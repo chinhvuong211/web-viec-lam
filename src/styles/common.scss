@@ -1,0 +1,35 @@
+:root {
+    --slide-spacing-sm: 1.6rem;
+    --slide-spacing-lg: 2rem;
+    --slide-size: 100%;
+    --slide-size-sm: 50%;
+    --slide-size-lg: calc(100% / 3);
+}
+
+html.dark .text-style-1 {
+    @apply bg-header-gradient bg-clip-text text-transparent;
+}
+
+html.green .text-style-1 {
+    color: #dbdfe6;
+}
+html.light .text-style-1 {
+    color: #272626;
+}
+
+html.light .quill {
+    border-top: 1px solid #ccc;
+}
+
+.title-border {
+    @apply green:border-b green:border-[#CEDFFF1A] green:pb-3 light:border-b light:border-[#2726264D] light:pb-3;
+}
+
+.ql-editor {
+    min-height: 192px;
+  }
+
+  .quill {
+    display: flex;
+    flex-direction: column-reverse;
+  }
