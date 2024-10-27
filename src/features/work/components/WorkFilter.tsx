@@ -22,7 +22,7 @@ function WorkFilter() {
                         <div
                             key={index}
                             className={cn(
-                                'flex h-[38px] w-[100px] rounded-[60px] flex-center text-body-16',
+                                'flex w-[100px] rounded-[60px] flex-center text-body-16 py-2',
                                 currentType === item
                                     ? ' bg-theme-primary light:bg-light-primary light:text-white'
                                     : 'cursor-pointer'
