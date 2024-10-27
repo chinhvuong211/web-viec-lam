@@ -40,8 +40,6 @@ export const QuillToolbar = () => (
                 <button className="ql-italic" />
                 <button className="ql-underline" />
                 <button className="ql-strike" />
-            </span>
-            <span className="ql-formats">
                 <button className="ql-link" />
                 <button className="ql-image" />
             </span>
