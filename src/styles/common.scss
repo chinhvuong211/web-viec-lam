@@ -27,9 +27,16 @@ html.light .quill {
 
 .ql-editor {
     min-height: 192px;
-  }
+}
 
-  .quill {
+.quill {
     display: flex;
     flex-direction: column-reverse;
-  }
+}
+#toolbar::after {
+    content: unset !important;
+    
+}
+.ql-snow .ql-formats:after div {
+    content: unset !important;
+}
