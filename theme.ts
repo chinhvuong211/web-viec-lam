@@ -2,7 +2,7 @@ export const typographyComponents = {
     // json generated:
     '.text-body-16': {
         fontSize: '16px',
-        lineHeight: '22.4px',
+        lineHeight: '22px',
         fontWeight: '300',
     },
     '.text-md-body-16': {

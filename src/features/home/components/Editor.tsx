@@ -10,7 +10,7 @@ export default function TextEditor() {
     const [value, setValue] = useState('');
 
     return (
-        <div className="bg-white relative">
+        <div className="bg-white relative border rounded-md overflow-hidden">
             <ReactQuill
                 theme="snow"
                 value={value}

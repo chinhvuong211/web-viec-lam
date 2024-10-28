@@ -29,14 +29,49 @@ html.light .quill {
     min-height: 192px;
 }
 
+html.dark .ql-editor {
+    background: #000005 !important;
+    color: white !important;
+}
+
+html.dark .ql-editor[data-placeholder]::before {
+    color: white !important;
+}
+
+html.green .ql-editor {
+    background: #171919 !important;
+    color: #737373 !important;
+}
+html.green .ql-editor[data-placeholder]::before {
+    color: #737373 !important;
+}
+
+html.light .ql-editor {
+    background: white !important;
+    color: #272626 !important;
+}
+html.light .ql-editor[data-placeholder]::before {
+    color: #272626 !important;
+}
+
+.ql-container.ql-snow {
+    @apply rounded-md overflow-hidden !border-t;
+    border: none !important;
+}
+
 .quill {
     display: flex;
     flex-direction: column-reverse;
+    @apply rounded-md overflow-hidden !border-t;
+    border: none !important;
 }
 #toolbar::after {
     content: unset !important;
-    
 }
 .ql-snow .ql-formats:after div {
     content: unset !important;
+}
+.ql-toolbar.ql-snow {
+    border: none !important;
+    border-top: 1px solid #e5e7eb !important;
 }
