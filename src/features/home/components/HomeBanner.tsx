@@ -2,10 +2,13 @@ import Link from 'next/link';
 
 import { Assets } from '@/assets';
 import Button from '@/components/base/button/Button';
+import Modal from '@/components/base/modal/Modal';
 import data from '@/data/data.json';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
 import { cn } from '@/lib/utils';
+
+import ConnectForm from './ConnectForm';
 
 const { aboutMe } = data;
 
@@ -20,7 +23,7 @@ function HomeBanner() {
 
     return (
         <div
-            className="bg-theme-background bg-cover bg-no-repeat object-cover light:max-lg:h-fit max-lg:bg-center"
+            className="bg-theme-background bg-cover bg-no-repeat object-cover h-screen light:max-lg:h-fit max-lg:bg-center"
             style={{ backgroundImage: `url("${bg}")` }}
         >
             {/* Hero Section */}
@@ -43,30 +46,43 @@ function HomeBanner() {
                     <Button label={'SEE MY WORK'} className="mt-10" />
                 </Link>
 
-                <div
-                    className={cn(
-                        'mx-auto mt-[117px] flex w-fit items-center space-x-6 rounded-full border px-4 py-3 max-lg:hidden',
-                        'light:border-light-primary',
-                        'dark:border-[#0057FF]'
-                    )}
+                <Modal
+                    contentComponent={ConnectForm}
+                    title="Have an project in mind "
+                    className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 max-lg:bottom-4"
                 >
-                    <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-[#12C966] " />
-                        <div className="text-white text-medium-16 light:text-light-primary">
-                            {aboutMe.availabilityStatus}
-                        </div>
-                    </div>
-                    <button
+                    <div
                         className={cn(
-                            'max-h-[39px] rounded-[60px] border px-5 py-3 flex-center text-medium-16 text-center',
-                            'green:text-[#0F0F0F] green:bg-white',
-                            'dark:bg-white dark:text-[#0057FF] dark:border-[#0057FF]',
-                            'light:text-white bg-light-primary'
+                            'mx-auto mt-[117px] flex w-fit items-center space-x-6 max-lg:space-x-2 rounded-full border px-4 py-3 bg-black light:bg-white max-lg:w-full',
+                            'light:border-light-primary',
+                            'dark:border-[#0057FF]',
+                            'max-lg:px-2 max-lg:py-1'
                         )}
                     >
-                        CONNECT NOW
-                    </button>
-                </div>
+                        <div className="flex items-center gap-2">
+                            <div className="h-2 w-2 min-w-2 rounded-full bg-[#12C966] " />
+                            <div
+                                className={cn(
+                                    'text-medium-16 light:text-light-primary whitespace-nowrap',
+                                    'max-lg:!text-[14px] max-lg:leading-[16px] dark:text-white green:text-white'
+                                )}
+                            >
+                                {aboutMe.availabilityStatus}
+                            </div>
+                        </div>
+                        <button
+                            className={cn(
+                                'max-h-[39px] rounded-[60px] border px-5 py-3 flex-center text-medium-16 text-center whitespace-nowrap',
+                                'green:text-[#0F0F0F] green:bg-white',
+                                'dark:bg-white dark:text-[#0057FF] dark:border-[#0057FF]',
+                                'light:text-white bg-light-primary',
+                                'max-lg:text-[14px] max-lg:leading-[16px] max-lg:px-2 max-lg:py-1'
+                            )}
+                        >
+                            CONNECT NOW
+                        </button>
+                    </div>
+                </Modal>
             </section>
         </div>
     );

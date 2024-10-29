@@ -55,14 +55,14 @@ html.light .ql-editor[data-placeholder]::before {
 }
 
 .ql-container.ql-snow {
-    @apply rounded-md overflow-hidden !border-t;
+    @apply overflow-hidden !border-t;
     border: none !important;
 }
 
 .quill {
     display: flex;
     flex-direction: column-reverse;
-    @apply rounded-md overflow-hidden !border-t;
+    @apply overflow-hidden !border-t;
     border: none !important;
 }
 #toolbar::after {

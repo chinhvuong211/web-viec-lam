@@ -17,10 +17,10 @@ function AboutMe() {
                     src={aboutMe.avatar}
                     width={553}
                     height={378}
-                    className="aspect-[553/378] w-full object-contain max-lg:aspect-[335/229]"
+                    className="aspect-[553/378] w-[85%] object-contain max-lg:aspect-[335/229] max-lg:min-w-full"
                     alt={''}
                 />
-                <div className="">
+                <div className="w-full">
                     <div className="text-style-1 text-title-h3 max-lg:text-md-title-h3">
                         {aboutMe.message.title}
                     </div>

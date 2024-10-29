@@ -6,6 +6,7 @@ import arrowUpRightIcon from './icons/arrow-up-right.svg';
 import asteriskIcon from './icons/asterisk.svg';
 import asteriskLightIcon from './icons/asterisk-light.svg';
 import chevronDownIcon from './icons/chevron-down.svg';
+import closeIcon from './icons/close.svg';
 import facebookIcon from './icons/facebook.svg';
 import githubIcon from './icons/github.svg';
 import linkedInIcon from './icons/linkedin.svg';
@@ -42,4 +43,5 @@ export const Assets = {
     menuIcon,
     arrowTopRightIcon,
     arrowTopIcon,
+    closeIcon,
 };

@@ -5,6 +5,11 @@ export const typographyComponents = {
         lineHeight: '22px',
         fontWeight: '300',
     },
+    '.text-medium-body-16': {
+        fontSize: '16px',
+        lineHeight: '22px',
+        fontWeight: '500',
+    },
     '.text-md-body-16': {
         fontSize: '16px',
         lineHeight: '20.8px',

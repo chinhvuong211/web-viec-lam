@@ -36,7 +36,8 @@ function WorkSection() {
                                 imageProps={{
                                     width: 372,
                                     height: 372,
-                                    className: 'w-full aspect-[1/1]',
+                                    className:
+                                        'w-full aspect-[1/1] min-w-[372px] max-xl:min-w-[200px]',
                                 }}
                                 className="w-full max-lg:w-full"
                             />

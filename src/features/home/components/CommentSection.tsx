@@ -29,7 +29,7 @@ function CommentSection() {
             </div>
             <div className="mx-auto mt-10">
                 {commentList.map((comment, index) => (
-                    <div key={index} className="mb-4 flex items-start gap-2">
+                    <div key={index} className="mb-4 flex items-start gap-2 max-lg:mb-6">
                         <Image
                             src={comment.avatar}
                             alt=""
@@ -40,14 +40,14 @@ function CommentSection() {
 
                         <div className="flex flex-col justify-start">
                             <div className="flex items-center">
-                                <strong className="dark:text-white green:text-white light:text-light-primary text-body-18 max-lg:text-md-body-14 light:font-medium">
+                                <strong className="dark:text-white green:text-white light:text-light-primary text-body-18 max-lg:text-[18px] light:font-medium">
                                     {comment.author}
                                 </strong>
-                                <span className="dark:text-[#C1C1C1] green:text-[#C1C1C1] light:text-[#C1C1C1] ml-4 text-body-14 max-lg:text-[14px]">
+                                <span className="dark:text-[#C1C1C1] green:text-[#C1C1C1] light:text-[#C1C1C1] ml-4 text-body-14 max-lg:text-[14px] max-lg:!font-normal">
                                     {comment.time}
                                 </span>
                             </div>
-                            <p className="text-body-16 text-[#E9E9E9] light:text-light-primary max-lg:text-md-body-14">
+                            <p className="text-body-16 text-[#E9E9E9] light:text-light-primary max-lg:text-md-body-14 max-lg:!font-normal">
                                 {comment.content}
                             </p>
                         </div>
