@@ -23,7 +23,7 @@ function ProjectCard(props: Props) {
                 <Image
                     src={imageUrl}
                     alt=""
-                    className={cn('object-contain', imageProps?.className)}
+                    className={cn('object-cover', imageProps?.className)}
                     {...imageProps}
                 />
                 <div

@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
 
 import { Assets } from '@/assets';
 import { cn } from '@/lib/utils';
@@ -23,8 +24,17 @@ const routerNames = [
     },
 ];
 
+const routerNameMobile = [
+    ...routerNames,
+    {
+        name: 'Contact',
+        path: '/contact',
+    },
+];
+
 const Header: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const router = usePathname();
 
     // Show or hide the button based on scroll position
     const toggleVisibility = () => {
@@ -39,10 +49,17 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', toggleVisibility);
+        console.log(router);
+
         return () => {
             window.removeEventListener('scroll', toggleVisibility);
         };
     }, []);
+
+    const pathIndex = useMemo(() => {
+        return routerNameMobile.findLastIndex((item) => router.includes(item.path));
+    }, [router]);
+
     return (
         <header
             className={cn(
@@ -54,8 +71,8 @@ const Header: React.FC = () => {
                 <div className="flex items-center justify-between gap-2">
                     <div
                         className={cn(
-                            'text-body-1 flex items-center dark:text-white green:text-white text-everett max-lg:text-normal-16 ',
-                            'light:text-light-primary light:font-medium'
+                            'text-body-1 flex items-center dark:text-white green:text-white text-everett',
+                            'light:text-light-primary light:font-medium max-lg:font-medium max-lg:text-[1.25rem]'
                         )}
                     >
                         <Link href={'/'}>P.Chuong</Link>
@@ -86,18 +103,35 @@ const Header: React.FC = () => {
                         Contact
                     </button>
                     <Dropdown
-                        items={routerNames}
-                        className="hidden max-lg:inline-block"
-                        renderItems={(item) => {
+                        items={routerNameMobile}
+                        className="hidden max-lg:inline-block "
+                        itemClass="w-full w-[calc(100vw-40px)] !py-8"
+                        renderItems={(item, _, index) => {
                             return (
                                 <Link href={item.path}>
                                     <div
                                         className={cn(
-                                            'block px-4 py-2 text-body-16 text-gray-700 hover:bg-gray-100 hover:text-gray-900',
-                                            'transform transition-all duration-200 ease-out'
+                                            'block px-4 py-2 text-body-16 text-gray-700 hover:bg-gray-100 hover:text-gray-900 ',
+                                            'transform transition-all duration-200 ease-out justify-center flex items-center gap-2'
                                         )}
                                     >
-                                        {item.name}
+                                        {pathIndex === index && (
+                                            <div className="w-1.5 h-1.5 bg-theme-primary rounded-full" />
+                                        )}
+
+                                        <div
+                                            className={cn(
+                                                'text-center',
+                                                pathIndex === index
+                                                    ? 'text-theme-primary'
+                                                    : 'text-[#576A8A]'
+                                            )}
+                                        >
+                                            {item.name}
+                                        </div>
+                                        {item.path === '/contact' && (
+                                            <Icon url={Assets.arrowRight2Icon.src} size={16} />
+                                        )}
                                     </div>
                                 </Link>
                             );

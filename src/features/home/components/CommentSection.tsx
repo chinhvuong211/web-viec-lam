@@ -40,10 +40,10 @@ function CommentSection() {
 
                         <div className="flex flex-col justify-start">
                             <div className="flex items-center">
-                                <strong className="dark:text-white green:text-white light:text-light-primary text-body-18 max-lg:text-[18px] light:font-medium">
+                                <strong className="dark:text-white green:text-white light:text-light-primary text-body-18 max-lg:text-[18px] max-lg:!font-normal">
                                     {comment.author}
                                 </strong>
-                                <span className="dark:text-[#C1C1C1] green:text-[#C1C1C1] light:text-[#C1C1C1] ml-4 text-body-14 max-lg:text-[14px] max-lg:!font-normal">
+                                <span className="dark:text-[#C1C1C1] green:text-[#C1C1C1] light:text-[#C1C1C1] ml-4 text-body-14 max-lg:text-[14px] !font-normal">
                                     {comment.time}
                                 </span>
                             </div>

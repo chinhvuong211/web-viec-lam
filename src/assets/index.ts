@@ -1,5 +1,6 @@
 import arrowLeftIcon from './icons/arrow-left.svg';
 import arrowRightIcon from './icons/arrow-right.svg';
+import arrowRight2Icon from './icons/arrow-right-2.svg';
 import arrowTopIcon from './icons/arrow-top.svg';
 import arrowTopRightIcon from './icons/arrow-top-right.svg';
 import arrowUpRightIcon from './icons/arrow-up-right.svg';
@@ -35,6 +36,7 @@ export const Assets = {
     facebookIcon,
     githubIcon,
     linkedInIcon,
+    arrowRight2Icon,
     asteriskLightIcon,
     arrowRightIcon,
     arrowLeftIcon,

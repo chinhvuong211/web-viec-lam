@@ -15,7 +15,8 @@ function Button(props: IButton) {
             className={cn(
                 'px-7 py-4 gap-2 flex items-center shadow-green hover:bg-blue-700 w-fit rounded-full text-body-18 bg-theme-primary text-theme-primary-text',
                 className,
-                'light:text-white'
+                'font-medium',
+                'light:text-white '
             )}
         >
             {title}

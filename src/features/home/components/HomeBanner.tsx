@@ -29,8 +29,8 @@ function HomeBanner() {
             {/* Hero Section */}
             <section className="px-24 pt-[220px] text-center max-lg:px-5 max-lg:pt-[150px] pb-[73px]">
                 <p className="text-start text-2xl text-[#D2DEFC] max-lg:font-[18px] max-lg:leading-[23.4px] light:text-light-primary">
-                    <span className="uppercase">{aboutMe.hello} </span>
-                    <span className="max-lg:block max-lg:mt-1 uppercase">
+                    <span className="uppercase max-lg:text-[1.125rem]">{aboutMe.hello} </span>
+                    <span className="max-lg:block max-lg:mt-1 uppercase max-lg:text-[1.125rem]">
                         {aboutMe.introduce}{' '}
                         <span className="green:text-[#12C99D] uppercase">{aboutMe.name}</span>
                     </span>

@@ -17,7 +17,7 @@ function AboutMe() {
                     src={aboutMe.avatar}
                     width={553}
                     height={378}
-                    className="aspect-[553/378] w-[85%] object-contain max-lg:aspect-[335/229] max-lg:min-w-full"
+                    className="aspect-[553/378] w-[85%] object-cover max-lg:aspect-[335/229] max-lg:min-w-full"
                     alt={''}
                 />
                 <div className="w-full">

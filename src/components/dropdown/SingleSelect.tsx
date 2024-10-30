@@ -26,12 +26,14 @@ function SingleSelect(props: Props) {
         <Dropdown
             items={items}
             className={className}
+            itemClass="max-lg:!w-[calc(100vw-40px)] max-lg:py-5 dark:bg-[#222228] dark:border-[#222228] green:bg-[#222228] green:border-[#222228]"
             renderItems={(item, { close }) => {
                 return (
                     <div
                         className={cn(
-                            'block px-4 py-2 text-body-16 text-gray-700 hover:bg-gray-100 hover:text-gray-900',
-                            'transform transition-all duration-200 ease-out'
+                            'block px-5 py-2 text-body-16 text-gray-700 hover:bg-gray-100 hover:text-gray-900',
+                            'transform transition-all duration-200 ease-out cursor-pointer',
+                            'dark:text-white green:text-white light:text-light-primary'
                         )}
                         onClick={() => {
                             setOption(item);

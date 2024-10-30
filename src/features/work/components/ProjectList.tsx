@@ -13,8 +13,7 @@ function ProjectList() {
                         imageProps={{
                             width: 605,
                             height: 405,
-                            className:
-                                'w-full aspect-[605/405] object-contain max-lg:aspect-[unset]',
+                            className: 'w-full aspect-[605/405] object-cover max-lg:aspect-[unset]',
                         }}
                     />
                 );

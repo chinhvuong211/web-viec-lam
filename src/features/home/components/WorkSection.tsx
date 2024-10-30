@@ -10,7 +10,7 @@ function WorkSection() {
         <section className="bg-theme-background px-24 pb-24 pt-8 max-lg:px-5">
             <div className="flex items-end justify-between max-lg:flex-col max-lg:items-start max-lg:gap-2 border-b green:border-[#CEDFFF1A] pb-3 light:border-[#2726264D] dark:border-transparent">
                 <TextTitle title={'MY PROJECT'} />
-                <h2 className="text-style-1 text-title-h2 max-lg:text-md-title-h1">
+                <h2 className="text-style-1 text-title-h2 max-lg:text-md-title-h2">
                     SELECTED WORK
                 </h2>
             </div>

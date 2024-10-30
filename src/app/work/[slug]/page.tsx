@@ -63,7 +63,7 @@ export default function Page({ params }: PageProps) {
                     alt={name}
                     width={1248}
                     height={702}
-                    className="object-contain aspect-[1248/702] max-lg:aspect-[335/188] w-full my-16 max-lg:mb-10 max-lg:mt-2"
+                    className="object-cover aspect-[1248/702] max-lg:aspect-[335/188] w-full my-16 max-lg:mb-10 max-lg:mt-2"
                 />
 
                 <div className="flex items-start justify-between max-lg:flex-col max-lg:gap-6">

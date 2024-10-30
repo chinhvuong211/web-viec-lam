@@ -45,6 +45,11 @@ export const typographyComponents = {
         lineHeight: '48px',
         fontWeight: '700',
     },
+    '.text-md-title-h2': {
+        fontSize: '36px',
+        lineHeight: '40px',
+        fontWeight: '700',
+    },
     '.text-title-h2': {
         fontSize: '64px',
         lineHeight: '70.4px',

@@ -79,7 +79,7 @@ function SkillSection() {
                                         width={300}
                                         height={169}
                                         alt={item.name}
-                                        className="aspect-[300/169] object-contain max-lg:w-full"
+                                        className="aspect-[300/169] object-cover max-lg:w-full"
                                     />
                                 </div>
                             </div>
