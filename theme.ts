@@ -10,21 +10,13 @@ export const typographyComponents = {
         lineHeight: '22px',
         fontWeight: '500',
     },
-    '.text-md-body-16': {
-        fontSize: '16px',
-        lineHeight: '20.8px',
-        fontWeight: '400',
-    },
+
     '.text-body-14': {
         fontSize: '14px',
         lineHeight: '14px',
         fontWeight: '300',
     },
-    '.text-md-body-14': {
-        fontSize: '14px',
-        lineHeight: '18.2px',
-        fontWeight: '300',
-    },
+
     '.text-body-18': {
         fontSize: '18px',
         lineHeight: '25.2px',
@@ -40,16 +32,7 @@ export const typographyComponents = {
         lineHeight: '83.6px',
         fontWeight: '700',
     },
-    '.text-md-title-h1': {
-        fontSize: '40px',
-        lineHeight: '48px',
-        fontWeight: '700',
-    },
-    '.text-md-title-h2': {
-        fontSize: '36px',
-        lineHeight: '40px',
-        fontWeight: '700',
-    },
+
     '.text-title-h2': {
         fontSize: '64px',
         lineHeight: '70.4px',
@@ -62,26 +45,13 @@ export const typographyComponents = {
         fontWeight: '500',
         letterSpacing: '0.02em',
     },
-    '.text-md-title-h3': {
-        fontSize: '24px',
-        lineHeight: '31.25px',
-        fontWeight: '500',
-    },
+
     '.text-title-h4': {
         fontSize: '24px',
         lineHeight: '26.5px',
         fontWeight: '500',
     },
-    '.text-md-title-h4': {
-        fontSize: '20px',
-        lineHeight: '26.04px',
-        fontWeight: '500',
-    },
-    '.text-md-title-h5': {
-        fontSize: '16px',
-        lineHeight: '20.83px',
-        fontWeight: '500',
-    },
+
     '.text-medium-16': {
         fontSize: '16px',
         lineHeight: '24px',
@@ -114,6 +84,43 @@ export const typographyComponents = {
         lineHeight: '26px',
         fontWeight: '400',
     },
+
+    '.text-md-title-h1': {
+        fontSize: '2.5rem', // 40px
+        lineHeight: '3rem', // 48px
+        fontWeight: '700',
+    },
+    '.text-md-title-h2': {
+        fontSize: '2.25rem', // 36px
+        lineHeight: '2.5rem', // 40px
+        fontWeight: '700',
+    },
+    '.text-md-title-h3': {
+        fontSize: '1.5rem', // 24px
+        lineHeight: '1.953125rem', // 31.25px
+        fontWeight: '500',
+    },
+    '.text-md-title-h4': {
+        fontSize: '1.25rem', // 20px
+        lineHeight: '1.6275rem', // 26.04px
+        fontWeight: '500',
+    },
+    '.text-md-title-h5': {
+        fontSize: '1rem', // 16px
+        lineHeight: '1.302rem', // 20.83px
+        fontWeight: '500',
+    },
+    '.text-md-body-16': {
+        fontSize: '1rem', // 16px
+        lineHeight: '1.3rem', // 20.8px
+        fontWeight: '400',
+    },
+    '.text-md-body-14': {
+        fontSize: '0.875rem', // 14px
+        lineHeight: '1.1375rem', // 18.2px
+        fontWeight: '300',
+    },
+ 
 };
 
 export const fontFamily = {};

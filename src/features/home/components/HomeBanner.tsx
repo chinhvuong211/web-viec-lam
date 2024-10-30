@@ -64,7 +64,7 @@ function HomeBanner() {
                             <div
                                 className={cn(
                                     'text-medium-16 light:text-light-primary whitespace-nowrap',
-                                    'max-lg:!text-[14px] max-lg:leading-[16px] dark:text-white green:text-white'
+                                    'max-lg:!text-[0.875rem] max-lg:leading-[16px] dark:text-white green:text-white'
                                 )}
                             >
                                 {aboutMe.availabilityStatus}
@@ -76,7 +76,7 @@ function HomeBanner() {
                                 'green:text-[#0F0F0F] green:bg-white',
                                 'dark:bg-white dark:text-[#0057FF] dark:border-[#0057FF]',
                                 'light:text-white bg-light-primary',
-                                'max-lg:text-[14px] max-lg:leading-[16px] max-lg:px-2 max-lg:py-1'
+                                'max-lg:text-[0.875rem] max-lg:leading-[16px] max-lg:px-2 max-lg:py-1'
                             )}
                         >
                             CONNECT NOW

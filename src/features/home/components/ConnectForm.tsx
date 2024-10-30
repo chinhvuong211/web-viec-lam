@@ -29,14 +29,17 @@ function ConnectForm(props: Props) {
 
     return (
         <div>
-            <InputText placeholder="Your email" className="mt-5" />
-            <InputTextArea placeholder="Add job description" className="mt-4" />
+            <InputText placeholder="Your email" className="mt-5 max-lg:text-md-body-14" />
+            <InputTextArea
+                placeholder="Add job description"
+                className="mt-4 max-lg:text-md-body-14"
+            />
             <div className="flex gap-5 items-center justify-between mt-4">
                 <InputRadio
                     value={JobType.FREELANCE}
                     label="Freelance"
                     name="radio"
-                    className="w-full"
+                    className="w-full max-lg:text-md-body-14"
                     checked={radio === JobType.FREELANCE}
                     onChange={handleChangeJobType}
                 />
@@ -44,14 +47,14 @@ function ConnectForm(props: Props) {
                     value={JobType.FULLTIME}
                     label="Fulltime"
                     name="radio"
-                    className="w-full"
+                    className="w-full max-lg:text-md-body-14"
                     checked={radio === JobType.FULLTIME}
                     onChange={handleChangeJobType}
                 />
             </div>
             <InputText
                 placeholder="Your timeline"
-                className="mt-5"
+                className="mt-5 max-lg:text-md-body-14"
                 rightIconProps={{
                     url: Assets.chevronDownIcon.src,
                     size: 16,
@@ -59,12 +62,12 @@ function ConnectForm(props: Props) {
             />
 
             <div className="flex items-center mt-4 pb-5">
-                <InputText placeholder="Your budget" className="grow" />
+                <InputText placeholder="Your budget" className="grow max-lg:text-md-body-14" />
 
                 <InputText
                     placeholder="USD"
                     value="USD"
-                    className="ml-4 max-w-[200px]"
+                    className="ml-4 max-w-[200px] max-lg:text-md-body-14 max-lg:max-w-[120px]"
                     rightIconProps={{
                         url: Assets.chevronDownIcon.src,
                         size: 16,
@@ -72,7 +75,7 @@ function ConnectForm(props: Props) {
                 />
             </div>
 
-            <div className="flex items-center justify-end gap-2 mt-4 ">
+            <div className="flex items-center justify-end gap-2 mt-4 max-lg:text-md-body-16">
                 <button
                     className="border bg-white rounded-sm flex items-center justify-center py-3 w-[120px] border-[#D4D4D4]"
                     onClick={close}
