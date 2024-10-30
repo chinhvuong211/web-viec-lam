@@ -12,10 +12,10 @@ function AboutMeSection() {
                     src={aboutMe.avatar}
                     width={553}
                     height={378}
-                    className="aspect-[553/378] w-full object-cover max-lg:aspect-[335/229] min-w-[553px] max-lg:min-w-full"
-                    alt={''}
+                    className="aspect-[553/378] w-[85%] object-cover max-lg:aspect-[335/229] min-w-[553px] max-lg:min-w-full"
+                    alt={aboutMe.name}
                 />
-                <div className="">
+                <div className="w-full">
                     <div className="text-style-1 text-title-h3 max-lg:text-md-title-h3">
                         {aboutMe.message.title}
                     </div>
