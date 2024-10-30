@@ -23,7 +23,7 @@ function InputRadio(props: IRadioProps) {
             <div className="w-3.5 h-3.5 rounded-full border border-[#E5E5E5] bg:[#FAFAFA] peer-checked:bg-black flex items-center">
                 <div className="w-1.5 h-1.5 bg-white rounded-full m-auto"></div>
             </div>
-            <span className="ml-2 text-medium-body-16">{label}</span>
+            <span className="ml-2 text-medium-body-16 text-[#262626]">{label}</span>
         </label>
     );
 }

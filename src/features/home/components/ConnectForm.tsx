@@ -77,7 +77,7 @@ function ConnectForm(props: Props) {
 
             <div className="flex items-center justify-end gap-2 mt-4 max-lg:text-md-body-16">
                 <button
-                    className="border bg-white rounded-sm flex items-center justify-center py-3 w-[120px] border-[#D4D4D4]"
+                    className="border bg-white rounded-sm flex items-center justify-center py-3 w-[120px] border-[#D4D4D4] text-black"
                     onClick={close}
                 >
                     Cancel
