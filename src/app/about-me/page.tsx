@@ -25,8 +25,8 @@ function Page() {
                 style={{ backgroundImage: bg && `url("${bg}")` }}
             >
                 <Header />
-                <div className="pt-[182px] max-lg:pt-24">
-                    <h1 className="text-style-1 px-24 text-title-h2 max-lg:px-5 max-lg:text-md-title-h1">
+                <div className="pt-[182px] max-lg:pt-24 max-w-screen-xxl mx-auto">
+                    <h1 className="text-style-1 px-24 text-title-h2 max-lg:px-5 max-lg:text-md-title-h1 ">
                         ABOUT ME
                     </h1>
                 </div>

@@ -54,14 +54,14 @@ const Footer: React.FC = () => {
     return (
         <footer className="text-center">
             <div
-                className="bg-theme-background px-24 pt-24 max-lg:px-5 max-lg:pt-10"
+                className="bg-theme-background "
                 style={{
                     backgroundImage: `url("${bg}")`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
             >
-                <div className=" flex justify-between gap-24 max-lg:flex-col max-lg:justify-start max-lg:gap-0">
+                <div className="max-w-screen-xxl px-24 pt-24 max-lg:px-5 max-lg:pt-10 mx-auto flex justify-between gap-24 max-lg:flex-col max-lg:justify-start max-lg:gap-0">
                     <div>
                         <TextTitle title="CONTACT" />
                         <div className="flex-start mt-[80px] flex flex-col items-start justify-start max-lg:hidden">
@@ -117,21 +117,23 @@ const Footer: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <div className="mt-[300px] flex items-center justify-between pb-10 max-lg:mt-[144px] light:border-t light:pt-5 light:border-light-primary green:border-t green:pt-5 green:border-[#CEDFFF1A">
-                    <div className="text-[#BBBBBB] text-normal-14 light:text-light-primary">
-                        {contact.copyright}
-                    </div>
+                <div className="max-w-screen-xxl left-0 right-0 mx-auto px-24 pt-24 max-lg:px-5 max-lg:pt-10 ">
+                    <div className=" mt-[300px] flex items-center justify-between pb-10 max-lg:mt-[144px] light:border-t light:pt-5 light:border-light-primary green:border-t green:pt-5 green:border-[#CEDFFF1A">
+                        <div className="text-[#BBBBBB] text-normal-14 light:text-light-primary">
+                            {contact.copyright}
+                        </div>
 
-                    <div className="flex items-center gap-5 max-lg:text-everett">
-                        {routerNames.map((item) => (
-                            <a
-                                className="text-[#BBBBBB] text-normal-14 light:text-light-primary"
-                                href={item.path}
-                                key={item.path}
-                            >
-                                {item.name}
-                            </a>
-                        ))}
+                        <div className="flex items-center gap-5 max-lg:text-everett">
+                            {routerNames.map((item) => (
+                                <a
+                                    className="text-[#BBBBBB] text-normal-14 light:text-light-primary"
+                                    href={item.path}
+                                    key={item.path}
+                                >
+                                    {item.name}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

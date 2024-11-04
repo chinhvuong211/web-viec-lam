@@ -13,6 +13,19 @@ const config: Config = {
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
+        screens: {
+            sm: '576px',
+
+            md: '768px',
+
+            lg: '992px',
+
+            xl: '1200px',
+
+            xxl: '1600px',
+
+            '3xl': '1920px',
+        },
         extend: {
             colors: {
                 background: 'hsl(var(--background))',

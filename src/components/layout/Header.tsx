@@ -63,11 +63,11 @@ const Header: React.FC = () => {
     return (
         <header
             className={cn(
-                'fixed top-0 z-10 w-full py-5 ',
+                'fixed top-0 z-10 w-full py-5  left-0 right-0 ',
                 isVisible ? 'bg-theme-background shadow-xxl' : ''
             )}
         >
-            <div className="mx-auto w-full px-24 max-lg:px-5">
+            <div className="mx-auto w-full px-24 max-lg:px-5 max-w-screen-xxl">
                 <div className="flex items-center justify-between gap-2">
                     <div
                         className={cn(

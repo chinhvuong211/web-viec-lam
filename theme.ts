@@ -120,7 +120,6 @@ export const typographyComponents = {
         lineHeight: '1.1375rem', // 18.2px
         fontWeight: '300',
     },
- 
 };
 
 export const fontFamily = {};

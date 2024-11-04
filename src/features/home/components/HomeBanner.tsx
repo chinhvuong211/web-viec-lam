@@ -27,7 +27,7 @@ function HomeBanner() {
             style={{ backgroundImage: `url("${bg}")` }}
         >
             {/* Hero Section */}
-            <section className="px-24 pt-[220px] text-center max-lg:px-5 max-lg:pt-[150px] pb-[73px]">
+            <section className="max-w-screen-xxl left-0 right-0 mx-auto px-24 pt-[220px] text-center max-lg:px-5 max-lg:pt-[150px] pb-[73px]">
                 <p className="text-start text-2xl text-[#D2DEFC] max-lg:font-[18px] max-lg:leading-[23.4px] light:text-light-primary">
                     <span className="uppercase max-lg:text-[1.125rem]">{aboutMe.hello} </span>
                     <span className="max-lg:block max-lg:mt-1 uppercase max-lg:text-[1.125rem]">

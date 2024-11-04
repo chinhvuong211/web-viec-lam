@@ -14,7 +14,7 @@ interface IProps {
 
 export function MainLayout({ children, style, className }: IProps) {
     return (
-        <div className="relative">
+        <div className="relative ">
             <div className={cn('mx-auto w-full')} style={style}>
                 <Suspense fallback={null}>
                     <ScrollToTopButton />

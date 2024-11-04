@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 
 function ExperienceSection() {
     return (
-        <div className="bg-theme-background green:bg-[#131414] flex items-center justify-center p-24 max-lg:px-5 max-lg:py-10">
-            <div className="w-full space-y-8">
+        <div className="bg-theme-background green:bg-[#131414] flex items-center justify-center ">
+            <div className="w-full space-y-8 max-w-screen-xxl left-0 right-0 mx-auto p-24 max-lg:px-5 max-lg:py-10">
                 <TextTitle title="EXPERIENCE" />
 
                 {/* Experience Items */}

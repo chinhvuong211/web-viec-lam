@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 
 function EducationSection() {
     return (
-        <div className="bg-theme-background green:bg-[#131414] flex items-center justify-center px-24 pb-24 max-lg:px-5 max-lg:pb-10">
-            <div className="w-full">
+        <div className="bg-theme-background green:bg-[#131414] flex items-center justify-center">
+            <div className="w-full max-w-screen-xxl left-0 right-0 mx-auto  px-24 pb-24 max-lg:px-5 max-lg:pb-10">
                 <TextTitle title="EDUCATION" />
 
                 {/* Experience Items */}
