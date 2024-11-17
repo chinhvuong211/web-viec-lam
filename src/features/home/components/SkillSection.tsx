@@ -8,10 +8,10 @@ const NumberPlus = (props: { number: number; text: string }) => {
     return (
         <div className="flex items-start gap-2">
             <div className="flex items-start gap-2">
-                <h3 className="text-style-1 text-[80px] font-[800] leading-[112px]">
+                <h3 className="text-style-1 text-[5rem] font-[800] leading-[7rem]">
                     {props.number}
                 </h3>
-                <div className="text-style-1 text-[40px] font-[800] leading-[56px]">+</div>
+                <div className="text-style-1 text-[2.5rem] font-[800] leading-[3.5rem]">+</div>
             </div>
 
             <div
@@ -35,7 +35,7 @@ function SkillSection() {
                 <div className="flex justify-between max-lg:flex-col max-lg:gap-10">
                     <div>
                         <TextTitle title={'SKILLS'} />
-                        <div className="sticky top-[100px] w-fit pt-10 max-lg:pt-6">
+                        <div className="sticky top-[6.25rem] w-fit pt-10 max-lg:pt-6">
                             <div className="border-b border-[#CEDFFF1A] pb-5 light:border-[#2726264D]">
                                 <NumberPlus number={data.client.number} text={data.client.label} />
                             </div>

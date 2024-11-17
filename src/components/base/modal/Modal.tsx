@@ -44,7 +44,7 @@ const Modal = forwardRef<IModalRef, IProps>((props, ref) => {
             <div onClick={handleOpenModal}>{children}</div>
             <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="relative z-50">
                 <div className="fixed inset-0 flex w-screen items-center justify-center max-lg:px-4">
-                    <DialogPanel className="border bg-white pt-5 px-5 pb-4 min-w-[800px] max-lg:mx-4 max-lg:min-w-full rounded-[8px] overflow-hidden">
+                    <DialogPanel className="border bg-white pt-5 px-5 pb-4 min-w-[50rem] max-lg:mx-4 max-lg:min-w-full rounded-[0.5rem] overflow-hidden">
                         <div className="flex-center-between">
                             <DialogTitle className="text-title-h4 text-light-primary max-lg:text-md-title-h4">
                                 {title}

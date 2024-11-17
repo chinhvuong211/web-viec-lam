@@ -10,7 +10,7 @@ const Editor = dynamic(() => import('./Editor'), { ssr: false });
 function CommentSection() {
     return (
         <section className="bg-theme-background ">
-            <div className="max-w-screen-xxl mx-auto py-20 px-[202px] max-lg:px-5 max-lg:py-10">
+            <div className="max-w-screen-xxl mx-auto py-20 px-[12.625rem] max-lg:px-5 max-lg:py-10">
                 <div className="text-[#E9E9E9] text-body-16 pb-10 max-lg:text-twk-everett light:text-light-primary light:font-semibold">
                     Community comments
                 </div>
@@ -36,7 +36,7 @@ function CommentSection() {
                                 alt=""
                                 width={64}
                                 height={64}
-                                className="min-w-[64px] max-lg:min-w-12 max-lg:w-12"
+                                className="min-w-16 max-lg:min-w-12 max-lg:w-12"
                             />
 
                             <div className="flex flex-col justify-start">

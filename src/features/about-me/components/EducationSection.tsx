@@ -22,7 +22,7 @@ function EducationSection() {
                             <div className="text-body-18 dark:text-[#C1C1C1] green:text-[#C1C1C1] light:text-[#272626]  max-lg:text-md-body-14 max-lg:mb-3">
                                 {item.time}
                             </div>
-                            <div className="max-w-[720px] w-[720px] max-lg:w-full">
+                            <div className="max-w-[45rem] w-[45rem] max-lg:w-full">
                                 <div className="flex flex-col items-start gap-2">
                                     <h2 className="text-title-h4 dark:text-white green:text-white light:text-[#252525] max-lg:text-md-title-h5">
                                         {item.name}

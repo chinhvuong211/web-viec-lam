@@ -67,7 +67,7 @@ export default function InputTextArea({
                 className={cn(
                     'rounded-sm border border-gray-200 text-body-16',
                     'px-3 py-3',
-                    'max-h-[300px] min-h-[140px] w-full',
+                    'max-h-[18.75rem] min-h-[8.75rem] w-full',
                     'text-light-primary',
                     'placeholder:text-[#888890] placeholder:text-body-16',
                     'transition-colors',
@@ -91,7 +91,7 @@ export default function InputTextArea({
             {error && (
                 <span
                     className={cn(
-                        'absolute left-0 top-[95%] text-[14px] leading-[21px] text-error'
+                        'absolute left-0 top-[95%] text-[0.875rem] leading-[1.3125rem] text-error'
                     )}
                 >
                     {error}

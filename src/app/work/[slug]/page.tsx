@@ -43,7 +43,7 @@ export default function Page({ params }: PageProps) {
             <Header />
 
             <div className="bg-theme-background  ">
-                <div className="max-w-screen-xxl mx-auto pt-[182px] max-lg:pt-24 px-24 max-lg:px-5">
+                <div className="max-w-screen-xxl mx-auto pt-[11.375rem] max-lg:pt-24 px-24 max-lg:px-5">
                     <div className="flex flex-wrap items-center gap-2">
                         {technologies.map((item, index) => (
                             <div
@@ -69,7 +69,7 @@ export default function Page({ params }: PageProps) {
 
                     <div className="flex items-start justify-between max-lg:flex-col max-lg:gap-6">
                         <TextTitle title="Overview" />
-                        <div className="max-w-[823px]">
+                        <div className="max-w-[51.375rem] ">
                             <div className="text-title-h3 dark:text-white green:text-white max-lg:text-md-title-h3 light:text-light-primary">
                                 {title}
                             </div>

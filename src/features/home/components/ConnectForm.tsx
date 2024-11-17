@@ -67,7 +67,7 @@ function ConnectForm(props: Props) {
                 <InputText
                     placeholder="USD"
                     value="USD"
-                    className="ml-4 max-w-[200px] max-lg:text-md-body-14 max-lg:max-w-[120px]"
+                    className="ml-4 max-w-[12.5rem] max-lg:text-md-body-14 max-lg:max-w-[7.5rem]"
                     rightIconProps={{
                         url: Assets.chevronDownIcon.src,
                         size: 16,
@@ -77,14 +77,14 @@ function ConnectForm(props: Props) {
 
             <div className="flex items-center justify-end gap-2 mt-4 max-lg:text-md-body-16">
                 <button
-                    className="border bg-white rounded-sm flex items-center justify-center py-3 w-[120px] border-[#D4D4D4] text-black"
+                    className="border bg-white rounded-sm flex items-center justify-center py-3 w-[7.5rem] border-[#D4D4D4] text-black"
                     onClick={close}
                 >
                     Cancel
                 </button>
 
                 <button
-                    className="border bg-black text-white rounded-sm flex items-center justify-center py-3 w-[120px] border-[#D4D4D4]"
+                    className="border bg-black text-white rounded-sm flex items-center justify-center py-3 w-[7.5rem] border-[#D4D4D4]"
                     onClick={handleSubmit}
                 >
                     Send it

@@ -110,7 +110,7 @@ const InputText = forwardRef<HTMLInputElement, IInputProps>(
                     {error && (
                         <span
                             className={cn(
-                                'absolute left-0 top-full text-[14px] leading-[21px] text-error'
+                                'absolute left-0 top-full text-[0.875rem] leading-[1.3125rem] text-error'
                             )}
                         >
                             {error}

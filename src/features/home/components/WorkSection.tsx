@@ -38,7 +38,7 @@ function WorkSection() {
                                         width: 372,
                                         height: 372,
                                         className:
-                                            'w-full aspect-[1/1] min-w-[372px] max-xl:min-w-[200px]',
+                                            'w-full aspect-[1/1] min-w-[23.25rem] max-xl:min-w-[12.5rem]',
                                     }}
                                     className="w-full max-lg:w-full"
                                 />

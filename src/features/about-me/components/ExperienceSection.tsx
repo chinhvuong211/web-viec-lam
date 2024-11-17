@@ -22,7 +22,7 @@ function ExperienceSection() {
                             <div className="text-body-18 dark:text-[#C1C1C1] green:text-[#C1C1C1] light:text-[#272626] max-lg:text-md-body-14 max-lg:mb-3">
                                 {item.period}
                             </div>
-                            <div className="max-w-[720px]">
+                            <div className="max-w-[45rem]">
                                 <div className="flex items-center max-lg:flex-col max-lg:items-start">
                                     <h2 className="text-title-h4 dark:text-white green:text-white max-lg:text-md-title-h5 light:text-light-primary">
                                         {item.title}

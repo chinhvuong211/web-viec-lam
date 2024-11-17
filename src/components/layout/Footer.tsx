@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                 <div className="max-w-screen-xxl px-24 pt-24 max-lg:px-5 max-lg:pt-10 mx-auto flex justify-between gap-24 max-lg:flex-col max-lg:justify-start max-lg:gap-0">
                     <div>
                         <TextTitle title="CONTACT" />
-                        <div className="flex-start mt-[80px] flex flex-col items-start justify-start max-lg:hidden">
+                        <div className="flex-start mt-20 flex flex-col items-start justify-start max-lg:hidden">
                             {socials.map((item, index) => (
                                 <a
                                     href={item.link}
@@ -81,13 +81,13 @@ const Footer: React.FC = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="max-w-[823px] text-start max-lg:mt-4">
+                    <div className="max-w-[51.4375rem] text-start max-lg:mt-4">
                         <p className="mb-12 text-start text-white text-title-h3 max-lg:mb-8 max-lg:text-md-title-h3 light:text-light-primary">
                             {contact.message}
                         </p>
                         <a
                             href={`mailto:${contact.email}`}
-                            className=" flex items-center gap-2 text-start text-white underline underline-offset-[6px] text-title-h3  max-lg:text-title-h4 light:text-light-primary"
+                            className=" flex items-center gap-2 text-start text-white underline underline-offset-[0.375rem] text-title-h3 max-lg:text-title-h4 light:text-light-primary"
                             style={{ wordBreak: 'break-word' }}
                         >
                             <Icon
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                         </a>
                     </div>
 
-                    <div className="flex-start mt-[80px]  hidden flex-col items-start justify-start max-lg:flex">
+                    <div className="flex-start mt-20  hidden flex-col items-start justify-start max-lg:flex">
                         {socials.map((item, index) => (
                             <a
                                 href={item.link}
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="max-w-screen-xxl left-0 right-0 mx-auto px-24 pt-24 max-lg:px-5 max-lg:pt-10 ">
-                    <div className=" mt-[300px] flex items-center justify-between pb-10 max-lg:mt-[144px] light:border-t light:pt-5 light:border-light-primary green:border-t green:pt-5 green:border-[#CEDFFF1A">
+                    <div className="mt-[18.75rem] flex items-center justify-between pb-10 max-lg:mt-[9rem] light:border-t light:pt-5 light:border-light-primary green:border-t green:pt-5 green:border-[#CEDFFF1A">
                         <div className="text-[#BBBBBB] text-normal-14 light:text-light-primary">
                             {contact.copyright}
                         </div>

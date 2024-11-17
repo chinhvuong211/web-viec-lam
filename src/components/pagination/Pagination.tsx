@@ -15,7 +15,7 @@ const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPage
     return (
         <div className="flex-center">
             <ul className="gap-4 flex-center text-white">
-                <button className="h-[42px] w-[42px] rounded-full dark:bg-[#1A1A1E] green:bg-[#1A1A1E] light:bg-white flex-center">
+                <button className="h-10 w-10 rounded-full dark:bg-[#1A1A1E] green:bg-[#1A1A1E] light:bg-white flex-center">
                     <Icon
                         className="dark:text-white green:text-white light:text-light-primary light:border light:border-black"
                         url={Assets.arrowLeftIcon.src}
@@ -29,7 +29,7 @@ const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPage
                         <li key={number}>
                             <button
                                 className={cn(
-                                    'h-[42px] w-[42px] rounded-full flex-center text-body-16',
+                                    'h-10 w-10 rounded-full flex-center text-body-16',
                                     number === currentPage
                                         ? 'bg-theme-primary green:text-[#131414]'
                                         : 'dark:bg-[#1A1A1E] green:bg-[#1A1A1E]  light:bg-white light:text-light-primary'
@@ -41,7 +41,7 @@ const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage, onPage
                             </button>
                         </li>
                     ))}
-                <button className="h-[42px] w-[42px] rounded-full dark:bg-[#1A1A1E] green:bg-[#1A1A1E] light:bg-white  flex-center">
+                <button className="h-10 w-10 rounded-full dark:bg-[#1A1A1E] green:bg-[#1A1A1E] light:bg-white  flex-center">
                     <Icon
                         className="dark:text-white green:text-white light:text-light-primary light:border light:border-black"
                         url={Assets.arrowRightIcon.src}

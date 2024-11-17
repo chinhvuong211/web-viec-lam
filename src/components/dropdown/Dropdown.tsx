@@ -34,7 +34,7 @@ function Dropdown<T>(props: IProps<T>) {
             </div>
             <div
                 className={cn(
-                    'absolute right-0 z-10 mt-[6px] min-w-[146px] origin-top-right',
+                    'absolute right-0 z-10 mt-1.5 min-w-[9.125rem] origin-top-right',
                     'bg-white border border-gray-200  rounded-[16px] shadow-lg overflow-hidden',
                     'transform transition-all duration-200 ease-out',
                     isOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible',

@@ -14,17 +14,17 @@ const config: Config = {
     ],
     theme: {
         screens: {
-            sm: '576px',
+            sm: '36rem',
 
-            md: '768px',
+            md: '48rem',
 
-            lg: '992px',
+            lg: '62rem',
 
-            xl: '1200px',
+            xl: '75rem',
 
-            xxl: '1600px',
+            xxl: '100rem',
 
-            '3xl': '1920px',
+            '3xl': '120rem',
         },
         extend: {
             colors: {
