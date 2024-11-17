@@ -75,3 +75,8 @@ html.light .ql-editor[data-placeholder]::before {
     border: none !important;
     border-top: 1px solid #e5e7eb !important;
 }
+
+.border-gradient { 
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(157, 157, 157, 0.25) 0%, rgba(157, 157, 157, 0) 100%, rgba(157, 157, 157, 0) 100%);
+}

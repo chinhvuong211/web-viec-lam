@@ -12,6 +12,9 @@ import facebookIcon from './icons/facebook.svg';
 import githubIcon from './icons/github.svg';
 import linkedInIcon from './icons/linkedin.svg';
 import menuIcon from './icons/menu.svg';
+import avatar1 from './images/avatar-1.png';
+import avatar2 from './images/avatar-2.png';
+import avatar3 from './images/avatar-3.png';
 import backgroundGreen from './images/background-green.png';
 import bannerHeaderGreenImage from './images/banner-background-green.png';
 import footerImage from './images/footer.png';
@@ -31,7 +34,9 @@ export const Assets = {
     footerLightImage,
     footerGreenImage,
     bannerHeaderGreenImage,
-
+    avatar1,
+    avatar2,
+    avatar3,
     asteriskIcon,
     facebookIcon,
     githubIcon,

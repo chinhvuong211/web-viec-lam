@@ -154,4 +154,8 @@ export const colors = {
 
 export const backgroundImage = {
     'header-gradient': 'linear-gradient(180deg, #FFFFFF 26.16%, #587CDB 106.98%)',
+    'slide-background':
+        'linear-gradient(180deg, rgba(104, 106, 115, 0.20) 0%, rgba(104, 106, 115, 0.00) 100%)',
+    'green-slide-background':
+        'linear-gradient(180deg, rgba(104, 106, 115, 0.2) 0%, rgba(104, 106, 115, 0) 100%)',
 };
