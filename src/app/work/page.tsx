@@ -1,29 +1,43 @@
-import React from 'react';
-
-import Header from '@/components/layout/Header';
-import ProjectList from '@/features/work/components/ProjectList';
-import ProjectListPagination from '@/features/work/components/ProjectListPagination';
-import WorkFilter from '@/features/work/components/WorkFilter';
+import { Template, Theme } from '@/lib/constant';
+import { getCookieTemplate } from '@/lib/template';
+import { getCookieTheme } from '@/lib/theme';
+import Developer1Work from '@/templates/developer-1/WorkPage';
+import Developer2Work from '@/templates/developer-2/WorkPage';
+import Developer3Work from '@/templates/developer-3/WorkPage';
+import Marketing1Work from '@/templates/marketing-1/WorkPage';
+import Marketing2Work from '@/templates/marketing-2/WorkPage';
+import Marketing3Work from '@/templates/marketing-3/WorkPage';
+import marketingData from '@/data/marketing.json';
 
 function Page() {
-    return (
-        <div>
-            <div className="bg-theme-background">
-                <Header />
-                <div className="pt-[11.375rem] max-lg:pt-24 max-w-screen-xxl mx-auto">
-                    <h1 className="text-style-1 px-24 text-title-h2 max-lg:px-5 max-lg:text-md-title-h1">
-                        MY PROJECTS
-                    </h1>
-                </div>
+    const theme = getCookieTheme();
+    const template = getCookieTemplate();
 
-                <div className="p-24 max-lg:px-5 max-lg:py-10 max-w-screen-xxl mx-auto">
-                    <WorkFilter />
-                    <ProjectList />
-                    <ProjectListPagination />
-                </div>
-            </div>
-        </div>
-    );
+    switch (template) {
+        case Template.DEVELOPER_1:
+            return <Developer1Work />;
+        case Template.DEVELOPER_3:
+            return <Developer3Work />;
+        case Template.DEVELOPER_2:
+            return <Developer2Work />;
+        case Template.MARKETING_1:
+            return <Marketing1Work data={marketingData} />;
+        case Template.MARKETING_2:
+            return <Marketing2Work />;
+        case Template.MARKETING_3:
+            return <Marketing3Work />;
+    }
+
+    switch (theme) {
+        case Theme.DEVELOPER_1:
+            return <Developer1Work />;
+        case Theme.DEVELOPER_3:
+            return <Developer3Work />;
+        case Theme.DEVELOPER_2:
+            return <Developer2Work />;
+        default:
+            return <Developer1Work />;
+    }
 }
 
 export default Page;

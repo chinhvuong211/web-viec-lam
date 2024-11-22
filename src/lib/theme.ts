@@ -4,12 +4,12 @@ import { Theme } from './constant';
 
 export function getTheme(value?: string | null) {
     switch (value) {
-        case Theme.GREEN:
-            return Theme.GREEN;
-        case Theme.LIGHT:
-            return Theme.LIGHT;
+        case Theme.DEVELOPER_2:
+            return Theme.DEVELOPER_2;
+        case Theme.DEVELOPER_3:
+            return Theme.DEVELOPER_3;
         default:
-            return Theme.DARK;
+            return Theme.DEVELOPER_1;
     }
 }
 

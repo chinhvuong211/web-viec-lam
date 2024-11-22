@@ -6,15 +6,15 @@ import { cn } from '@/lib/utils';
 import { Icon } from './base/icon/Icon';
 
 const IconMapping = {
-    [Theme.DARK]: {
+    [Theme.DEVELOPER_1]: {
         icon: <Icon url={Assets.asteriskIcon.src} className="text-[#E63B1D]" size={20} />,
         text: 'text-[#D2DEFC]',
     },
-    [Theme.LIGHT]: {
+    [Theme.DEVELOPER_3]: {
         icon: <Icon url={Assets.asteriskLightIcon.src} className="text-[#F65D2C]" size={20} />,
         text: 'text-light-primary',
     },
-    [Theme.GREEN]: {
+    [Theme.DEVELOPER_2]: {
         icon: <div className="w-3.5 h-1.5 min-w-3.5 rounded-[19px] bg-[#12C99D]" />,
         text: 'text-[#D2DEFC]',
     },

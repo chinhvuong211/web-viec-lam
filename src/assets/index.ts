@@ -23,7 +23,18 @@ import footerLightImage from './images/footer-light.png';
 import homeBanner from './images/home-banner.png';
 import homeBannerGreen from './images/home-banner-green.png';
 import homeBannerLight from './images/home-banner-light.png';
-
+import instagramIcon from './icons/instagram.svg';
+import photoshopIcon from './icons/photoshop.svg';
+import notionIcon from './icons/notion.svg';
+import figmaIcon from './icons/figma.svg';
+import youtubeIcon from './icons/youtube.svg';
+import capcutIcon from './icons/capcut.svg';
+import canvaIcon from './icons/canva.svg';
+import chevronRightIcon from './icons/chevron-right.svg';
+import marketingHomeBanner11 from './images/marketing-home-banner-1-1.png';
+import marketingHomeBanner12 from './images/marketing-home-banner-1-2.png';
+import marketingHomeBanner13 from './images/marketing-home-banner-1-3.png';
+import circleCheckIcon from './icons/circle-check.svg';
 export const Assets = {
     logo: '/assets/images/logo.png',
     homeBanner,
@@ -32,11 +43,14 @@ export const Assets = {
     homeBannerLight,
     footerImage,
     footerLightImage,
-    footerGreenImage,
+    footerGreenImage,           
     bannerHeaderGreenImage,
     avatar1,
     avatar2,
     avatar3,
+    marketingHomeBanner11,
+    marketingHomeBanner12,
+    marketingHomeBanner13,
     asteriskIcon,
     facebookIcon,
     githubIcon,
@@ -51,4 +65,13 @@ export const Assets = {
     arrowTopRightIcon,
     arrowTopIcon,
     closeIcon,
+    instagramIcon,
+    photoshopIcon,
+    notionIcon,
+    figmaIcon,
+    youtubeIcon,
+    capcutIcon,
+    canvaIcon,
+    circleCheckIcon,
+    chevronRightIcon,
 };

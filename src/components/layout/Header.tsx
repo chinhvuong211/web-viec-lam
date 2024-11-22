@@ -32,9 +32,21 @@ const routerNameMobile = [
     },
 ];
 
-const Header: React.FC = () => {
+type HeaderTheme = {
+    text: string;
+    font?: string;
+    contact?: string;
+};
+
+type HeaderProps = {
+    theme?: HeaderTheme;
+};
+
+const Header: React.FC<HeaderProps> = (props) => {
     const [isVisible, setIsVisible] = useState(false);
     const router = usePathname();
+
+    const { theme = { text: '' } } = props || {};
 
     // Show or hide the button based on scroll position
     const toggleVisibility = () => {
@@ -71,7 +83,8 @@ const Header: React.FC = () => {
                 <div className="flex items-center justify-between gap-2">
                     <div
                         className={cn(
-                            'text-body-1 flex items-center dark:text-white green:text-white text-everett',
+                            'text-body-1 flex items-center text-everett',
+                            'max-lg:font-medium max-lg:text-[1.25rem]',
                             'light:text-light-primary light:font-medium max-lg:font-medium max-lg:text-[1.25rem]'
                         )}
                     >
@@ -81,12 +94,7 @@ const Header: React.FC = () => {
                     <div className="flex items-center gap-9 max-lg:hidden text-[#E9E9E9]">
                         {routerNames.map((item) => (
                             <Link href={item.path} key={item.path}>
-                                <div
-                                    className={cn(
-                                        'text-body-16',
-                                        'light:text-light-primary light:font-medium'
-                                    )}
-                                >
+                                <div className={cn('text-body-16', theme.text, theme.font)}>
                                     {item.name}
                                 </div>
                             </Link>
@@ -95,9 +103,10 @@ const Header: React.FC = () => {
                     <button
                         className={cn(
                             'shadow-xs flex max-h-10 items-center rounded-[60px] border border-[#0057FF] bg-[#010005] px-6 py-2.5 text-[#F2F2F2]',
-                            'max-lg:hidden ',
-                            'green:border-[#FFFFFF] green:bg-transparent',
-                            'light:bg-transparent light:text-light-primary light:border-light-primary light:font-medium'
+                            'max-lg:hidden',
+                            theme.text,
+                            theme.font,
+                            theme.contact
                         )}
                     >
                         Contact
@@ -141,7 +150,7 @@ const Header: React.FC = () => {
                             <button>
                                 <Icon
                                     url={Assets.menuIcon.src}
-                                    className="text-white light:text-light-primary"
+                                    className={cn(theme.text)}
                                     size={24}
                                 />
                             </button>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Assets } from '@/assets';
 import Button from '@/components/base/button/Button';
 import Modal from '@/components/base/modal/Modal';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
 import { cn } from '@/lib/utils';
@@ -13,9 +13,9 @@ import ConnectForm from './ConnectForm';
 const { aboutMe } = data;
 
 const bgMapping = {
-    [Theme.DARK]: Assets.homeBanner.src,
-    [Theme.LIGHT]: Assets.homeBannerLight.src,
-    [Theme.GREEN]: Assets.homeBannerGreen.src,
+    [Theme.DEVELOPER_1]: Assets.homeBanner.src,
+    [Theme.DEVELOPER_3]: Assets.homeBannerLight.src,
+    [Theme.DEVELOPER_2]: Assets.homeBannerGreen.src,
 };
 
 function HomeBanner() {

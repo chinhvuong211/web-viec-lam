@@ -1,15 +1,16 @@
-import Header from '@/components/layout/Header';
-import data from '@/data/data.json';
-import AboutMe from '@/features/home/components/AboutMeSection';
-import CommentSection from '@/features/home/components/CommentSection';
-import HomeBanner from '@/features/home/components/HomeBanner';
-import SkillSection from '@/features/home/components/SkillSection';
-import { SlideCardTheme } from '@/features/home/components/SlideCard';
-import TestimonialSection from '@/features/home/components/TestimonialSection';
-import WorkSection from '@/features/home/components/WorkSection';
-import { Theme } from '@/lib/constant';
+import data from '@/data/developer.json';
+import marketingData from '@/data/marketing.json';
+import { Template, Theme } from '@/lib/constant';
+import { getCookieTemplate } from '@/lib/template';
 import { getCookieTheme } from '@/lib/theme';
 import { getBaseUrl } from '@/lib/utils';
+import Developer1 from '@/templates/developer-1/HomePage';
+import Developer2 from '@/templates/developer-2/HomePage';
+import Developer3 from '@/templates/developer-3/HomePage';
+import Marketing1 from '@/templates/marketing-1/HomePage';
+import Marketing2 from '@/templates/marketing-2/HomePage';
+import Marketing3 from '@/templates/marketing-3/HomePage';
+
 const { aboutMe, skills } = data;
 export async function generateMetadata() {
     const imageUrl = `${getBaseUrl()}/assets/images/profile/avatar.png`;
@@ -47,64 +48,33 @@ export async function generateMetadata() {
 
 function Index() {
     const theme = getCookieTheme();
+    const template = getCookieTemplate();
 
-    const mapTheme: Record<Theme, SlideCardTheme> = {
-        [Theme.GREEN]: {
-            background: 'bg-slide-background',
-            description: 'text-[#E9E9E9]',
-            title: 'text-[#E5E8FA]',
-            position: 'text-[#E9E9E9]',
-        },
-        [Theme.LIGHT]: {
-            background: '!bg-white border border-[#959595]',
-            description: 'text-light-primary-text',
-            title: 'text-light-primary-text',
-            position: 'text-light-primary-text',
-        },
-        [Theme.DARK]: {
-            background: 'bg-slide-background',
-            description: 'text-[#E9E9E9]',
-            title: 'text-[#E5E8FA]',
-            position: 'text-[#E9E9E9]',
-        },
-    };
+    switch (template) {
+        case Template.DEVELOPER_1:
+            return <Developer1 />;
+        case Template.DEVELOPER_3:
+            return <Developer3 />;
+        case Template.DEVELOPER_2:
+            return <Developer2 />;
+        case Template.MARKETING_1:
+            return <Marketing1 data={marketingData} />;
+        case Template.MARKETING_2:
+            return <Marketing2 data={marketingData} />;
+        case Template.MARKETING_3:
+            return <Marketing3 data={marketingData} />;
+    }
 
-    const activeDotClassName = {
-        [Theme.GREEN]: 'bg-white',
-        [Theme.LIGHT]: 'bg-black',
-        [Theme.DARK]: 'bg-white',
-    };
-
-    const inactiveDotClassName = {
-        [Theme.GREEN]: 'bg-[#464646]',
-        [Theme.LIGHT]: 'bg-[#C3C3C3]',
-        [Theme.DARK]: 'bg-[#464646]',
-    };
-
-    return (
-        <div>
-            <Header />
-            <HomeBanner />
-
-            <WorkSection />
-
-            {/* About Section */}
-            <AboutMe />
-
-            {/* Skills Section */}
-            <SkillSection />
-
-            {/* Testimonial Section */}
-            <TestimonialSection
-                cardTheme={mapTheme[theme]}
-                activeDotClassName={activeDotClassName[theme]}
-                inactiveDotClassName={inactiveDotClassName[theme]}
-            />
-
-            {/* Comments Section */}
-            <CommentSection />
-        </div>
-    );
+    switch (theme) {
+        case Theme.DEVELOPER_1:
+            return <Developer1 />;
+        case Theme.DEVELOPER_3:
+            return <Developer3 />;
+        case Theme.DEVELOPER_2:
+            return <Developer2 />;
+        default:
+            return <Developer1 />;
+    }
 }
 
 export default Index;

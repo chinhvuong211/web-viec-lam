@@ -1,5 +1,5 @@
 import { TextTitle } from '@/components/TextTitle';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import { cn } from '@/lib/utils';
 
 function ExperienceSection() {

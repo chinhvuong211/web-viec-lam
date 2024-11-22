@@ -1,4 +1,4 @@
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 
 import ProjectCard from './ProjectCard';
 

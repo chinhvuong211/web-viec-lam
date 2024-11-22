@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import Button from '@/components/base/button/Button';
 import { TextTitle } from '@/components/TextTitle';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import ProjectCard from '@/features/work/components/ProjectCard';
 
 function WorkSection() {

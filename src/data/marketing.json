@@ -1,0 +1,401 @@
+{
+    "aboutMe": {
+        "hello": "Xin chào!",
+        "introduce": "Mình là",
+        "name": "Jane Nguyen",
+        "message": {
+            "title": "With a passion for technology, I have 3 years experience in developing web and mobile applications, using ​​such as JavaScript, Python, and Java.",
+            "description": "I have participated in many large-scale projects, from architectural design to deployment and maintenance. With good leadership and teamwork skills, I have guided and trained new team members. I am always looking for opportunities to improve the development process and increase work efficiency. In addition, I also love exploring new technologies and applying modern development methods such as Agile and DevOps. "
+        },
+        "avatar": "/assets/images/profile/marketing.png",
+        "job": "A FREELANCE",
+        "position": "FRONT-END DEVELOPER",
+        "availabilityStatus": "I'M AVAILABLE FOR WORK",
+        "social": {
+            "facebookLink": "https://www.facebook.com/",
+            "linkedinLink": "https://www.linkedin.com/",
+            "instagramLink": "https://www.instagram.com/",
+            "youtubeLink": "https://www.youtube.com/"
+        }
+    },
+    "overview": {
+        "description": "I strive for excellence and pay attention to the smallest details. Each project should reflect its individuality, and border on aesthetics and functionality"
+    },
+    "contact": {
+        "message": "I'm currently open for new opportunities. Let me make your project idea a reality! Don't hesitate, contact me today via",
+        "email": "yourmail@gmail.com",
+        "copyright": "© 2024",
+        "facebookLink": "https://www.facebook.com/",
+        "linkedInLink": "https://www.linkedin.com/",
+        "githubLink": "https://github.com/"
+    },
+    "client": {
+        "number": 15,
+        "label": "Happy Clients"
+    },
+    "project": {
+        "number": 10,
+        "label": "Projects this year"
+    },
+    "skills": [
+        {
+            "name": "Website Development",
+            "technologies": [
+                "Libraries",
+                "Frameworks",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Git",
+                "Django"
+            ],
+            "imageUrl": "/assets/images/skills/web-development.png"
+        },
+        {
+            "name": "App Development",
+            "technologies": [
+                "Libraries",
+                "Frameworks",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Git",
+                "Django"
+            ],
+            "imageUrl": "/assets/images/skills/app-development.png"
+        },
+        {
+            "name": "Technology Consulting",
+            "technologies": [
+                "Libraries",
+                "Frameworks",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Git",
+                "Django"
+            ],
+            "imageUrl": "/assets/images/skills/technology-consulting.png"
+        }
+    ],
+    "educations": [
+        {
+            "time": "08/2024 - Present",
+            "name": "Information Technology Specialist Courses",
+            "major": "Udemy Certification "
+        },
+        {
+            "time": "09/2018 - 06/2022",
+            "name": "Hanoi University of Science and Technology",
+            "major": "Bachelor Information Technology"
+        }
+    ],
+    "experiences": [
+        {
+            "title": "Web Developer",
+            "company": "Freelancer",
+            "period": "08/2024 - Present",
+            "description": [
+                "Led the effort to support multi tenant organizations in teams and channels app within Teams app. This involved updating UI components, developing a new API which included understanding the requirements, creating developer specification, collaborating with partners and implementing the API independently"
+            ]
+        },
+        {
+            "title": "Software Development Engineer",
+            "company": "Microsoft",
+            "period": "06/2024 - 02/2019",
+            "description": [
+                "Led the integration of push architecture based sync in the Teams calendar removing the requirement of polling. This effort contributed in the reducation of 40% network calls to the backend services and made calendar sync near real time. This project involved understanding the requirements of all the Teams clients (Web, iOS, android etc.), coming up with a notification contract, creating developer spec for web client and implementing them."
+            ]
+        },
+        {
+            "title": "Junior Developer",
+            "company": "Hashness",
+            "period": "01/2019 - 05/2017",
+            "description": [
+                "I led the migration of Teams Calendaring APIs from legacy exchange APIs to the latest ones, improving availability, maintenance, debugging, and latencies. I implemented a client-side mechanism for phased migration in Microsoft Teams.",
+                "The Teams Calendaring APIs were successfully moved to downstream service communication with the latest auth stack. This resulted in faster, more resilient, and secure communication. I shared my learnings with partner teams, assisting them in migrating their services.",
+                "Beyond feature development, I provided consultation to team members on their features, mentored interns and new team members, contributed to hiring drives by taking technical interviews, provided live-site support as a part of lead on-call rotation etc."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "name": "Project Number 01",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-1.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Google",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Project Number 02",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-2.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Google",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Project Number 03",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-3.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Google",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Project Number 04",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-4.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Google",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        }
+    ],
+    "commentList": [
+        {
+            "author": "Maude Hall",
+            "content": "That's a fantastic projects. You and your team did an excellent job of incorporating user testing feedback.",
+            "time": "14 min",
+            "avatar": "/assets/images/user/user-1.png"
+        },
+        {
+            "author": "User 1",
+            "content": "That's a fantastic projects. You and your team did an excellent job of incorporating user testing feedback.",
+            "time": "2 months ago",
+            "avatar": "/assets/images/user/user-1.png"
+        },
+        {
+            "author": "User 2",
+            "content": "That's a fantastic projects. You and your team did an excellent job of incorporating user testing feedback.",
+            "time": "2 months ago",
+            "avatar": "/assets/images/user/user-2.png"
+        }
+    ],
+    "whatThaySaidAboutMe": [
+        {
+            "name": "Ronak Patel",
+            "avatar": "avatar1",
+            "position": "CEO & Owner of SaasFlash",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Mohamed Ali Amaira",
+            "avatar": "avatar2",
+            "position": "Founder of MyDoc",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        }
+    ]
+}

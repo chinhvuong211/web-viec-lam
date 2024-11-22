@@ -2,7 +2,7 @@
 import React from 'react';
 
 import Pagination from '@/components/pagination/Pagination';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 
 function ProjectListPagination() {
     const [currentPage, setCurrentPage] = React.useState(1);

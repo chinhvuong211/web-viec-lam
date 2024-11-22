@@ -1,5 +1,5 @@
 import Image from '@/components/base/Image';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import { cn } from '@/lib/utils';
 
 const { aboutMe } = data;
