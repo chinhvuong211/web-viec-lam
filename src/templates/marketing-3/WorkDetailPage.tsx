@@ -1,9 +1,15 @@
 import { ProjectItem } from '@/features/work/interface';
+import { MarketingData } from '@/features/common/interface';
+import MarketingWorkDetail from '@/features/work/detail/MarketingWorkDetail';
 
-export default function MarketingStyle1WorkDetailPage({
-    projectDetail,
-}: {
-    projectDetail: ProjectItem;
-}) {
-    return <div>{projectDetail.title}</div>;
+type Props = {
+    data: MarketingData;
+    slug: string;
+};
+export default function MarketingStyle3WorkDetailPage({
+    data,
+    slug,
+}: Props) {
+    const projectDetail = data.projects.find((item) => item.id === slug) as ProjectItem;
+    return <MarketingWorkDetail projectDetail={projectDetail} />;
 }

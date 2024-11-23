@@ -7,7 +7,8 @@ import { MainLayout } from '@/components/layout/MainLayout';
 import data from '@/data/developer.json';
 import { getCookieTemplate } from '@/lib/template';
 import { getCookieTheme } from '@/lib/theme';
-import { cn } from '@/lib/utils';
+import { cn, getTemplateCategory } from '@/lib/utils';
+import { TemplateCategory } from '@/lib/constant';
 const { aboutMe } = data;
 export const metadata: Metadata = {
     icons: [
@@ -44,13 +45,12 @@ export default function RootLayout({
     const theme = getCookieTheme();
     const template = getCookieTemplate();
 
-    const themeName = {
-        marketing: 'theme-marketing',
-        developer: 'theme-developer',
+    const themeName: Record<TemplateCategory, string> = {
+        [TemplateCategory.MARKETING]: 'theme-marketing',
+        [TemplateCategory.DEVELOPER]: 'theme-developer',
     };
 
-    const themeClass =
-        themeName[template?.split('-')[0] as keyof typeof themeName] || 'theme-developer';
+    const themeClass = themeName[getTemplateCategory(template ?? "")] || 'theme-developer';
 
     return (
         <html lang="en" className={cn(theme, themeClass)}>

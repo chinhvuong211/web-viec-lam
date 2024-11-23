@@ -3,6 +3,7 @@ import { Icon } from '@/components/base/icon/Icon';
 import Image from '@/components/base/Image';
 import { MarketingProjectItem } from '@/features/common/interface';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 type Props = {
     item: MarketingProjectItem;
     theme?: {
@@ -13,9 +14,9 @@ type Props = {
 
 export default function ProjectCard(props: Props) {
     const { item, theme } = props;
-    const { imageUrl, name, description, goals } = item;
+    const { imageUrl, name, description, goals, id } = item;
 
-    return <div className={cn('w-full h-full rounded-[2rem] py-6 px-8 flex gap-8 ', theme?.container)}>
+    return <Link href={`work/${id}`} className={cn('w-full h-full rounded-[2rem] py-6 px-8 flex gap-8', theme?.container)}>
         <div className='flex-1 flex flex-col justify-between'>
             <div className=''>
                 <div className='text-[2rem] font-medium leading-[2.732rem]'>
@@ -55,5 +56,5 @@ export default function ProjectCard(props: Props) {
             </div>
         </div>
         <Image src={imageUrl} alt={name} width={693} height={464} className='rounded-[1.5rem] aspect-[693/464]' />
-    </div>
+    </Link>
 }

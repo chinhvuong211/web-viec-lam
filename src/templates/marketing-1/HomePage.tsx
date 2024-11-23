@@ -28,49 +28,45 @@ function MarketingStyle1HomePage(props: Props) {
     const { aboutMe: { social } } = data;
 
     return (
-        <div>
-            <div
-                className="bg-white"
-            >
-                <Header name={data.aboutMe.name} />
-                <HomeBanner
-                    theme={{
-                        primaryText: 'text-[#272626]',
-                        secondaryText: 'text-[#9b9b9b]',
-                        connectButton: 'bg-white text-[#272626]',
-                        connectButtonText: 'text-white bg-[#272626]',
-                        availabilityStatus: 'green:text-[#0F0F0F] green:bg-white',
-                    }}
-                />
+        <div className="bg-white">
+            <Header name={data.aboutMe.name} />
+            <HomeBanner
+                theme={{
+                    primaryText: 'text-[#272626]',
+                    secondaryText: 'text-[#9b9b9b]',
+                    connectButton: 'bg-white text-[#272626]',
+                    connectButtonText: 'text-white bg-[#272626]',
+                    availabilityStatus: 'green:text-[#0F0F0F] green:bg-white',
+                }}
+            />
 
 
-                {/* About Section */}
-                <AboutMe
-                    theme={{
-                        aboutMeBackground: 'bg-[#F4F4F4]',
-                    }}
-                />
-                <WorkSection
-                    theme={{
-                        background: 'bg-[#F4F4F4]',
-                        btn: 'bg-white text-black',
-                    }}
-                    data={data.projects}
-                />
+            {/* About Section */}
+            <AboutMe
+                theme={{
+                    aboutMeBackground: 'bg-[#F4F4F4]',
+                }}
+            />
+            <WorkSection
+                theme={{
+                    background: 'bg-[#F4F4F4]',
+                    btn: 'bg-white text-black',
+                }}
+                data={data.projects}
+            />
 
-                {/* Testimonial Section */}
-                <TestimonialSection
-                    cardTheme={{
-                        background: 'bg-slide-background',
-                        description: 'text-[#E9E9E9]',
-                        title: 'text-[#E5E8FA]',
-                        position: 'text-[#E9E9E9]',
-                    }}
-                    activeDotClassName={'bg-white'}
-                    inactiveDotClassName={'bg-[#464646]'}
-                />
+            {/* Testimonial Section */}
+            <TestimonialSection
+                cardTheme={{
+                    background: 'bg-slide-background',
+                    description: 'text-[#E9E9E9]',
+                    title: 'text-[#E5E8FA]',
+                    position: 'text-[#E9E9E9]',
+                }}
+                activeDotClassName={'bg-white'}
+                inactiveDotClassName={'bg-[#464646]'}
+            />
 
-            </div>
             <Footer
                 data={{
                     socials: [

@@ -71,7 +71,7 @@ function SkillSection() {
                                             </div>
 
                                             <div className="mt-4 flex max-w-[30vw] flex-wrap gap-2 max-lg:max-w-full">
-                                                {item.technologies.map((item) => (
+                                                {item.technologies?.map((item) => (
                                                     <TagItem key={item} label={item} />
                                                 ))}
                                             </div>

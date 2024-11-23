@@ -4,6 +4,11 @@ export enum Theme {
     DEVELOPER_3 = 'light',
 }
 
+export enum TemplateCategory {
+    DEVELOPER = 'developer',
+    MARKETING = 'marketing',
+}
+
 export enum Template {
     DEVELOPER_1 = 'developer-1',
     DEVELOPER_2 = 'developer-2',
