@@ -49,7 +49,7 @@ const bgMapping = {
     [Theme.DEVELOPER_2]: Assets.footerGreenImage.src,
 };
 
-interface FooterProps {
+export interface MarketingFooterProps {
     theme?: {
         social?: string;
         message?: string;
@@ -91,7 +91,7 @@ const socialItems = [
     },
     
 ];
-const MarketingFooter: React.FC<FooterProps> = (props) => {
+const MarketingFooter: React.FC<MarketingFooterProps> = (props) => {
     const {
         theme = {
             social: '',
@@ -110,8 +110,8 @@ const MarketingFooter: React.FC<FooterProps> = (props) => {
     const bg = bgMapping[getCookieTheme()];
 
     return (
-        <footer className="px-20 py-10">
-            <div className="max-w-screen-xxl bg-black rounded-[32px] px-[72px] pt-[72px] pb-12">
+        <footer className="px-20 py-10 w-full">
+            <div className="max-w-screen-xxl w-full bg-black rounded-[32px] px-[72px] pt-[72px] pb-12 mx-auto">
                 <div
                     className={cn(
                         'text-[56px] leading-[72px] font-[56px] text-start max-w-[836px]',

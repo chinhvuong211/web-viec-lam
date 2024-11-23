@@ -28,6 +28,9 @@ const config: Config = {
             '3xl': '120rem',
         },
         extend: {
+            fontFamily: {
+                montserrat: ['Montserrat', 'sans-serif'], 
+            },
             colors: {
                 background: 'hsl(var(--background))',
                 foreground: 'hsl(var(--foreground))',

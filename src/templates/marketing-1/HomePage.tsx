@@ -1,8 +1,6 @@
 import React from 'react';
 
 import { Assets } from '@/assets';
-import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
 import MarketingFooter from '@/components/layout/MarketingFooter';
 import MarketingHeader from '@/components/layout/MarketingHeader';
 import AboutMeSection from '@/features/about-me/components/AboutMeSection';
@@ -16,12 +14,11 @@ import TestimonialSection from '@/features/home/components/TestimonialSection';
 import WorkSection from '@/features/home/marketing/WorkSection';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
+import Marketing1Footer from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-const bgMapping = {
-    [Theme.DEVELOPER_1]: '',
-    [Theme.DEVELOPER_3]: '',
-    [Theme.DEVELOPER_2]: Assets.backgroundGreen.src,
-};
+
 type Props = {
     data: MarketingData;
 };
@@ -29,21 +26,13 @@ type Props = {
 function MarketingStyle1HomePage(props: Props) {
     const { data } = props;
     const { aboutMe: { social } } = data;
-    const bg = bgMapping[getCookieTheme()];
 
     return (
         <div>
             <div
                 className="bg-white"
             >
-                <MarketingHeader
-                    theme={{
-                        text: 'text-white',
-                        background: 'bg-black',
-                        contact: 'bg-white text-black',
-                    }}
-                    name={data.aboutMe.name}
-                />
+                <Header name={data.aboutMe.name} />
                 <HomeBanner
                     theme={{
                         primaryText: 'text-[#272626]',
@@ -61,11 +50,10 @@ function MarketingStyle1HomePage(props: Props) {
                         aboutMeBackground: 'bg-[#F4F4F4]',
                     }}
                 />
-                
-                <WorkSection 
-                
+                <WorkSection
                     theme={{
                         background: 'bg-[#F4F4F4]',
+                        btn: 'bg-white text-black',
                     }}
                     data={data.projects}
                 />
@@ -83,18 +71,7 @@ function MarketingStyle1HomePage(props: Props) {
                 />
 
             </div>
-            <MarketingFooter
-                theme={{
-                    social: 'text-[#D2DEFC]',
-                    message: '!text-white',
-                    email: 'text-white',
-                    copyright: 'text-[#BBBBBB]',
-                    router: 'text-[#BBBBBB]',
-                    routerContainer: 'light:pt-5 light:border-light-primary',
-                    btn: 'bg-white text-black',
-                    divider: 'border-white',
-                    contact: 'text-[#E8E8E8]',
-                }}
+            <Footer
                 data={{
                     socials: [
                         {

@@ -4,19 +4,19 @@ import React, { useState } from 'react';
 import SingleSelect from '@/components/dropdown/SingleSelect';
 import { cn } from '@/lib/utils';
 
-const tabs = ['All', 'Mobile', 'Website'];
+const tabs = ['All', 'Campaign', 'Content', 'Social Media'];
 
 function WorkFilter() {
     const [currentType, setCurrentType] = useState<string>('All');
     return (
-        <div className="flex-center-between max-lg:w-full max-lg:flex-col max-lg:gap-3">
+        <div className="flex-center-between max-lg:w-full max-lg:flex-col max-lg:gap-3 mb-8">
             <SingleSelect
                 className="max-lg:w-full hidden max-lg:block"
                 items={tabs.map((item) => ({ label: item, value: item }))}
                 customLabel={(item) => `Type: ${item.label}`}
             />
 
-            <div className="flex items-center gap-2 max-lg:hidden green:text-[#E9E9E9] dark:text-[#E9E9E9] light:text-light-primary">
+            <div className="flex items-center gap-2 max-lg:hidden">
                 {tabs.map((item, index) => {
                     return (
                         <div

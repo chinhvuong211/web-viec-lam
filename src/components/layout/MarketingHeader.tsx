@@ -32,7 +32,7 @@ const routerNameMobile = [
     },
 ];
 
-type HeaderTheme = {
+export type HeaderTheme = {
     text: string;
     font?: string;
     contact?: string;
@@ -65,7 +65,7 @@ const MarketingHeader: React.FC<HeaderProps> = (props) => {
                 <div className="flex items-center justify-between gap-2">
                     <div
                         className={cn(
-                            'font-medium text-[1.5625rem] leading-[1.75rem] text-white flex items-center',
+                            'font-medium text-[1.5625rem] leading-[1.75rem] text-white flex items-center font-montserrat',
                             theme.text
                         )}
                     >

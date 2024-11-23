@@ -1,3 +1,3 @@
-export default function MarketingStyle1AboutMe() {
-    return <div>MarketingStyle1AboutMe</div>;
+export default function Marketing1AboutMe() {
+    return <div>Marketing1AboutMe</div>;
 }

@@ -3,23 +3,21 @@
         "hello": "Xin chào!",
         "introduce": "Mình là",
         "name": "Jane Nguyen",
-        "message": {
-            "title": "With a passion for technology, I have 3 years experience in developing web and mobile applications, using ​​such as JavaScript, Python, and Java.",
-            "description": "I have participated in many large-scale projects, from architectural design to deployment and maintenance. With good leadership and teamwork skills, I have guided and trained new team members. I am always looking for opportunities to improve the development process and increase work efficiency. In addition, I also love exploring new technologies and applying modern development methods such as Agile and DevOps. "
-        },
         "avatar": "/assets/images/profile/marketing.png",
-        "job": "A FREELANCE",
-        "position": "FRONT-END DEVELOPER",
-        "availabilityStatus": "I'M AVAILABLE FOR WORK",
         "social": {
             "facebookLink": "https://www.facebook.com/",
             "linkedinLink": "https://www.linkedin.com/",
             "instagramLink": "https://www.instagram.com/",
             "youtubeLink": "https://www.youtube.com/"
+        },
+        "overview": {
+            "description": "I’m a digital marketing professional with five years of experience specializing in creating impactful marketing strategies and driving growth through data-driven decisions. My expertise spans across SEO, social media management, content marketing, and paid advertising, allowing me to build comprehensive campaigns tailored to diverse target audiences. With a strong background in analytics and market research, I focus on optimizing conversion rates and enhancing brand visibility. I am passionate about leveraging digital tools and platforms to deliver measurable results and help brands connect more effectively with their audience.",
+            "experiences": [
+                "Social Media Manager Giggling Platypus Co",
+                "Social Media Specialist Larana, Inc"
+            ],
+            "tools": ["Photoshop", "Figma", "Canva", "Capcut", "Notion"]
         }
-    },
-    "overview": {
-        "description": "I strive for excellence and pay attention to the smallest details. Each project should reflect its individuality, and border on aesthetics and functionality"
     },
     "contact": {
         "message": "I'm currently open for new opportunities. Let me make your project idea a reality! Don't hesitate, contact me today via",
@@ -80,41 +78,39 @@
     ],
     "educations": [
         {
-            "time": "08/2024 - Present",
-            "name": "Information Technology Specialist Courses",
-            "major": "Udemy Certification "
+            "time": "2018 - 2022",
+            "name": "RMIT University",
+            "major": "Bachelor of Digital Marketing"
         },
         {
-            "time": "09/2018 - 06/2022",
-            "name": "Hanoi University of Science and Technology",
-            "major": "Bachelor Information Technology"
+            "time": "2021 - 2022",
+            "name": "Cousera Certificate",
+            "major": "Google Digital Marketing & E-commerce Professional "
         }
     ],
     "experiences": [
         {
-            "title": "Web Developer",
-            "company": "Freelancer",
+            "title": "Digital Marketer",
+            "company": "Freelance",
             "period": "08/2024 - Present",
             "description": [
-                "Led the effort to support multi tenant organizations in teams and channels app within Teams app. This involved updating UI components, developing a new API which included understanding the requirements, creating developer specification, collaborating with partners and implementing the API independently"
+                "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like English."
             ]
         },
         {
-            "title": "Software Development Engineer",
-            "company": "Microsoft",
+            "title": "Social Media Manager",
+            "company": "Vertica Agency",
             "period": "06/2024 - 02/2019",
             "description": [
-                "Led the integration of push architecture based sync in the Teams calendar removing the requirement of polling. This effort contributed in the reducation of 40% network calls to the backend services and made calendar sync near real time. This project involved understanding the requirements of all the Teams clients (Web, iOS, android etc.), coming up with a notification contract, creating developer spec for web client and implementing them."
+                "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like English."
             ]
         },
         {
-            "title": "Junior Developer",
-            "company": "Hashness",
+            "title": "Idea Creator Executive",
+            "company": "Alabic Studio",
             "period": "01/2019 - 05/2017",
             "description": [
-                "I led the migration of Teams Calendaring APIs from legacy exchange APIs to the latest ones, improving availability, maintenance, debugging, and latencies. I implemented a client-side mechanism for phased migration in Microsoft Teams.",
-                "The Teams Calendaring APIs were successfully moved to downstream service communication with the latest auth stack. This resulted in faster, more resilient, and secure communication. I shared my learnings with partner teams, assisting them in migrating their services.",
-                "Beyond feature development, I provided consultation to team members on their features, mentored interns and new team members, contributed to hiring drives by taking technical interviews, provided live-site support as a part of lead on-call rotation etc."
+                "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like English."
             ]
         }
     ],

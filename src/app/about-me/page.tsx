@@ -1,4 +1,5 @@
 import React from 'react';
+import marketingData from '@/data/marketing.json';
 
 import { Template, Theme } from '@/lib/constant';
 import { getCookieTemplate } from '@/lib/template';
@@ -22,11 +23,11 @@ function AboutMePage() {
         case Template.DEVELOPER_2:
             return <Developer2AboutMe />;
         case Template.MARKETING_1:
-            return <Marketing1AboutMe />;
+            return <Marketing1AboutMe data={marketingData} />;
         case Template.MARKETING_2:
-            return <Marketing2AboutMe />;
+            return <Marketing2AboutMe data={marketingData} />;
         case Template.MARKETING_3:
-            return <Marketing3AboutMe />;
+            return <Marketing3AboutMe data={marketingData} />;
     }
 
     switch (theme) {

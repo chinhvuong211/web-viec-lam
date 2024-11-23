@@ -15,7 +15,7 @@ export default function ProjectCard(props: Props) {
     const { item, theme } = props;
     const { imageUrl, name, description, goals } = item;
 
-    return <div className={cn('shadow-inset w-full h-full rounded-[2rem] py-6 px-8 flex gap-8 ', theme?.container)}>
+    return <div className={cn('w-full h-full rounded-[2rem] py-6 px-8 flex gap-8 ', theme?.container)}>
         <div className='flex-1 flex flex-col justify-between'>
             <div className=''>
                 <div className='text-[2rem] font-medium leading-[2.732rem]'>
