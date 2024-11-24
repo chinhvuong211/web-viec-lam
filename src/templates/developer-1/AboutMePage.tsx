@@ -25,7 +25,7 @@ function AboutMePage() {
                 className="bg-theme-background bg-cover bg-no-repeat object-cover light:max-lg:h-fit "
                 style={{ backgroundImage: bg && `url("${bg}")` }}
             >
-                <Header theme={{ text: 'text-white', title: 'text-white' }} />
+                <Header theme={{ text: 'text-white' }} />
 
                 <div className="pt-[11.375rem] max-lg:pt-24 max-w-screen-xxl mx-auto">
                     <h1 className="text-style-1 px-24 text-title-h2 max-lg:px-5 max-lg:text-md-title-h1 ">
