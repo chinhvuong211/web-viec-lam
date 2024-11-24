@@ -41,8 +41,9 @@ export default function Index() {
                     className="px-2 py-1 bg-blue-400 hover:bg-blue-500 rounded-md"
                     onClick={(e) => {
                         e.preventDefault();
-                        window.location.href = `/?template=${item.link}`;
+                        window.open(`/?template=${item.link}`, '_blank');
                     }}
+                    target="_blank"
                 >
                     {item.name}
                 </Link>
