@@ -1,5 +1,6 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+
 import { TemplateCategory } from './constant';
 
 export function cn(...inputs: ClassValue[]) {

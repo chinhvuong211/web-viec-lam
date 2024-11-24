@@ -1,4 +1,5 @@
 import { Assets } from '@/assets';
+import { Icon } from '@/components/base/icon/Icon';
 import Image from '@/components/base/Image';
 import { cn } from '@/lib/utils';
 
@@ -14,11 +15,12 @@ type SlideCardProps = {
     position: string;
     description: string;
     avatar: string;
+    star?: number;
     theme?: SlideCardTheme;
 };
 
 export const SlideCard = (props: SlideCardProps) => {
-    const { name, position, description, avatar, theme } = props;
+    const { name, position, description, avatar, theme, star } = props;
     return (
         <div
             className={cn(
@@ -26,6 +28,13 @@ export const SlideCard = (props: SlideCardProps) => {
                 theme?.background
             )}
         >
+            {star && (
+                <div className="flex items-center gap-1 mb-4">
+                    {Array.from({ length: star }).map((_, index) => (
+                        <Icon url={Assets.starIcon.src} key={index} className="text-[#FFBB24]" />
+                    ))}
+                </div>
+            )}
             <div className={cn('text-body-16 ', theme?.description)}>{description}</div>
             <div className="mt-8 flex items-center gap-4">
                 <Image

@@ -37,9 +37,7 @@ function ProjectCard(props: Props) {
                     {name}
                 </div>
                 <div className="mt-4 flex flex-wrap items-center gap-2">
-                    {technologies?.map((item) => (
-                        <TagItem key={item} label={item} />
-                    ))}
+                    {technologies?.map((item) => <TagItem key={item} label={item} />)}
                 </div>
             </Link>
         </div>

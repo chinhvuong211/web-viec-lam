@@ -55,17 +55,21 @@ const MarketingHeader: React.FC<HeaderProps> = (props) => {
     }, [router]);
 
     return (
-        <header className={cn('fixed top-0 z-10 w-full py-4 left-0 right-0 px-10')}>
+        <header
+            className={cn(
+                'fixed top-0 z-10 w-full py-4 left-0 right-0 px-10 max-lg:px-0 max-lg:py-0'
+            )}
+        >
             <div
                 className={cn(
-                    'mx-auto w-full px-8 py-4 max-lg:px-5 max-w-screen-xxl rounded-[1rem]',
+                    'mx-auto w-full px-8 py-4 max-w-screen-xxl rounded-[1rem] max-lg:px-4 max-lg:bg-white max-lg:rounded-none',
                     theme.background
                 )}
             >
                 <div className="flex items-center justify-between gap-2">
                     <div
                         className={cn(
-                            'font-medium text-[1.5625rem] leading-[1.75rem] text-white flex items-center font-montserrat',
+                            'font-medium text-[1.5625rem] leading-[1.75rem] text-white flex items-center font-montserrat max-lg:text-black',
                             theme.text
                         )}
                     >
@@ -104,7 +108,7 @@ const MarketingHeader: React.FC<HeaderProps> = (props) => {
                                 <Link href={item.path}>
                                     <div
                                         className={cn(
-                                            'block px-4 py-2 text-body-16 text-gray-700 hover:bg-gray-100 hover:text-gray-900 ',
+                                            'block px-4 py-2 text-body-16 text-gray-700 hover:bg-gray-100 hover:text-gray-900',
                                             'transform transition-all duration-200 ease-out justify-center flex items-center gap-2'
                                         )}
                                     >
@@ -134,7 +138,7 @@ const MarketingHeader: React.FC<HeaderProps> = (props) => {
                             <button>
                                 <Icon
                                     url={Assets.menuIcon.src}
-                                    className={cn(theme.text)}
+                                    className={cn(theme.text, 'max-lg:text-black')}
                                     size={24}
                                 />
                             </button>

@@ -9,7 +9,7 @@ const tabs = ['All', 'Campaign', 'Content', 'Social Media'];
 function WorkFilter() {
     const [currentType, setCurrentType] = useState<string>('All');
     return (
-        <div className="flex-center-between max-lg:w-full max-lg:flex-col max-lg:gap-3 mb-8">
+        <div className="flex-center-between max-lg:w-full max-lg:flex-col max-lg:gap-3 mb-8 border-b max-lg:hidden">
             <SingleSelect
                 className="max-lg:w-full hidden max-lg:block"
                 items={tabs.map((item) => ({ label: item, value: item }))}
@@ -22,10 +22,10 @@ function WorkFilter() {
                         <div
                             key={index}
                             className={cn(
-                                'flex w-24 rounded-[60px] flex-center text-body-16 py-2',
+                                'flex px-4 flex-center text-body-16 py-2 border-b-2',
                                 currentType === item
-                                    ? ' bg-theme-primary light:bg-light-primary light:text-white'
-                                    : 'cursor-pointer'
+                                    ? ' border-black'
+                                    : 'cursor-pointer border-transparent'
                             )}
                             onClick={() => {
                                 setCurrentType(item);
@@ -40,7 +40,7 @@ function WorkFilter() {
             <div
                 className={cn(
                     'gap-2 green:text-[#C1C1C1] dark:text-[#C1C1C1] light:text-light-primary max-lg:w-full',
-                    'flex-center text-body-16'
+                    'flex-center text-body-16 mb-2'
                 )}
             >
                 <div className="max-lg:hidden">Sort</div>

@@ -1,53 +1,9 @@
 import React from 'react';
 
 import { Assets } from '@/assets';
-import data from '@/data/developer.json';
-import { Theme } from '@/lib/constant';
-import { getCookieTheme } from '@/lib/theme';
 import { cn } from '@/lib/utils';
 
 import { Icon } from '../base/icon/Icon';
-import { TextTitle } from '../TextTitle';
-const { contact } = data;
-
-const routerNames = [
-    {
-        name: 'Home',
-        path: '/',
-    },
-    {
-        name: 'About me',
-        path: '/about-me',
-    },
-    {
-        name: 'Work',
-        path: '/work',
-    },
-];
-
-const socials = [
-    {
-        name: 'Facebook',
-        icon: Assets.facebookIcon.src,
-        link: contact.facebookLink,
-    },
-    {
-        name: 'Github',
-        icon: Assets.githubIcon.src,
-        link: contact.githubLink,
-    },
-    {
-        name: 'LinkedIn',
-        icon: Assets.linkedInIcon.src,
-        link: contact.linkedInLink,
-    },
-];
-
-const bgMapping = {
-    [Theme.DEVELOPER_1]: Assets.footerImage.src,
-    [Theme.DEVELOPER_3]: Assets.footerLightImage.src,
-    [Theme.DEVELOPER_2]: Assets.footerGreenImage.src,
-};
 
 export interface MarketingFooterProps {
     theme?: {
@@ -61,36 +17,17 @@ export interface MarketingFooterProps {
         btn?: string;
         divider?: string;
         contact?: string;
-    };
+    }; 
     data?: {
         banner?: string;
         socials?: {
             icon: string;
             link: string;
         }[];
-    }
+    };
 }
 
-const socialItems = [
-    {
-        icon: Assets.facebookIcon.src,
-        link: contact.facebookLink,
-    },
-  
-    {
-        icon: Assets.linkedInIcon.src,
-        link: contact.linkedInLink,
-    },
-    {
-        icon: Assets.linkedInIcon.src,
-        link: contact.linkedInLink,
-    },
-    {
-        icon: Assets.linkedInIcon.src,
-        link: contact.linkedInLink,
-    },
-    
-];
+
 const MarketingFooter: React.FC<MarketingFooterProps> = (props) => {
     const {
         theme = {
@@ -107,14 +44,13 @@ const MarketingFooter: React.FC<MarketingFooterProps> = (props) => {
         },
         data,
     } = props;
-    const bg = bgMapping[getCookieTheme()];
 
     return (
-        <footer className="px-20 py-10 w-full">
-            <div className="max-w-screen-xxl w-full bg-black rounded-[32px] px-[72px] pt-[72px] pb-12 mx-auto">
+        <footer className="px-20 py-10 w-full max-lg:px-2 max-lg:py-4">
+            <div className="max-w-screen-xxl w-full bg-black rounded-[2rem] max-lg:rounded-[1.5rem] px-[4.5rem] pt-[4.5rem] pb-12 mx-auto max-lg:px-5 max-lg:py-6">
                 <div
                     className={cn(
-                        'text-[56px] leading-[72px] font-[56px] text-start max-w-[836px]',
+                        'text-[3.5rem] leading-[4.5rem] font-semibold text-start max-w-[52.25rem] max-lg:text-[1.5rem] max-lg:leading-[1.95rem] ',
                         theme.message
                     )}
                 >
@@ -122,61 +58,60 @@ const MarketingFooter: React.FC<MarketingFooterProps> = (props) => {
                 </div>
                 <button
                     className={cn(
-                        'text-[18px] my-10 px-7 py-4 rounded-[8px] leading-[23.4px] font-medium text-start flex items-center gap-2',
+                        'text-[1.125rem] my-10 max-lg:my-6 px-7 py-4 rounded-[0.5rem] leading-[1.4625rem] font-medium text-start flex items-center gap-2 max-lg:text-[1rem] max-lg:leading-[1.3rem]',
                         theme.btn
                     )}
                 >
                     Start a project
-                    <Icon
-                        url={Assets.arrowTopRightIcon.src}
-                        size={24}
-                    />
+                    <Icon url={Assets.arrowTopRightIcon.src} size={24} />
                 </button>
 
                 <div className={cn('border-t ', theme.divider)} />
 
-                <div className="flex justify-between">
-                    <div className="mt-10 flex flex-col">
+                <div className="flex justify-between max-lg:flex-col">
+                    <div className="mt-10 flex flex-col max-lg:mt-6">
                         <div
-                        className={cn(
-                            'text-[18px] font-normal leading-[25.2px] text-white',
-                            theme.contact
-                        )}
-                    >
-                        Contact through:
-                    </div>
-                    <div
-                        className={cn(
-                            'text-[24px] font-medium leading-[32.2px] mt-6 underline',
-                            theme.email
-                        )}
-                    >
-                        Yourmail@gmail.com
+                            className={cn(
+                                'text-[1.125rem] font-normal leading-[1.575rem] text-white max-lg:text-[1rem] max-lg:leading-[1.4rem]',
+                                theme.contact
+                            )}
+                        >
+                            Contact through:
+                        </div>
+                        <div
+                            className={cn(
+                                'text-[1.5rem] font-medium leading-[2.0125rem] mt-6 max-lg:mt-2 underline max-lg:text-[1.25rem] max-lg:leading-[1.625rem]',
+                                theme.email
+                            )}
+                        >
+                            Yourmail@gmail.com
                         </div>
                     </div>
-                    <div className="mt-10 flex flex-col">
+                    <div className="mt-10 max-lg:mt-6 flex flex-col">
                         <div
-                        className={cn(
-                            'text-[18px] font-normal leading-[25.2px] text-white',
-                            theme.contact
-                        )}
+                            className={cn(
+                                'text-[1.125rem] font-normal leading-[1.575rem] text-white max-lg:text-[1rem] max-lg:leading-[1.4rem]',
+                                theme.contact
+                            )}
                         >
                             Follow:
                         </div>
                         <div
-                        className={cn(
-                            'text-[24px] font-medium leading-[32.2px] mt-2 underline text-white flex items-center gap-4',
-                        )}
-                    >
-                        {
-                            data?.socials?.map((item, index) => (
+                            className={cn(
+                                'text-[1.5rem] font-medium leading-[2.0125rem] mt-2 underline text-white flex items-center gap-4'
+                            )}
+                        >
+                            {data?.socials?.map((item, index) => (
                                 <a key={index} href={item.link} target="_blank">
-                                   <div  className={cn('cursor-pointer bg-[#FBE9E9] rounded-full h-12 w-12 flex items-center justify-center text-[#F15060]')}>
-                                    <Icon url={item.icon} size={20} />
-                                </div>
+                                    <div
+                                        className={cn(
+                                            'cursor-pointer bg-[#FBE9E9] rounded-full h-12 w-12 flex items-center justify-center text-[#F15060]'
+                                        )}
+                                    >
+                                        <Icon url={item.icon} size={20} />
+                                    </div>
                                 </a>
-                            ))
-                        }
+                            ))}
                         </div>
                     </div>
                 </div>

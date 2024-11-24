@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 import { Assets } from '@/assets';
-import Image from '@/components/base/Image';
 import Button from '@/components/base/button/Button';
+import Image from '@/components/base/Image';
 import Modal from '@/components/base/modal/Modal';
 import data from '@/data/developer.json';
 import { cn } from '@/lib/utils';
@@ -16,43 +16,72 @@ type Props = {
         connectButton: string;
         connectButtonText: string;
         availabilityStatus: string;
-    }
-}
+    };
+};
 
 const { aboutMe } = data;
 
-
 function HomeBanner({ theme }: Props) {
-
     return (
-        <div
-            className="h-screen -mb-[100px]"
-        >
+        <div className="h-screen -mb-[100px] max-lg:mb-10">
             {/* Hero Section */}
             <section className="max-w-screen-xxl left-0 right-0 mx-auto pt-[233px] max-lg:px-5 max-lg:pt-[9.375rem] pb-[4.5625rem]">
-
-                <div className={cn("text-[88px] f ont-semibold leading-[96.8px]", "tracking-[-0.01em] flex flex-col justify-center items-center", theme.primaryText)}>
-                    <div className='flex items-center gap-6'>
+                <div
+                    className={cn(
+                        'text-[88px] font-semibold leading-[96.8px]',
+                        'tracking-[-0.01em] flex flex-col justify-center items-center',
+                        'max-lg:text-[40px] max-lg:leading-[48px] max-lg:justify-start max-lg:items-start',
+                        theme.primaryText
+                    )}
+                >
+                    <div className="flex items-center gap-6">
                         <div>
-                            <div className='flex items-center justify-end'>
-                                <Image src={Assets.marketingHomeBanner11} alt="" width={88} height={88} className='aspect-[88/88] inline mr-6' />
-                                Hello, <span className={cn(theme.secondaryText, "whitespace-pre")}> I’m Jane</span>
+                            <div className="flex items-center justify-end max-lg:justify-start">
+                                <Image
+                                    src={Assets.marketingHomeBanner11}
+                                    alt=""
+                                    width={88}
+                                    height={88}
+                                    className="aspect-[88/88] inline mr-6 max-lg:w-11"
+                                />
+                                Hello,{' '}
+                                <span className={cn(theme.secondaryText, 'whitespace-pre')}>
+                                    {' '}
+                                    I’m Jane
+                                </span>
                             </div>
                             <div>
                                 A <span className={cn(theme.secondaryText)}>Digital</span> Marketing
                             </div>
                         </div>
-                        <Image src={Assets.marketingHomeBanner13} alt="" width={316} height={229} className='' />
-
+                        <Image
+                            src={Assets.marketingHomeBanner13}
+                            alt=""
+                            width={316}
+                            height={229}
+                            className="max-lg:hidden"
+                        />
                     </div>
-                    <div className='flex items-center gap-6'>
+                    <div className="flex items-center gap-6 max-lg:flex-wrap max-lg:gap-0 ">
                         with 5 years
-                        <Image src={Assets.marketingHomeBanner12} alt="" width={88} height={88} className='aspect-[88/88] inline' />
+                        <Image
+                            src={Assets.marketingHomeBanner12}
+                            alt=""
+                            width={88}
+                            height={88}
+                            className="aspect-[88/88] inline max-lg:w-11 max-lg:ml-3"
+                        />
                         experience
                     </div>
                 </div>
 
-
+                <Image
+                    src={Assets.marketingHomeBanner13}
+                    alt=""
+                    width={316}
+                    height={229}
+                    className="hidden max-lg:block max-lg:w-full"
+                />
                 <Modal
                     contentComponent={ConnectForm}
                     title="Have an project in mind "

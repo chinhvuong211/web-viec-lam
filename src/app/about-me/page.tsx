@@ -1,6 +1,6 @@
 import React from 'react';
-import marketingData from '@/data/marketing.json';
 
+import marketingData from '@/data/marketing.json';
 import { Template, Theme } from '@/lib/constant';
 import { getCookieTemplate } from '@/lib/template';
 import { getCookieTheme } from '@/lib/theme';

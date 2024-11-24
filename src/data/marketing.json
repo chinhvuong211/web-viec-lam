@@ -37,43 +37,20 @@
     },
     "skills": [
         {
-            "name": "Website Development",
-            "technologies": [
-                "Libraries",
-                "Frameworks",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Git",
-                "Django"
-            ],
-            "imageUrl": "/assets/images/skills/web-development.png"
+            "name": "Social media",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
         },
         {
-            "name": "App Development",
-            "technologies": [
-                "Libraries",
-                "Frameworks",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Git",
-                "Django"
-            ],
-            "imageUrl": "/assets/images/skills/app-development.png"
+            "name": "E-commerce",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
         },
         {
-            "name": "Technology Consulting",
-            "technologies": [
-                "Libraries",
-                "Frameworks",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Git",
-                "Django"
-            ],
-            "imageUrl": "/assets/images/skills/technology-consulting.png"
+            "name": "SEO consultant",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
+        },
+        {
+            "name": "Content Stratergy",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
         }
     ],
     "educations": [
@@ -351,27 +328,45 @@
             ]
         }
     ],
-    "whatThaySaidAboutMe": [
+    "whatTheySaidAboutMe": [
         {
             "name": "Ronak Patel",
+            "star": 5,
             "avatar": "avatar1",
             "position": "CEO & Owner of SaasFlash",
             "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
         },
         {
             "name": "Mohamed Ali Amaira",
+            "star": 5,
             "avatar": "avatar2",
             "position": "Founder of MyDoc",
             "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
         },
         {
             "name": "Delano Wallace",
+            "star": 5,
             "avatar": "avatar3",
             "position": "Founder of Rebel Creatives",
             "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
         },
         {
             "name": "Delano Wallace",
+            "star": 5,
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "star": 5,
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "star": 5,
             "avatar": "avatar3",
             "position": "Founder of Rebel Creatives",
             "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"

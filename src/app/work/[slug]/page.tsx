@@ -19,7 +19,9 @@ export default function Page({ params }: { params: { slug: string } }) {
         [TemplateCategory.DEVELOPER]: developerData,
         [TemplateCategory.MARKETING]: marketingData,
     };
-    const projectDetail = data[getTemplateCategory(template ?? '')].projects.find((item) => item.id === params.slug) as ProjectItem;
+    const projectDetail = data[getTemplateCategory(template ?? '')].projects.find(
+        (item) => item.id === params.slug
+    ) as ProjectItem;
 
     if (!projectDetail) {
         return <div>Project not found</div>;

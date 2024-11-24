@@ -7,17 +7,18 @@ import AboutMeSection from '@/features/about-me/components/AboutMeSection';
 import EducationSection from '@/features/about-me/components/EducationSection';
 import ExperienceSection from '@/features/about-me/components/ExperienceSection';
 import { MarketingData } from '@/features/common/interface';
-import AboutMe from '@/features/home/marketing/AboutMeSection';
 import CommentSection from '@/features/home/components/CommentSection';
+import AboutMe from '@/features/home/marketing/AboutMeSection';
 import HomeBanner from '@/features/home/marketing/HomeBanner';
-import TestimonialSection from '@/features/home/components/TestimonialSection';
+import SkillSection from '@/features/home/marketing/SkillSection';
+import TestimonialSection from '@/features/home/marketing/TestimonialSection';
 import WorkSection from '@/features/home/marketing/WorkSection';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
-import Marketing1Footer from './components/Footer';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
+import Marketing1Footer from './components/Footer';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 type Props = {
     data: MarketingData;
@@ -25,7 +26,9 @@ type Props = {
 
 function MarketingStyle1HomePage(props: Props) {
     const { data } = props;
-    const { aboutMe: { social } } = data;
+    const {
+        aboutMe: { social },
+    } = data;
 
     return (
         <div className="bg-white">
@@ -40,31 +43,34 @@ function MarketingStyle1HomePage(props: Props) {
                 }}
             />
 
-
             {/* About Section */}
             <AboutMe
                 theme={{
                     aboutMeBackground: 'bg-[#F4F4F4]',
                 }}
+                data={data.aboutMe}
             />
             <WorkSection
                 theme={{
                     background: 'bg-[#F4F4F4]',
-                    btn: 'bg-white text-black',
+                    btn: 'bg-[#272626] text-white',
                 }}
                 data={data.projects}
             />
 
+            <SkillSection data={data.skills} />
+
             {/* Testimonial Section */}
             <TestimonialSection
+                data={data.whatTheySaidAboutMe}
                 cardTheme={{
-                    background: 'bg-slide-background',
-                    description: 'text-[#E9E9E9]',
-                    title: 'text-[#E5E8FA]',
-                    position: 'text-[#E9E9E9]',
+                    background: '!bg-white shadow-xs',
+                    description: 'text-[#595959]',
+                    title: 'text-[#272626]',
+                    position: 'text-[#595959]',
                 }}
-                activeDotClassName={'bg-white'}
-                inactiveDotClassName={'bg-[#464646]'}
+                activeDotClassName={'bg-[#272626]'}
+                inactiveDotClassName={'bg-[#C3C3C3]'}
             />
 
             <Footer
@@ -86,7 +92,6 @@ function MarketingStyle1HomePage(props: Props) {
                             icon: Assets.youtubeIcon.src,
                             link: social.youtubeLink,
                         },
-
                     ],
                 }}
             />

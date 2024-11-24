@@ -1,3 +1,4 @@
+import marketingData from '@/data/marketing.json';
 import { Template, Theme } from '@/lib/constant';
 import { getCookieTemplate } from '@/lib/template';
 import { getCookieTheme } from '@/lib/theme';
@@ -7,7 +8,6 @@ import Developer3Work from '@/templates/developer-3/WorkPage';
 import Marketing1Work from '@/templates/marketing-1/WorkPage';
 import Marketing2Work from '@/templates/marketing-2/WorkPage';
 import Marketing3Work from '@/templates/marketing-3/WorkPage';
-import marketingData from '@/data/marketing.json';
 
 function Page() {
     const theme = getCookieTheme();

@@ -1,7 +1,8 @@
 'use client';
 
 import Carousel from '@/components/base/carousel/Carousel';
-import data from '@/data/developer.json';
+import data from '@/data/marketing.json';
+import { WhatTheySaidAboutMeItem } from '@/features/common/interface';
 import { cn } from '@/lib/utils';
 
 import { SlideCard, SlideCardTheme } from './SlideCard';
@@ -10,18 +11,16 @@ type Props = {
     cardTheme?: SlideCardTheme;
     activeDotClassName?: string;
     inactiveDotClassName?: string;
+    data: WhatTheySaidAboutMeItem[];
 };
 
 export const WhatTheySaidAboutMeSlider = (props: Props) => {
-    const { whatThaySaidAboutMe } = data;
-    const { cardTheme, activeDotClassName, inactiveDotClassName } = props;
+    const { cardTheme, activeDotClassName, inactiveDotClassName, data } = props;
     return (
         <div className="flex gap-8">
             <Carousel
-                slides={whatThaySaidAboutMe}
-                slideClassName={cn(
-                    '!min-w-0 pl-2 flex-[0_0_33%] max-lg:flex-[0_0_100%] max-lg:pl-0'
-                )}
+                slides={data}
+                slideClassName={cn('!min-w-0 flex-[0_0_20%] max-lg:flex-[0_0_100%] max-xl:flex-[0_0_50%] max-lg:pl-0')}
                 activeDotClassName={activeDotClassName}
                 inactiveDotClassName={inactiveDotClassName}
             >

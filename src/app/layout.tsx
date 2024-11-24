@@ -5,10 +5,10 @@ import type { Metadata } from 'next';
 
 import { MainLayout } from '@/components/layout/MainLayout';
 import data from '@/data/developer.json';
+import { TemplateCategory } from '@/lib/constant';
 import { getCookieTemplate } from '@/lib/template';
 import { getCookieTheme } from '@/lib/theme';
 import { cn, getTemplateCategory } from '@/lib/utils';
-import { TemplateCategory } from '@/lib/constant';
 const { aboutMe } = data;
 export const metadata: Metadata = {
     icons: [
@@ -50,7 +50,7 @@ export default function RootLayout({
         [TemplateCategory.DEVELOPER]: 'theme-developer',
     };
 
-    const themeClass = themeName[getTemplateCategory(template ?? "")] || 'theme-developer';
+    const themeClass = themeName[getTemplateCategory(template ?? '')] || 'theme-developer';
 
     return (
         <html lang="en" className={cn(theme, themeClass)}>
