@@ -15,7 +15,7 @@ const IconMapping = {
         text: 'text-light-primary',
     },
     [Theme.DEVELOPER_2]: {
-        icon: <div className="w-3.5 h-1.5 min-w-3.5 rounded-[19px] bg-[#12C99D]" />,
+        icon: <div className="w-3.5 h-1.5 min-w-3.5 rounded-[1.1875rem] bg-[#12C99D]" />,
         text: 'text-[#D2DEFC]',
     },
 };

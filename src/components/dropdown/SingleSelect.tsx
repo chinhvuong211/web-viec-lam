@@ -47,7 +47,7 @@ function SingleSelect(props: Props) {
         >
             {() => (
                 <button className="max-lg:w-full text-[#C1C1C1] green:text-[#C1C1C1] light:text-light-primary">
-                    <div className="w-full cursor-pointer gap-2 rounded-[23px] border dark:border-[#E9E9E9] green:border-[#E9E9E9] light:border-light-primary px-5 py-2 flex-center max-lg:flex-center-between">
+                    <div className="w-full cursor-pointer gap-2 rounded-[1.4375rem] border dark:border-[#E9E9E9] green:border-[#E9E9E9] light:border-light-primary px-5 py-2 flex-center max-lg:flex-center-between">
                         {customLabel?.(option) ?? option.label}
                         <Icon url={Assets.chevronDownIcon.src} size={16} />
                     </div>

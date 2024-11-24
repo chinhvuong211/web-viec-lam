@@ -41,7 +41,9 @@ import marketingHomeBanner13 from './images/marketing-home-banner-1-3.png';
 import marketingHomeBanner21 from './images/marketing-home-banner-2-1.png';
 import marketingHomeBanner22 from './images/marketing-home-banner-2-2.png';
 import marketingHomeBanner23 from './images/marketing-home-banner-2-3.png';
-
+import marketingHomeBanner31 from './images/marketing-home-banner-3-1.png';
+import marketingHomeBanner32 from './images/marketing-home-banner-3-2.png';
+import marketingHomeBanner33 from './images/marketing-home-banner-3-3.png';
 export const Assets = {
     logo: '/assets/images/logo.png',
     homeBanner,
@@ -61,6 +63,9 @@ export const Assets = {
     marketingHomeBanner21,
     marketingHomeBanner22,
     marketingHomeBanner23,
+    marketingHomeBanner31,
+    marketingHomeBanner32,
+    marketingHomeBanner33,
     asteriskIcon,
     facebookIcon,
     githubIcon,

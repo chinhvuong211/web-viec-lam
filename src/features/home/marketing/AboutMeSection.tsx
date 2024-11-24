@@ -34,25 +34,25 @@ function AboutMe({ theme, data }: Props) {
     const { cardBackground = 'bg-white', markIcon = Assets.circleCheckIcon.src , markColor= 'text-[#FFBB24]' } = theme
     return (
         <section
-            className={cn(theme.aboutMeBackground, 'rounded-t-[48px] max-lg:rounded-t-[32px]')}
+            className={cn(theme.aboutMeBackground, 'rounded-t-[3rem] max-lg:rounded-t-[2rem]')}
         >
             <div className="max-w-screen-xxl mx-auto p-24 max-lg:px-5 max-lg:py-10 ">
-                <div className="text-[60px] font-semibold leading-[72px] tracking-[-0.01em] max-lg:text-[36px] max-lg:leading-[43px]">
+                <div className="text-[3.75rem] font-semibold leading-[4.5rem] tracking-[-0.01em] max-lg:text-[2.25rem] max-lg:leading-[2.6875rem]">
                     About Me
                 </div>
                 <div className="mt-6 flex gap-6 max-lg:flex-col max-lg:gap-3 max-lg:mt-3">
                     <div className="flex-1 h-full grow ">
                         <div
                             className={cn(
-                                'rounded-[12px] p-8 max-lg:p-4',
+                                'rounded-[0.75rem] p-8 max-lg:p-4',
                                 cardBackground
                             )}
                         >
-                            <div className="text-[16px] font-normal leading-[21.6px] text-[#222222] max-lg:text-[14px] max-lg:leading-[18px]">
+                            <div className="text-[1rem] font-normal leading-[1.35rem] text-[#222222] max-lg:text-[0.875rem] max-lg:leading-[1.125rem]">
                                 {data.overview.description}
                             </div>
 
-                            <div className="text-[16px] font-normal leading-[21.6px] mt-4 text-[#222222] max-lg:mt-3 max-lg:text-[14px] max-lg:leading-[18px]">
+                            <div className="text-[1rem] font-normal leading-[1.35rem] mt-4 text-[#222222] max-lg:mt-3 max-lg:text-[0.875rem] max-lg:leading-[1.125rem]">
                                 I have experience in:
                             </div>
 
@@ -62,7 +62,7 @@ function AboutMe({ theme, data }: Props) {
                                     className={cn("w-5 h-5", markColor)}
                                     size={20}
                                 />
-                                <div className="text-[16px] font-normal leading-[20px] text-[#000000] max-lg:text-[14px] max-lg:leading-[18px]">
+                                <div className="text-[1rem] font-normal leading-[1.25rem] text-[#000000] max-lg:text-[0.875rem] max-lg:leading-[1.125rem]">
                                     Social Media Manager Giggling Platypus Co
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ function AboutMe({ theme, data }: Props) {
                                     className={cn("w-5 h-5", markColor)}
                                     size={20}
                                 />
-                                <div className="text-[16px] font-normal leading-[20px] text-[#000000] max-lg:text-[14px] max-lg:leading-[18px]">
+                                <div className="text-[1rem] font-normal leading-[1.25rem] text-[#000000] max-lg:text-[0.875rem] max-lg:leading-[1.125rem]">
                                     Social Media Specialist Larana, Inc
                                 </div>
                             </div>
@@ -81,22 +81,22 @@ function AboutMe({ theme, data }: Props) {
                         <div className="mt-4 flex items-center gap-6 max-lg:flex-col max-lg:gap-3 max-lg:mt-3">
                             <div
                                 className={cn(
-                                    'rounded-[12px] px-8 py-6 max-lg:w-full max-lg:px-5 max-lg:py-5',
+                                    'rounded-[0.75rem] px-8 py-6 max-lg:w-full max-lg:px-5 max-lg:py-5 w-full',
                                     cardBackground
                                 )
                                 }>
                                 <div className="flex items-center gap-2">
-                                    <span className="font-extrabold text-[64px] leading-[46px] max-lg:text-[48px] max-lg:leading-[35px]">
+                                    <span className="font-extrabold text-[4rem] leading-[2.875rem] max-lg:text-[3rem] max-lg:leading-[2.1875rem]">
                                         5
                                     </span>
-                                    <span className="font-bold text-[28px] leading-[39.2px] max-lg:text-[20px] max-lg:leading-[26px]">
+                                    <span className="font-bold text-[1.75rem] leading-[2.45rem] max-lg:text-[1.25rem] max-lg:leading-[1.625rem]">
                                         years experience
                                     </span>
                                 </div>
                                 <div
                                     className={cn(
-                                        'text-[16px] leading-[28px] font-normal mt-2 text-[#535353]',
-                                        'max-lg:mt-1.5 max-lg:text-[14px] max-lg:leading-[28px]'
+                                        'text-[1rem] leading-[1.75rem] font-normal mt-2 text-[#535353]',
+                                        'max-lg:mt-1.5 max-lg:text-[0.875rem] max-lg:leading-[1.75rem]'
                                     )}
                                 >
                                     as a Digital Marketing Freelancer
@@ -104,13 +104,13 @@ function AboutMe({ theme, data }: Props) {
                             </div>
 
                             <div className={cn(
-                                'rounded-[12px] px-8 py-6 max-lg:w-full max-lg:px-5 max-lg:py-5',
+                                'rounded-[0.75rem] px-8 py-6 max-lg:w-full max-lg:px-5 max-lg:py-5 w-full',
                                 cardBackground
                             )}>
-                                <div className="text-[20px] font-bold leading-[28px] max-lg:text-[16px] max-lg:leading-[21px]">
+                                <div className="text-[1.25rem] font-bold leading-[1.75rem] max-lg:text-[1rem] max-lg:leading-[1.3125rem]">
                                     Tool I can use
                                 </div>
-                                <div className="flex items-center gap-4 mt-3 max-lg:mt-1.5 ">
+                                <div className="flex items-center gap-4 mt-3 max-lg:mt-1.5">
                                     {tools.map((tool, index) => (
                                         <Image
                                             src={tool}
@@ -130,7 +130,7 @@ function AboutMe({ theme, data }: Props) {
                             src={aboutMe.avatar}
                             width={441}
                             height={588}
-                            className="object-cover h-full max-lg:aspect-[335/229] max-lg:min-w-full rounded-t-[6px]"
+                            className="object-cover h-full max-lg:aspect-[335/229] max-lg:min-w-full rounded-t-[0.375rem]"
                             alt={''}
                         />
                     </div>

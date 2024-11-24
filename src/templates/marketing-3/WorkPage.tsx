@@ -5,6 +5,7 @@ import WorkSection from '@/features/work/marketing/WorkSection';
 
 import Marketing1Footer from './components/Footer';
 import Header from './components/Header';
+import WhatClientsSayAboutMe from './components/WhatClientsSayAboutMe';
 
 type Props = {
     data: MarketingData;
@@ -24,20 +25,15 @@ export default function Marketing3WorkPage(props: Props) {
                 projects={projects}
                 theme={{
                     btn: 'bg-[#272626] text-white',
+                    projectCard: {
+                        container: '!bg-white',
+                        primaryText: 'text-[#272626]',
+                        secondaryText: 'text-[#11111199]',
+                    },
+                    container: 'bg-[#F1F1F1]',
                 }}
             />
-            {/* Testimonial Section */}
-            <TestimonialSection
-                data={data.whatTheySaidAboutMe}
-                cardTheme={{
-                    background: '!bg-white shadow-xs',
-                    description: 'text-[#595959]',
-                    title: 'text-[#272626]',
-                    position: 'text-[#595959]',
-                }}
-                activeDotClassName={'bg-[#272626]'}
-                inactiveDotClassName={'bg-[#C3C3C3]'}
-            />
+            <WhatClientsSayAboutMe data={data} />
             <Marketing1Footer
                 data={{
                     socials: [

@@ -8,6 +8,9 @@ import { cn } from '@/lib/utils';
 
 export type ProjectCardTheme = {
     container?: string;
+    primaryText?: string;
+    secondaryText?: string;
+    btn?: string;
 };
 
 type Props = {
@@ -19,6 +22,7 @@ export default function ProjectCard(props: Props) {
     const { item, theme } = props;
     const { imageUrl = '', name = '', description = '', goals = [], id = '' } = item;
 
+    const { primaryText = 'text-[#111111]', secondaryText = 'text-[#11111199]', btn = 'text-[#111111] bg-white border-[#DEDEDE]' } = theme || {};
     return (
         <Link
             href={`work/${id}`}
@@ -30,23 +34,28 @@ export default function ProjectCard(props: Props) {
         >
             <div className="flex-1 flex flex-col justify-between">
                 <div className="">
-                    <div className="text-[2rem] font-medium leading-[2.732rem] max-lg:text-[1.25rem] max-lg:leading-[1.706rem]">
+                    <div className={
+                        cn("text-[2rem] font-medium leading-[2.732rem] max-lg:text-[1.25rem] max-lg:leading-[1.706rem]",
+
+                            primaryText
+                        )
+                    }>
                         {name}
                     </div>
 
-                    <div className="text-[1rem] font-normal leading-[1.35rem] mt-6 max-lg:mt-3 text-[#11111199]">
+                    <div className={cn('text-[1rem] font-normal leading-[1.35rem] mt-6 max-lg:mt-3', secondaryText)}>
                         {description}
                     </div>
 
                     <div className="mt-6">
-                        <div className="text-[1rem] font-normal leading-[1.35rem] text-[#111111]">
-                            Goal 
+                        <div className={cn('text-[1rem] font-normal leading-[1.35rem]', primaryText)}>
+                            Goal
                         </div>
                         <ul className="flex flex-col gap-1 mt-2 ml-4">
                             {goals.map((goal, index) => (
                                 <li
                                     key={index}
-                                    className="text-[1rem] font-normal leading-[1.35rem] text-[#11111199]"
+                                    className={cn('text-[1rem] font-normal leading-[1.35rem]', secondaryText)}
                                     style={{
                                         listStyleType: 'disc',
                                     }}
@@ -58,7 +67,12 @@ export default function ProjectCard(props: Props) {
                     </div>
                 </div>
 
-                <div className="text-[1.125rem] max-lg:text-[1rem] font-semibold leading-[1.462rem] max-lg:leading-[1.3rem] text-[#111111] flex items-center gap-2 justify-between border border-[#DEDEDE] rounded-[3.75rem] px-5 py-3 cursor-pointer max-lg:mt-5">
+                <div className={
+                    cn("text-[1.125rem] max-lg:text-[1rem] font-semibold leading-[1.462rem] max-lg:leading-[1.3rem] flex items-center gap-2 justify-between border rounded-[3.75rem] px-5 py-3 cursor-pointer max-lg:mt-5",
+                        primaryText,
+                        btn
+                    )
+                }>
                     <div>View detail case study</div>
                     <Icon url={Assets.chevronRightIcon.src} className="w-4 h-4" />
                 </div>

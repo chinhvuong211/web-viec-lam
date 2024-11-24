@@ -102,7 +102,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                     </div>
                     <button
                         className={cn(
-                            'shadow-xs flex max-h-10 items-center rounded-[60px] border border-[#0057FF] bg-[#010005] px-6 py-2.5 text-[#F2F2F2]',
+                            'shadow-xs flex max-h-10 items-center rounded-[3.75rem] border border-[#0057FF] bg-[#010005] px-6 py-2.5 text-[#F2F2F2]',
                             'max-lg:hidden',
                             theme.text,
                             theme.font,

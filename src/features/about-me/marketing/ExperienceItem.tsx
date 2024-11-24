@@ -21,8 +21,8 @@ export default function ExperienceItem(props: Props) {
                 />
                 <div
                     className={cn(
-                        'text-[16px] leading-[21.6px] text-[#595959] font-medium',
-                        'max-lg:text-[14px] max-lg:leading-[19px]'
+                        'text-[1rem] leading-[1.35rem] text-[#595959] font-medium',
+                        'max-lg:text-[0.875rem] max-lg:leading-[1.1875rem]'
                     )}
                 >
                     {period}
@@ -32,16 +32,16 @@ export default function ExperienceItem(props: Props) {
             <div className={cn('flex gap-3 mt-1 items-center', 'max-lg:gap-1 max-lg:mt-2')}>
                 <div
                     className={cn(
-                        'text-[20px] leading-[22px] text-[#111111] font-medium',
-                        'max-lg:text-[16px] max-lg:leading-[18px]'
+                        'text-[1.25rem] leading-[1.375rem] text-[#111111] font-medium',
+                        'max-lg:text-[1rem] max-lg:leading-[1.125rem]'
                     )}
                 >
                     {company}
                 </div>
                 <div
                     className={cn(
-                        'text-[16px] font-medium leading-[21.6px]',
-                        'max-lg:text-[14px] max-lg:leading-[19px]'
+                        'text-[1rem] font-medium leading-[1.35rem]',
+                        'max-lg:text-[0.875rem] max-lg:leading-[1.1875rem]'
                     )}
                 >
                     {title}
@@ -53,8 +53,8 @@ export default function ExperienceItem(props: Props) {
                     <div
                         key={index}
                         className={cn(
-                            'text-[16px] leading-[21.6px] text-[#222222]',
-                            'max-lg:text-[14px] max-lg:leading-[19px]'
+                            'text-[1rem] leading-[1.35rem] text-[#222222]',
+                            'max-lg:text-[0.875rem] max-lg:leading-[1.1875rem]'
                         )}
                     >
                         {item}

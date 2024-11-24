@@ -16,6 +16,7 @@ type Props = {
         banner1?: string;
         banner2?: string;
         banner3?: string;
+        highlightText?: string;
     };
 };
 
@@ -25,18 +26,18 @@ function HomeBanner({ theme }: Props) {
     const { banner1 = Assets.marketingHomeBanner11, banner2 = Assets.marketingHomeBanner12, banner3 = Assets.marketingHomeBanner13 } =
         theme;
     return (
-        <div className="h-screen -mb-[100px] max-lg:mb-10">
+        <div className="h-screen -mb-[6.25rem] max-lg:mb-[0.625rem]">
             {/* Hero Section */}
-            <section className="max-w-screen-xxl left-0 right-0 mx-auto pt-[233px] max-lg:px-5 max-lg:pt-[9.375rem] pb-[4.5625rem]">
+            <section className="max-w-screen-xxl left-0 right-0 mx-auto pt-[14.5625rem] max-lg:px-5 max-lg:pt-[9.375rem] pb-[4.5625rem]">
                 <div
                     className={cn(
-                        'text-[88px] font-semibold leading-[96.8px]',
+                        'text-[5.5rem] font-semibold leading-[6.05rem]',
                         'tracking-[-0.01em] flex flex-col justify-center items-center',
-                        'max-lg:text-[40px] max-lg:leading-[48px] max-lg:justify-start max-lg:items-start',
+                        'max-lg:text-[2.5rem] max-lg:leading-[3rem] max-lg:justify-start max-lg:items-start',
                         theme.primaryText
                     )}
                 >
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-[1.5rem]">
                         <div>
                             <div className="flex items-center justify-end max-lg:justify-start">
                                 <Image
@@ -44,16 +45,16 @@ function HomeBanner({ theme }: Props) {
                                     alt=""
                                     width={88}
                                     height={88}
-                                    className="aspect-[88/88] inline mr-6 max-lg:w-11 max-lg:mr-3"
+                                    className="aspect-[88/88] inline mr-[1.5rem] max-lg:w-[2.75rem] max-lg:mr-[0.75rem]"
                                 />
                                 Hello,{' '}
                                 <span className={cn(theme.secondaryText, 'whitespace-pre')}>
                                     {' '}
-                                    I’m Jane
+                                    I’m <span className={theme.highlightText}>Jane</span>
                                 </span>
                             </div>
                             <div>
-                                A <span className={cn(theme.secondaryText)}>Digital</span> Marketing
+                                A <span className={cn(theme.secondaryText, theme.highlightText)}>Digital</span> Marketing
                             </div>
                         </div>
                         <Image
@@ -64,14 +65,14 @@ function HomeBanner({ theme }: Props) {
                             className="max-lg:hidden"
                         />
                     </div>
-                    <div className="flex items-center gap-6 max-lg:flex-wrap max-lg:gap-0 ">
+                    <div className="flex items-center gap-[1.5rem] max-lg:flex-wrap max-lg:gap-0">
                         with 5 years
                         <Image
                             src={banner2}
                             alt=""
                             width={88}
                             height={88}
-                            className="aspect-[88/88] inline max-lg:w-11 max-lg:ml-3"
+                            className="aspect-[88/88] inline max-lg:w-[2.75rem] max-lg:ml-[0.75rem]"
                         />
                         experience
                     </div>
@@ -82,12 +83,12 @@ function HomeBanner({ theme }: Props) {
                     alt=""
                     width={316}
                     height={229}
-                    className="hidden max-lg:block max-lg:w-full my-2"
+                    className="hidden max-lg:block max-lg:w-full my-[0.125rem]"
                 />
                 <Modal
                     contentComponent={ConnectForm}
                     title="Have an project in mind "
-                    className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 max-lg:bottom-4"
+                    className="fixed bottom-[1.25rem] left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[0.25rem]"
                 >
                     <div
                         className={cn(
@@ -97,9 +98,9 @@ function HomeBanner({ theme }: Props) {
                             theme.connectButton
                         )}
                     >
-                        <div className="items-center flex space-x-6 py-1 px-3 rounded-full shadow-[0px_0px_4px_0px_#0000001A] max-lg:space-x-2 max-lg:px-1.5">
-                            <div className="flex items-center gap-2">
-                                <div className="h-2 w-2 min-w-2 rounded-full bg-[#12C966] " />
+                        <div className="items-center flex space-x-[1.5rem] py-[0.0625rem] px-[0.1875rem] rounded-full shadow-[0px_0px_4px_0px_#0000001A] max-lg:space-x-[0.5rem] max-lg:px-[0.09375rem]">
+                            <div className="flex items-center gap-[0.5rem]">
+                                <div className="h-[0.5rem] w-[0.5rem] min-w-[0.5rem] rounded-full bg-[#12C966] " />
                                 <div
                                     className={cn(
                                         'text-medium-16 light:text-light-primary whitespace-nowrap',

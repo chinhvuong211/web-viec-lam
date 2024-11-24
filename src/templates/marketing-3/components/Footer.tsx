@@ -5,7 +5,7 @@ export default function Marketing1Footer(props: MarketingFooterProps) {
     return (
         <MarketingFooter
             theme={{
-                social: 'text-[#D2DEFC]',
+                social: 'bg-[#FBEFE9] text-[#FF3C00]',
                 message: '!text-white',
                 email: 'text-white',
                 copyright: 'text-[#BBBBBB]',
@@ -14,7 +14,7 @@ export default function Marketing1Footer(props: MarketingFooterProps) {
                 btn: 'bg-white text-black',
                 divider: 'border-white',
                 contact: 'text-[#E8E8E8]',
-            }}
+            }} 
             {...props}
         />
     );

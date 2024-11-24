@@ -5,6 +5,7 @@ import { ProjectItem } from '@/features/work/interface';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
+import { Assets } from '@/assets';
 
 type Props = {
     data: MarketingData;
@@ -12,6 +13,9 @@ type Props = {
 };
 export default function Marketing1WorkDetailPage({ data, slug }: Props) {
     const projectDetail = data.projects.find((item) => item.id === slug) as ProjectItem;
+    const {
+        aboutMe: { social },
+    } = data;
 
     return (
         <div>
@@ -29,7 +33,28 @@ export default function Marketing1WorkDetailPage({ data, slug }: Props) {
                 activeDotClassName={'bg-[#272626]'}
                 inactiveDotClassName={'bg-[#C3C3C3]'}
             />
-            <Footer />
+            <Footer
+                data={{
+                    socials: [
+                        {
+                            icon: Assets.facebookIcon.src,
+                            link: social.facebookLink,
+                        },
+                        {
+                            icon: Assets.instagramIcon.src,
+                            link: social.instagramLink,
+                        },
+                        {
+                            icon: Assets.linkedInIcon.src,
+                            link: social.linkedinLink,
+                        },
+                        {
+                            icon: Assets.youtubeIcon.src,
+                            link: social.youtubeLink,
+                        },
+                    ],
+                }}
+            />
         </div>
     );
 }

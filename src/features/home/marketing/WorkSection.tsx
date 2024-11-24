@@ -23,7 +23,7 @@ function WorkSection(props: Props) {
             <div className="max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-4 max-lg:py-4">
                 <div
                     className={cn(
-                        'text-[3.75rem] font-semibold leading-[4.5rem] tracking-[-0.01em] text-center max-w-[624px] mx-auto py-24',
+                        'text-[3.75rem] font-semibold leading-[4.5rem] tracking-[-0.01em] text-center max-w-[39rem] mx-auto py-24',
                         'max-lg:text-[2.25rem] max-lg:leading-[2.688rem] max-lg:py-14'
                     )}
                 >
@@ -44,7 +44,7 @@ function WorkSection(props: Props) {
                     <Link
                         href={'/work'}
                         className={cn(
-                            'text-[1.125rem] my-10 px-7 py-3 rounded-[8px] leading-[1.463rem] font-semibold text-start flex items-center gap-2',
+                            'text-[1.125rem] my-10 px-7 py-3 rounded-[0.5rem] leading-[1.463rem] font-semibold text-start flex items-center gap-2',
                             theme.btn
                         )}
                     >

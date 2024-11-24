@@ -13,46 +13,51 @@ type Props = {
     data: SkillItem[];
     theme?: {
         title?: string;
+        activeBg?: string;
+        containerBackground?: string;
     };
 };
 
-function SkillSection({ data }: Props) {
+function SkillSection({ data, theme }: Props) {
     const [activeIndex, setActiveIndex] = useState(0);
 
+    const { title = 'bg-white', activeBg = 'shadow-sm', containerBackground = 'bg-white' } = theme || {};
+
     return (
-        <section className="bg-white">
+        <section className={cn(containerBackground)}>
             <div className="max-w-screen-xxl mx-auto p-24 py-16 max-lg:px-4 max-lg:py-10">
                 <div
                     className={cn(
-                        'text-[60px] font-semibold leading-[72px] tracking-[-0.01em] text-[#272626]',
-                        'flex items-center justify-center gap-3 max-lg:text-[40px] max-lg:leading-[48px]',
-                        'max-lg:gap-2.5 max-lg:text-[36px] max-lg:leading-[43px] max-lg:tracking-[-0.02em]'
+                        'text-[3.75rem] font-semibold leading-[4.5rem] tracking-[-0.01em] text-[#272626]',
+                        'flex items-center justify-center gap-3 max-lg:text-[2.5rem] max-lg:leading-[3rem]',
+                        'max-lg:gap-2.5 max-lg:text-[2.25rem] max-lg:leading-[2.6875rem] max-lg:tracking-[-0.02em]'
                     )}
                 >
                     The skills I can do{' '}
                     <Image src={Assets.magicWandIcon.src} alt="magic wand" width={56} height={56} />
                 </div>
-                <div className="flex justify-between mt-10 max-lg:flex-col max-lg:gap-10 max-lg:hidden">
+                <div className="flex justify-between mt-[2.5rem] max-lg:flex-col max-lg:gap-[2.5rem] max-lg:hidden">
                     <div className="flex flex-col">
                         {data.map((item, index) => {
                             return (
                                 <div
                                     className={cn(
-                                        'flex gap-8 items-center px-8 pt-6 pb-10 rounded-[16px] cursor-pointer',
-                                        activeIndex === index ? 'shadow-sm' : 'hover:bg-gray-50'
+                                        'flex gap-8 items-center px-8 pt-[1.5rem] pb-[2.5rem] rounded-[1rem] cursor-pointer',
+                                        activeIndex === index ? activeBg : 'hover:bg-gray-50',
+                                        
                                     )}
                                     key={index}
                                     onClick={() => setActiveIndex(index)}
                                 >
-                                    <div className="min-w-[350px]">
-                                        <div className="text-[18px] leading-[23.4px] text-[#2E2B2B]">
+                                    <div className="min-w-[21.875rem]">
+                                        <div className="text-[1.125rem] leading-[1.4625rem] text-[#2E2B2B]">
                                             {index < 10 && '0'}
                                             {index + 1}
                                         </div>
 
                                         <div
                                             className={cn(
-                                                'text-[32px] leading-[38.4px] font-semibold text-[#272626] mt-3',
+                                                'text-[2rem] leading-[2.4rem] font-semibold text-[#272626] mt-3',
                                                 activeIndex === index ? 'opacity-100' : 'opacity-0'
                                             )}
                                         >
@@ -61,11 +66,11 @@ function SkillSection({ data }: Props) {
                                     </div>
                                     <div className="max-lg:flex max-lg:flex-col max-lg:gap-4 flex items-center">
                                         {activeIndex !== index ? (
-                                            <div className="text-[32px] leading-[38.4px] font-semibold text-[#272626]">
+                                            <div className="text-[2rem] leading-[2.4rem] font-semibold text-[#272626]">
                                                 {item.name}
                                             </div>
                                         ) : (
-                                            <div className="text-[16px] leading-[21.6px] text-[#595959]">
+                                            <div className="text-[1rem] leading-[1.35rem] text-[#595959]">
                                                 {item.description}
                                             </div>
                                         )}
@@ -76,7 +81,7 @@ function SkillSection({ data }: Props) {
                     </div>
                 </div>
 
-                <div className=" flex-col divide-y divide-[#DFDFDF] hidden max-lg:flex mt-10">
+                <div className=" flex-col divide-y divide-[#DFDFDF] hidden max-lg:flex mt-[2.5rem]">
                     {data.map((item, index) => {
                         return (
                             <div
@@ -85,7 +90,7 @@ function SkillSection({ data }: Props) {
                                 onClick={() => setActiveIndex(index)}
                             >
                                 <div className="flex flex-center-between">
-                                    <div className="text-[18px] leading-[23.4px] text-[#2E2B2B]">
+                                    <div className="text-[1.125rem] leading-[1.4625rem] text-[#2E2B2B]">
                                         {index < 10 && '0'}
                                         {index + 1}
                                     </div>
@@ -106,11 +111,11 @@ function SkillSection({ data }: Props) {
                                     leaveFrom="opacity-100 h-auto"
                                     leaveTo="opacity-0 h-0"
                                 >
-                                    <div className="mt-2">
-                                        <div className="text-[20px] leading-[24px] font-semibold text-[#272626]">
+                                    <div className="mt-[0.5rem]">
+                                        <div className="text-[1.25rem] leading-[1.5rem] font-semibold text-[#272626]">
                                             {item.name}
                                         </div>
-                                        <div className="text-[14px] leading-[18.9px] text-[#595959] mt-4">
+                                        <div className="text-[0.875rem] leading-[1.18125rem] text-[#595959] mt-[1rem]">
                                             {item.description}
                                         </div>
                                     </div>

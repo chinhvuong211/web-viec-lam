@@ -42,7 +42,7 @@ export default function WorkDetailPage({ projectDetail }: { projectDetail: Proje
                         {technologies?.map((item, index) => (
                             <div
                                 key={index}
-                                className="rounded-[32px] border border-[#CCDDFE0D] bg-[#CCDDFE0D] px-6 py-2 text-white text-body-16 max-lg:text-normal-14"
+                                className="rounded-[2rem] border border-[#CCDDFE0D] bg-[#CCDDFE0D] px-6 py-2 text-white text-body-16 max-lg:text-normal-14"
                             >
                                 {item}
                             </div>

@@ -21,7 +21,7 @@ function WorkFilter() {
                 customLabel={(item) => `Type: ${item.label}`}
             />
 
-            <div className="flex items-center gap-2 max-lg:hidden">
+            <div className="flex items-center gap-2 max-lg:hidden -mb-2">
                 {tabs.map((item, index) => {
                     return (
                         <div

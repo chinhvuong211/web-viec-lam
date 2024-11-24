@@ -12,39 +12,43 @@ type Props = {
     theme: {
         btn: string;
         projectCard?: ProjectCardTheme;
+        container?: string;
     };
 };
 export default function WorkSection({ projects, theme }: Props) {
+    const { container = 'bg-white' } = theme;
     return (
-        <div
-            className={cn('max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5', 'max-lg:pb-10')}
-        >
+        <div className={container}>
             <div
-                className={cn(
-                    'bg-white mt-[200px] text-[88px] font-semibold leading-[96.8px] tracking-[-0.01em] text-center mb-[120px]',
-                    'max-lg:mt-[75px] max-lg:text-[40px] max-lg:leading-[44px] max-lg:mb-12'
-                )}
+                className={cn('max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5', 'max-lg:pb-10')}
             >
-                Featured works
-            </div>
-            <WorkFilter />
-            <div className="gap-10 flex flex-col">
-                {projects?.map((item) => (
-                    <ProjectCard key={item.id} item={item} theme={theme.projectCard} />
-                ))}
-            </div>
-            <div className="flex justify-center w-full">
-                <Link
-                    href={'/work'}
+                <div
                     className={cn(
-                        'text-[18px] my-10 px-7 py-3 rounded-[8px] leading-[23.4px] font-semibold text-start flex items-center gap-2 ',
-                        'max-lg:mt-8 mb-0',
-                        theme.btn
+                        ' mt-[12.5rem] text-[5.5rem] font-semibold leading-[6.05rem] tracking-[-0.01em] text-center mb-[7.5rem]',
+                        'max-lg:mt-[4.6875rem] max-lg:text-[2.5rem] max-lg:leading-[2.75rem] max-lg:mb-12',
                     )}
                 >
-                    View more
-                    <Icon url={Assets.arrowTopRightIcon.src} size={24} />
-                </Link>
+                    Featured works
+                </div>
+                <WorkFilter />
+                <div className="gap-10 flex flex-col">
+                    {projects?.map((item) => (
+                        <ProjectCard key={item.id} item={item} theme={theme.projectCard} />
+                    ))}
+                </div>
+                <div className="flex justify-center w-full">
+                    <Link
+                        href={'/work'}
+                        className={cn(
+                            'text-[1.125rem] my-10 px-7 py-3 rounded-[0.5rem] leading-[1.4625rem] font-semibold text-start flex items-center gap-2 ',
+                            'max-lg:mt-8 mb-0',
+                            theme.btn
+                        )}
+                    >
+                        View more
+                        <Icon url={Assets.arrowTopRightIcon.src} size={24} />
+                    </Link>
+                </div>
             </div>
         </div>
     );

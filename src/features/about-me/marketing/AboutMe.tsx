@@ -34,8 +34,8 @@ export default function MarketingAboutMe(props: Props) {
         <div className="max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-4 max-lg:pb-10">
             <div
                 className={cn(
-                    'bg-white mt-[200px] text-[88px] font-semibold leading-[96.8px] tracking-[-0.01em] text-center mb-[120px]',
-                    'max-lg:text-[40px] max-lg:leading-[43px] max-lg:mb-[60px] max-lg:mt-[75px]'
+                    'bg-white mt-[12.5rem] text-[5.5rem] font-semibold leading-[6.05rem] tracking-[-0.01em] text-center mb-[7.5rem]',
+                    'max-lg:text-[2.5rem] max-lg:leading-[2.688rem] max-lg:mb-[3.75rem] max-lg:mt-[4.688rem]'
                 )}
             >
                 About Me
@@ -44,18 +44,18 @@ export default function MarketingAboutMe(props: Props) {
                 <div className="flex-1 h-full grow ">
                     <div
                         className={cn(
-                            'text-[24px] font-bold leading-[33.6px] mb-4',
-                            'max-lg:text-[20px] max-lg:leading-[28px] max-lg:mb-3'
+                            'text-[1.5rem] font-bold leading-[2.1rem] mb-4',
+                            'max-lg:text-[1.25rem] max-lg:leading-[1.75rem] max-lg:mb-3'
                         )}
                     >
                         Overview
                     </div>
 
-                    <div className="bg-white rounded-[12px]">
+                    <div className="bg-white rounded-[0.75rem]">
                         <div
                             className={cn(
-                                'text-[16px] font-normal leading-[21.6px] text-[#222222]',
-                                'max-lg:text-[14px] max-lg:leading-[19px]'
+                                'text-[1rem] font-normal leading-[1.35rem] text-[#222222]',
+                                'max-lg:text-[0.875rem] max-lg:leading-[1.188rem]'
                             )}
                         >
                             {overview.description}
@@ -63,8 +63,8 @@ export default function MarketingAboutMe(props: Props) {
 
                         <div
                             className={cn(
-                                'text-[16px] font-normal leading-[21.6px] mt-4 text-[#222222]',
-                                'max-lg:text-[14px] max-lg:leading-[19px]'
+                                'text-[1rem] font-normal leading-[1.35rem] mt-4 text-[#222222]',
+                                'max-lg:text-[0.875rem] max-lg:leading-[1.188rem]'
                             )}
                         >
                             I have experience in:
@@ -82,8 +82,8 @@ export default function MarketingAboutMe(props: Props) {
                                 />
                                 <div
                                     className={cn(
-                                        'text-[16px] font-normal leading-[20px] text-[#000000]',
-                                        'max-lg:text-[14px] max-lg:leading-[19px]'
+                                        'text-[1rem] font-normal leading-[1.25rem] text-[#000000]',
+                                        'max-lg:text-[0.875rem] max-lg:leading-[1.188rem]'
                                     )}
                                 >
                                     {experience}
@@ -96,14 +96,14 @@ export default function MarketingAboutMe(props: Props) {
                         src={aboutMe.avatar}
                         width={441}
                         height={588}
-                        className="object-cover h-full w-full mt-8 rounded-t-[6px] max-lg:block hidden"
+                        className="object-cover h-full w-full mt-8 rounded-t-[0.375rem] max-lg:block hidden"
                         alt={''}
                     />
 
                     <div
                         className={cn(
-                            'text-[24px] font-bold leading-[33.6px] mb-4 mt-12',
-                            'max-lg:text-[20px] max-lg:leading-[28px] max-lg:mt-8',
+                            'text-[1.5rem] font-bold leading-[2.1rem] mb-4 mt-12',
+                            'max-lg:text-[1.25rem] max-lg:leading-[1.75rem] max-lg:mt-8',
                             'max-lg:text-[#272626]'
                         )}
                     >
@@ -122,8 +122,8 @@ export default function MarketingAboutMe(props: Props) {
                     <div className="mt-12">
                         <div
                             className={cn(
-                                'text-[20px] font-bold leading-[28px]',
-                                'max-lg:text-[20px] max-lg:leading-[28px]'
+                                'text-[1.25rem] font-bold leading-[1.75rem]',
+                                'max-lg:text-[1.25rem] max-lg:leading-[1.75rem]'
                             )}
                         >
                             Tool I can use
@@ -137,8 +137,8 @@ export default function MarketingAboutMe(props: Props) {
 
                     <div
                         className={cn(
-                            'text-[24px] font-bold leading-[33.6px] mb-4 mt-12',
-                            'max-lg:text-[20px] max-lg:leading-[28px]'
+                            'text-[1.5rem] font-bold leading-[2.1rem] mb-4 mt-12',
+                            'max-lg:text-[1.25rem] max-lg:leading-[1.75rem]'
                         )}
                     >
                         Education
@@ -156,7 +156,7 @@ export default function MarketingAboutMe(props: Props) {
                         src={aboutMe.avatar}
                         width={441}
                         height={588}
-                        className="object-cover h-full w-full max-lg:min-w-full rounded-t-[6px]"
+                        className="object-cover h-full w-full max-lg:min-w-full rounded-t-[0.375rem]"
                         alt={''}
                     />
                 </div>

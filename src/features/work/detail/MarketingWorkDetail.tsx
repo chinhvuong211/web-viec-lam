@@ -3,7 +3,14 @@ import { Icon } from '@/components/base/icon/Icon';
 import Image from '@/components/base/Image';
 import { ProjectItem } from '@/features/work/interface';
 import { cn } from '@/lib/utils';
-export default function MarketingWorkDetail({ projectDetail }: { projectDetail: ProjectItem }) {
+
+type Props = {
+    projectDetail: ProjectItem;
+    theme?: {
+        role?: string;
+    }
+};
+export default function MarketingWorkDetail({ projectDetail, theme }: Props) {
     const {
         name,
         imageUrl,
@@ -17,6 +24,7 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
         result,
         stats,
         brief,
+        
     } = projectDetail;
 
     const leftContent = [
@@ -34,21 +42,24 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
         },
     ];
 
+ 
+
     return (
-        <div className="mt-[200px] mx-auto max-w-screen-xxl max-lg:mt-[75px]">
+        <div className="pt-[12.5rem] mx-auto max-w-screen-xxl max-lg:mt-[4.6875rem] bg-inherit">
             <div className="px-24 pb-24 max-lg:px-4 max-lg:pb-10">
                 <div
                     className={cn(
-                        'text-[16px] leading-[22.4px] bg-[#F1F1F1] px-6 py-2 rounded-[32px] mx-auto w-fit',
-                        'max-lg:text-[14px] max-lg:leading-[18px] max-lg:px-5',
-                        'text-[#272626]'
+                        'text-[1rem] leading-[1.4rem] px-6 py-2 rounded-[2rem] mx-auto w-fit',
+                        'max-lg:text-[0.875rem] max-lg:leading-[1.125rem] max-lg:px-5',
+                        'text-[#272626]',
+                        theme?.role || 'bg-[#F1F1F1] text-[#272626]'
                     )}
                 >
                     {role}
                 </div>
                 <div
                     className={cn(
-                        'text-6xl font-semibold leading-[70.4px] tracking-[-0.01em] text-center mt-[28px] text-[#272626]',
+                        'text-[3.75rem] font-semibold leading-[4.4rem] tracking-[-0.01em] text-center mt-[1.75rem] text-[#272626]',
                         'max-lg:text-[2.5rem] max-lg:leading-[3.5rem] max-lg:mt-3'
                     )}
                 >
@@ -56,8 +67,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                 </div>
                 <div
                     className={cn(
-                        'text-[18px] leading-[24.3px] text-[#9B9B9B] mt-4 w-[760px] mx-auto text-center',
-                        'max-lg:w-full max-lg:text-[14px] max-lg:leading-[18px] max-lg:mt-3'
+                        'text-[1.125rem] leading-[1.51875rem] text-[#9B9B9B] mt-4 w-[47.5rem] mx-auto text-center',
+                        'max-lg:w-full max-lg:text-[0.875rem] max-lg:leading-[1.125rem] max-lg:mt-3'
                     )}
                 >
                     {title}
@@ -70,14 +81,14 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                         alt={name ?? ''}
                         width={1248}
                         height={702}
-                        className="object-cover rounded-[24px] w-full"
+                        className="object-cover rounded-[1.5rem] w-full"
                     />
                 </div>
 
                 <div
                     className={cn('mt-16 flex gap-48', 'max-lg:flex-col max-lg:gap-10 max-lg:mt-6')}
                 >
-                    <div className="flex flex-col gap-5 w-[315px] max-lg:w-full max-lg:pr-10">
+                    <div className="flex flex-col gap-5 w-[19.6875rem] max-lg:w-full max-lg:pr-10">
                         {leftContent.map((item) => (
                             <div
                                 className="flex flex-col gap-2 border-b border-[#E0E0E0] pb-5"
@@ -85,16 +96,16 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                             >
                                 <div
                                     className={cn(
-                                        'text-[18px] leading-[24.3px] text-[#595959]',
-                                        'max-lg:text-[14px] max-lg:leading-[18px]'
+                                        'text-[1.125rem] leading-[1.51875rem] text-[#595959]',
+                                        'max-lg:text-[0.875rem] max-lg:leading-[1.125rem]'
                                     )}
                                 >
                                     {item.title}
                                 </div>
                                 <div
                                     className={cn(
-                                        'text-[32px] font-semibold leading-[41.6px] text-[#000000] mt-2',
-                                        'max-lg:text-[20px] max-lg:leading-[26px]'
+                                        'text-[2rem] font-semibold leading-[2.6rem] text-[#000000] mt-2',
+                                        'max-lg:text-[1.25rem] max-lg:leading-[1.625rem]'
                                     )}
                                 >
                                     {item.content}
@@ -112,16 +123,16 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                         <div>
                             <div
                                 className={cn(
-                                    'text-[32px] font-semibold leading-[40px] tracking-[0.02em] text-[#272626]',
-                                    'max-lg:text-[24px] max-lg:leading-[30px]'
+                                    'text-[2rem] font-semibold leading-[2.5rem] tracking-[0.02em] text-[#272626]',
+                                    'max-lg:text-[1.5rem] max-lg:leading-[1.875rem]'
                                 )}
                             >
                                 Request/Brief
                             </div>
                             <div
                                 className={cn(
-                                    'text-[16px] leading-[22.4px] text-[#595959] mt-4 max-lg:mt-3',
-                                    'max-lg:text-[14px] max-lg:leading-[18px]'
+                                    'text-[1rem] leading-[1.4rem] text-[#595959] mt-4 max-lg:mt-3',
+                                    'max-lg:text-[0.875rem] max-lg:leading-[1.125rem]'
                                 )}
                             >
                                 {brief}
@@ -130,8 +141,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                         <div>
                             <div
                                 className={cn(
-                                    'text-[32px] font-semibold leading-[40px] tracking-[0.02em] text-[#272626]',
-                                    'max-lg:text-[24px] max-lg:leading-[30px]'
+                                    'text-[2rem] font-semibold leading-[2.5rem] tracking-[0.02em] text-[#272626]',
+                                    'max-lg:text-[1.5rem] max-lg:leading-[1.875rem]'
                                 )}
                             >
                                 What was done?
@@ -140,8 +151,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                                 {done?.map((item, index) => (
                                     <div
                                         className={cn(
-                                            'text-[16px] leading-[22.4px] text-[#595959] mt-2',
-                                            'max-lg:text-[14px] max-lg:leading-[18px]'
+                                            'text-[1rem] leading-[1.4rem] text-[#595959] mt-2',
+                                            'max-lg:text-[0.875rem] max-lg:leading-[1.125rem]'
                                         )}
                                         key={index}
                                     >
@@ -153,8 +164,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                         <div>
                             <div
                                 className={cn(
-                                    'text-[32px] font-semibold leading-[40px] tracking-[0.02em] text-[#272626]',
-                                    'max-lg:text-[24px] max-lg:leading-[30px]'
+                                    'text-[2rem] font-semibold leading-[2.5rem] tracking-[0.02em] text-[#272626]',
+                                    'max-lg:text-[1.5rem] max-lg:leading-[1.875rem]'
                                 )}
                             >
                                 Result
@@ -171,8 +182,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                                 <div key={index}>
                                     <div
                                         className={cn(
-                                            'text-[16px] leading-6 text-[#595959]',
-                                            'max-lg:text-[14px] max-lg:leading-[18px]'
+                                            'text-[1rem] leading-6 text-[#595959]',
+                                            'max-lg:text-[0.875rem] max-lg:leading-[1.125rem]'
                                         )}
                                     >
                                         {item.title}
@@ -180,8 +191,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                                     <div className="flex items-end mt-1">
                                         <div
                                             className={cn(
-                                                'text-[56px] font-semibold leading-[46px] text-[#000000] mt-2 mr-2',
-                                                'max-lg:text-[32px] max-lg:leading-[26px]'
+                                                'text-[3.5rem] font-semibold leading-[2.875rem] text-[#000000] mt-2 mr-2',
+                                                'max-lg:text-[2rem] max-lg:leading-[1.625rem]'
                                             )}
                                         >
                                             {item.value}
@@ -193,8 +204,8 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                                         />
                                         <div
                                             className={cn(
-                                                'text-[18px] font-medium leading-[18px] text-[#000000] mt-2',
-                                                'max-lg:text-[16px] max-lg:leading-[18px]'
+                                                'text-[1.125rem] font-medium leading-[1.125rem] text-[#000000] mt-2',
+                                                'max-lg:text-[1rem] max-lg:leading-[1.125rem]'
                                             )}
                                         >
                                             {item.percentage}
@@ -218,7 +229,7 @@ export default function MarketingWorkDetail({ projectDetail }: { projectDetail: 
                             alt={name ?? ''}
                             width={1248}
                             height={702}
-                            className="object-cover rounded-[24px] w-full"
+                            className="object-cover rounded-[1.5rem] w-full"
                             key={index}
                         />
                     ))}
