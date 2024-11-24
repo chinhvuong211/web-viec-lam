@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = (props) => {
     const [isVisible, setIsVisible] = useState(false);
     const router = usePathname();
 
-    const { theme = { text: '' } } = props || {};
+    const { theme = { text: '', title: '', font: '', contact: '' } } = props || {};
 
     // Show or hide the button based on scroll position
     const toggleVisibility = () => {
@@ -83,9 +83,9 @@ const Header: React.FC<HeaderProps> = (props) => {
                 <div className="flex items-center justify-between gap-2">
                     <div
                         className={cn(
-                            'text-body-1 flex items-center text-everett',
+                            'dark:text-white green:text-white text-body-1 flex items-center text-everett',
                             'max-lg:font-medium max-lg:text-[1.25rem]',
-                            'light:text-light-primary light:font-medium max-lg:font-medium max-lg:text-[1.25rem]'
+                            'light:text-light-primary light:font-medium max-lg:font-medium max-lg:text-[1.25rem]',
                         )}
                     >
                         <Link href={'/'}>P.Chuong</Link>
