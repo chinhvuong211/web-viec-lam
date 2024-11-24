@@ -1,0 +1,376 @@
+{
+    "aboutMe": {
+        "hello": "Xin chào!",
+        "introduce": "Mình là",
+        "name": "Jane Nguyen",
+        "avatar": "/assets/images/profile/marketing.png",
+        "social": {
+            "facebookLink": "https://www.facebook.com/",
+            "linkedinLink": "https://www.linkedin.com/",
+            "instagramLink": "https://www.instagram.com/",
+            "youtubeLink": "https://www.youtube.com/"
+        },
+        "overview": {
+            "description": "I’m a digital marketing professional with five years of experience specializing in creating impactful marketing strategies and driving growth through data-driven decisions. My expertise spans across SEO, social media management, content marketing, and paid advertising, allowing me to build comprehensive campaigns tailored to diverse target audiences. With a strong background in analytics and market research, I focus on optimizing conversion rates and enhancing brand visibility. I am passionate about leveraging digital tools and platforms to deliver measurable results and help brands connect more effectively with their audience.",
+            "experiences": [
+                "Social Media Manager Giggling Platypus Co",
+                "Social Media Specialist Larana, Inc"
+            ],
+            "tools": ["Photoshop", "Figma", "Canva", "Capcut", "Notion"]
+        },
+        "availabilityStatus": "I’m available for work!"
+    },
+    "contact": {
+        "message": "I'm currently open for new opportunities. Let me make your project idea a reality! Don't hesitate, contact me today via",
+        "email": "yourmail@gmail.com",
+        "copyright": "© 2024",
+        "facebookLink": "https://www.facebook.com/",
+        "linkedInLink": "https://www.linkedin.com/",
+        "githubLink": "https://github.com/"
+    },
+    "client": {
+        "number": 15,
+        "label": "Happy Clients"
+    },
+    "project": {
+        "number": 10,
+        "label": "Projects this year"
+    },
+    "skills": [
+        {
+            "name": "Social media",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
+        },
+        {
+            "name": "E-commerce",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
+        },
+        {
+            "name": "SEO consultant",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
+        },
+        {
+            "name": "Content Stratergy",
+            "description": "Lorsque vous achetez un cours d'allemand, vous bénéficiez d'un accès à vie au contenu du cours et à toutes les mises à jour futures du cours. Le cours est autodidacte, vous pouvez donc étudier au rythme qui vous convient. Mentorat privé avec des experts de Friedolin"
+        }
+    ],
+    "educations": [
+        {
+            "time": "2018 - 2022",
+            "name": "RMIT University",
+            "major": "Bachelor of Digital Marketing"
+        },
+        {
+            "time": "2021 - 2022",
+            "name": "Cousera Certificate",
+            "major": "Google Digital Marketing & E-commerce Professional "
+        }
+    ],
+    "experiences": [
+        {
+            "title": "Digital Marketer",
+            "company": "Freelance",
+            "period": "08/2024 - Present",
+            "description": [
+                "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like English."
+            ]
+        },
+        {
+            "title": "Social Media Manager",
+            "company": "Vertica Agency",
+            "period": "06/2024 - 02/2019",
+            "description": [
+                "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like English."
+            ]
+        },
+        {
+            "title": "Idea Creator Executive",
+            "company": "Alabic Studio",
+            "period": "01/2019 - 05/2017",
+            "description": [
+                "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like English."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "name": "Project Number 01",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-1.png",
+            "role": "Marketing Campaign",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Cheeser",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Project Number 02",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "role": "Marketing Campaign",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-2.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Cheeser",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Project Number 03",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "role": "Marketing Campaign",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "imageUrl": "/assets/images/projects/marketing/project-3.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Cheeser",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Project Number 04",
+            "role": "Marketing Campaign",
+            "done": [
+                "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet",
+                "It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+            ],
+            "result": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+            "stats": [
+                {
+                    "title": "Total organic impresser",
+                    "value": "5N",
+                    "percentage": "120%"
+                },
+                {
+                    "title": "Total new conversion",
+                    "value": "300",
+                    "percentage": "80%"
+                },
+                {
+                    "title": "Total page views",
+                    "value": "12N",
+                    "percentage": "200%"
+                },
+                {
+                    "title": "Total new users",
+                    "value": "1N",
+                    "percentage": "50%"
+                },
+                {
+                    "title": "Page interactions",
+                    "value": "5N",
+                    "percentage": "150%"
+                },
+                {
+                    "title": "Reach",
+                    "value": "6N",
+                    "percentage": "30%"
+                }
+            ],
+            "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut elementum erat. Proin eu dolor efficitur, bibendum dolor nec, dictum orci. Nam at interdum ex. Vestibulum id nunc eros. In condimentum magna ligula, eu semper magna porta vel.",
+            "imageUrl": "/assets/images/projects/marketing/project-4.png",
+            "startTime": "10/2024",
+            "field": "F&B Agency",
+            "client": "Cheeser",
+            "projectImages": [
+                "/assets/images/projects/project-3-1.png",
+                "/assets/images/projects/project-3-2.png"
+            ],
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+            "title": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The goals was to create an intuitive for effortless management.",
+            "goals": [
+                "Increase brand awareness",
+                "Generate high-quality leads",
+                "Acquire new customers",
+                "Increase website traffic"
+            ]
+        }
+    ],
+    "whatTheySaidAboutMe": [
+        {
+            "name": "Ronak Patel",
+            "star": 5,
+            "avatar": "avatar1",
+            "position": "CEO & Owner of SaasFlash",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Mohamed Ali Amaira",
+            "star": 5,
+            "avatar": "avatar2",
+            "position": "Founder of MyDoc",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "star": 5,
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "star": 5,
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "star": 5,
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        },
+        {
+            "name": "Delano Wallace",
+            "star": 5,
+            "avatar": "avatar3",
+            "position": "Founder of Rebel Creatives",
+            "description": "It is a long established fact that a reader will be distracted by the content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        }
+    ]
+}

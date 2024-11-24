@@ -2,13 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-/* Rest of the CSS file content */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url('/fonts/manrope/Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/montserrat/Montserrat-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html.theme-marketing {
+    --font-family: 'Manrope', sans-serif;
+}
+
+html.theme-developer {
+    --font-family: 'Manrope', sans-serif;
 }
 
 :root {
@@ -16,6 +35,7 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
     --radius: 8px;
+    --font-family: 'DM Sans', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,13 +50,16 @@ body {
     color: rgb(var(--foreground-rgb));
     padding: 0;
     margin: 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font-family);
     font-size: 16px;
+    font-variation-settings:
+    "wght" 375,
+    "GRAD" 88;
 }
 
-* {
-    font-family: 'DM Sans', sans-serif;
-}
+/* * {
+    font-family: var(--font-family);
+} */
 
 html {
     height: -webkit-fill-available;

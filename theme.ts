@@ -124,6 +124,22 @@ export const typographyComponents = {
 
 export const fontFamily = {};
 
+const theme = {
+    'developer-style3-primary': '#F65D2C',
+    'developer-style3-background': '#FFFFFF',
+    'developer-style3-light-background': '#F5F5F5',
+    'developer-style3-primary-text': '#0F0F0F',
+    'developer-style3-text': '#272626',
+    'developer-style2-primary': '#0057FF',
+    'developer-style2-background': '#000005',
+    'developer-style2-primary-text': '#FFFFFF',
+    'developer-style2-text': '#D2DEFC',
+    'developer-style1-primary': '#12C99D',
+    'developer-style1-background': '#000005',
+    'developer-style1-primary-text': '#0F0F0F',
+    'developer-style1-text': '#DBDFE6',
+};
+
 export const colors = {
     light: {
         theme: {
@@ -133,6 +149,7 @@ export const colors = {
             'primary-text': '#0F0F0F',
             text: '#272626',
         },
+        ...theme,
     },
     dark: {
         theme: {
@@ -141,6 +158,7 @@ export const colors = {
             'primary-text': '#FFFFFF',
             text: '#D2DEFC',
         },
+        ...theme,
     },
     green: {
         theme: {
@@ -149,6 +167,7 @@ export const colors = {
             'primary-text': '#0F0F0F',
             text: '#DBDFE6',
         },
+        ...theme,
     },
 };
 

@@ -76,7 +76,7 @@ export default function InputTextArea({
                     'focus:ring-1 focus:ring-primary-blue-500',
                     'focus:outline-none focus:ring-1',
                     error
-                        ? '!ring-[1.2px] !ring-error'
+                        ? '!ring-[0.075rem] !ring-error'
                         : 'focus:border-primary-blue-500 focus:ring-primary-blue-500',
                     error && '!border-b-error'
                 )}

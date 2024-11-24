@@ -1,7 +1,7 @@
 'use client';
 
 import Carousel from '@/components/base/carousel/Carousel';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import { cn } from '@/lib/utils';
 
 import { SlideCard, SlideCardTheme } from './SlideCard';

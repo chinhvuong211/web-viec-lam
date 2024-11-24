@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { Assets } from '@/assets';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
+import { cn } from '@/lib/utils';
 
 import { Icon } from '../base/icon/Icon';
 import { TextTitle } from '../TextTitle';
@@ -43,18 +44,40 @@ const socials = [
 ];
 
 const bgMapping = {
-    [Theme.DARK]: Assets.footerImage.src,
-    [Theme.LIGHT]: Assets.footerLightImage.src,
-    [Theme.GREEN]: Assets.footerGreenImage.src,
+    [Theme.DEVELOPER_1]: Assets.footerImage.src,
+    [Theme.DEVELOPER_3]: Assets.footerLightImage.src,
+    [Theme.DEVELOPER_2]: Assets.footerGreenImage.src,
 };
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    theme?: {
+        social?: string;
+        message?: string;
+        email?: string;
+        copyright?: string;
+        router?: string;
+        routerContainer?: string;
+        background?: string;
+    };
+}
+const Footer: React.FC<FooterProps> = (props) => {
+    const {
+        theme = {
+            social: '',
+            message: '',
+            email: '',
+            copyright: '',
+            router: '',
+            routerContainer: '',
+            background: '',
+        },
+    } = props;
     const bg = bgMapping[getCookieTheme()];
 
     return (
         <footer className="text-center">
             <div
-                className="bg-theme-background "
+                className={cn('bg-theme-background', theme.background)}
                 style={{
                     backgroundImage: `url("${bg}")`,
                     backgroundSize: 'cover',
@@ -69,7 +92,7 @@ const Footer: React.FC = () => {
                                 <a
                                     href={item.link}
                                     key={index}
-                                    className="mb-5 text-[#D2DEFC] hover:underline light:text-light-primary"
+                                    className={cn('mb-5 hover:underline', theme.social)}
                                 >
                                     <div className="flex items-center gap-2">
                                         <Icon url={item.icon} className="h-5 w-5" size={20} />
@@ -82,7 +105,12 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                     <div className="max-w-[51.4375rem] text-start max-lg:mt-4">
-                        <p className="mb-12 text-start text-white text-title-h3 max-lg:mb-8 max-lg:text-md-title-h3 light:text-light-primary">
+                        <p
+                            className={cn(
+                                theme.message,
+                                'mb-12 text-start text-title-h3 max-lg:mb-8 max-lg:text-md-title-h3'
+                            )}
+                        >
                             {contact.message}
                         </p>
                         <a
@@ -93,7 +121,7 @@ const Footer: React.FC = () => {
                             <Icon
                                 url={Assets.arrowUpRightIcon.src}
                                 size={20}
-                                className="min-w-5 text-[#0057FF] light:text-theme-primary"
+                                className={cn('min-w-5 text-[#0057FF]', theme.email)}
                             />
                             {contact.email}
                         </a>
@@ -118,15 +146,20 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="max-w-screen-xxl left-0 right-0 mx-auto px-24 pt-24 max-lg:px-5 max-lg:pt-10 ">
-                    <div className="mt-[18.75rem] flex items-center justify-between pb-10 max-lg:mt-[9rem] light:border-t light:pt-5 light:border-light-primary green:border-t green:pt-5 green:border-[#CEDFFF1A">
-                        <div className="text-[#BBBBBB] text-normal-14 light:text-light-primary">
+                    <div
+                        className={cn(
+                            theme.routerContainer,
+                            'mt-[18.75rem] flex items-center justify-between pb-10 max-lg:mt-[9rem] light:border-t light:border-light-primary'
+                        )}
+                    >
+                        <div className={cn('text-normal-14 ', theme.copyright)}>
                             {contact.copyright}
                         </div>
 
                         <div className="flex items-center gap-5 max-lg:text-everett">
                             {routerNames.map((item) => (
                                 <a
-                                    className="text-[#BBBBBB] text-normal-14 light:text-light-primary"
+                                    className={cn('text-[#BBBBBB] text-normal-14', theme.router)}
                                     href={item.path}
                                     key={item.path}
                                 >

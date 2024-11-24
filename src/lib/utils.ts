@@ -1,6 +1,8 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
+import { TemplateCategory } from './constant';
+
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
 }
@@ -15,4 +17,8 @@ export const getBaseUrl = () => {
     }
 
     return 'http://localhost:3000';
+};
+
+export const getTemplateCategory = (template: string) => {
+    return template.split('-')[0] as TemplateCategory;
 };

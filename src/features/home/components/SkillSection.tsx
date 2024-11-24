@@ -1,7 +1,7 @@
 import Image from '@/components/base/Image';
 import TagItem from '@/components/TagItem';
 import { TextTitle } from '@/components/TextTitle';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 import { cn } from '@/lib/utils';
 
 const NumberPlus = (props: { number: number; text: string }) => {
@@ -71,7 +71,7 @@ function SkillSection() {
                                             </div>
 
                                             <div className="mt-4 flex max-w-[30vw] flex-wrap gap-2 max-lg:max-w-full">
-                                                {item.technologies.map((item) => (
+                                                {item.technologies?.map((item) => (
                                                     <TagItem key={item} label={item} />
                                                 ))}
                                             </div>

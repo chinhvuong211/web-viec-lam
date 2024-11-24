@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 
 import Image from '@/components/base/Image';
-import data from '@/data/data.json';
+import data from '@/data/developer.json';
 const { commentList } = data;
 
 const Editor = dynamic(() => import('./Editor'), { ssr: false });
