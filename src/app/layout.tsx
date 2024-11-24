@@ -19,7 +19,7 @@ export async function generateMetadata() {
     };
 
     const data = templateDataMapping[getTemplateCategory(template || '')];
-    const { aboutMe, skills } = data;
+    const { aboutMe = { name: '' }, skills = [] } = data || {};
 
     return {
         robots: 'index, follow',
