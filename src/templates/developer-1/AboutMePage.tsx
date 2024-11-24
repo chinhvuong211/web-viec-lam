@@ -8,6 +8,7 @@ import ExperienceSection from '@/features/about-me/components/ExperienceSection'
 import SkillSection from '@/features/home/components/SkillSection';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
+import Footer from '@/components/layout/Footer';
 
 const bgMapping = {
     [Theme.DEVELOPER_1]: '',
@@ -37,6 +38,16 @@ function AboutMePage() {
             <ExperienceSection />
             <EducationSection />
             <SkillSection />
+            <Footer
+                theme={{
+                    social: 'text-[#D2DEFC]',
+                    message: '!text-white',
+                    email: 'text-[#D2DEFC]',
+                    copyright: 'text-[#BBBBBB]',
+                    router: 'text-[#BBBBBB]',
+                    routerContainer: 'light:pt-5 light:border-light-primary',
+                }}
+            />
         </div>
     );
 }

@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 
 import { getTemplate } from './lib/template';
 import { getTheme } from './lib/theme';
+import { Template, Theme } from './lib/constant';
 
 export function middleware(request: NextRequest) {
     const response = NextResponse.next();
@@ -17,6 +18,21 @@ export function middleware(request: NextRequest) {
     if (template) {
         const templateValue = getTemplate(template);
         response.cookies.set('template', templateValue ?? '');
+        switch (template) {
+            case Template.DEVELOPER_1:
+                response.cookies.set('theme', Theme.DEVELOPER_1);
+                break;
+            case Template.DEVELOPER_2:
+                response.cookies.set('theme', Theme.DEVELOPER_2);
+                break;
+            case Template.DEVELOPER_3:
+                response.cookies.set('theme', Theme.DEVELOPER_3);
+                break;
+            default:
+                response.cookies.set('theme', Theme.DEVELOPER_3);
+                break;
+
+        }
     }
     return response;
 }

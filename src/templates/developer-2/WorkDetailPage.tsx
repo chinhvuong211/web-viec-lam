@@ -1,4 +1,5 @@
 import Image from '@/components/base/Image';
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import { TextTitle } from '@/components/TextTitle';
 import { ProjectItem } from '@/features/work/interface';
@@ -103,6 +104,16 @@ export default function WorkDetailPage({ projectDetail }: { projectDetail: Proje
                     </div>
                 </div>
             </div>
+            <Footer
+                theme={{
+                    social: 'text-[#D2DEFC]',
+                    message: '!text-white',
+                    email: 'text-[#D2DEFC]',
+                    copyright: 'text-[#BBBBBB]',
+                    router: 'text-[#BBBBBB]',
+                    routerContainer: 'light:pt-5 light:border-light-primary',
+                }}
+            />
         </div>
     );
 }
