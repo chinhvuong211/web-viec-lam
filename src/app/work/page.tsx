@@ -23,9 +23,9 @@ function Page() {
         case Template.MARKETING_1:
             return <Marketing1Work data={marketingData} />;
         case Template.MARKETING_2:
-            return <Marketing2Work />;
+            return <Marketing2Work data={marketingData} />;
         case Template.MARKETING_3:
-            return <Marketing3Work />;
+            return <Marketing3Work data={marketingData} />;
     }
 
     switch (theme) {

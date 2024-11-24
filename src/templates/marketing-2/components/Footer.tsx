@@ -5,7 +5,7 @@ export default function Marketing1Footer(props: MarketingFooterProps) {
     return (
         <MarketingFooter
             theme={{
-                social: 'text-[#D2DEFC]',
+                social: 'bg-[#D2F65A] text-[#111111]',
                 message: '!text-white',
                 email: 'text-white',
                 copyright: 'text-[#BBBBBB]',

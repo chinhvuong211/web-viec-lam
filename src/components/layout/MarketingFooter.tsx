@@ -104,7 +104,8 @@ const MarketingFooter: React.FC<MarketingFooterProps> = (props) => {
                                 <a key={index} href={item.link} target="_blank">
                                     <div
                                         className={cn(
-                                            'cursor-pointer bg-[#FBE9E9] rounded-full h-12 w-12 flex items-center justify-center text-[#F15060]'
+                                            'cursor-pointer rounded-full h-12 w-12 flex items-center justify-center',
+                                            theme.social
                                         )}
                                     >
                                         <Icon url={item.icon} size={20} />

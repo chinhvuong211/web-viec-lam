@@ -13,12 +13,17 @@ type Props = {
         connectButton: string;
         connectButtonText: string;
         availabilityStatus: string;
+        banner1?: string;
+        banner2?: string;
+        banner3?: string;
     };
 };
 
 const { aboutMe } = data;
 
 function HomeBanner({ theme }: Props) {
+    const { banner1 = Assets.marketingHomeBanner11, banner2 = Assets.marketingHomeBanner12, banner3 = Assets.marketingHomeBanner13 } =
+        theme;
     return (
         <div className="h-screen -mb-[100px] max-lg:mb-10">
             {/* Hero Section */}
@@ -35,7 +40,7 @@ function HomeBanner({ theme }: Props) {
                         <div>
                             <div className="flex items-center justify-end max-lg:justify-start">
                                 <Image
-                                    src={Assets.marketingHomeBanner11}
+                                    src={banner1}
                                     alt=""
                                     width={88}
                                     height={88}
@@ -52,7 +57,7 @@ function HomeBanner({ theme }: Props) {
                             </div>
                         </div>
                         <Image
-                            src={Assets.marketingHomeBanner13}
+                            src={banner3}
                             alt=""
                             width={316}
                             height={229}
@@ -62,7 +67,7 @@ function HomeBanner({ theme }: Props) {
                     <div className="flex items-center gap-6 max-lg:flex-wrap max-lg:gap-0 ">
                         with 5 years
                         <Image
-                            src={Assets.marketingHomeBanner12}
+                            src={banner2}
                             alt=""
                             width={88}
                             height={88}
@@ -73,7 +78,7 @@ function HomeBanner({ theme }: Props) {
                 </div>
 
                 <Image
-                    src={Assets.marketingHomeBanner13}
+                    src={banner3}
                     alt=""
                     width={316}
                     height={229}

@@ -5,12 +5,13 @@ import { Icon } from '@/components/base/icon/Icon';
 import { ProjectItem } from '@/features/work/interface';
 import { cn } from '@/lib/utils';
 
-import ProjectCard from './ProjectCard';
+import ProjectCard, { ProjectCardTheme } from './ProjectCard';
 
 type Props = {
     theme: {
         background: string;
         btn: string;
+        projectCard?: ProjectCardTheme;
     };
     data: ProjectItem[];
 };
@@ -34,9 +35,7 @@ function WorkSection(props: Props) {
                             <ProjectCard
                                 key={index}
                                 item={item}
-                                theme={{
-                                    container: 'bg-white',
-                                }}
+                                theme={theme.projectCard}
                             />
                         );
                     })}

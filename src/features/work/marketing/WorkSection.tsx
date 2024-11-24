@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { Assets } from '@/assets';
 import { Icon } from '@/components/base/icon/Icon';
-import ProjectCard from '@/features/home/marketing/ProjectCard';
+import ProjectCard, { ProjectCardTheme } from '@/features/home/marketing/ProjectCard';
 import { ProjectItem } from '@/features/work/interface';
 import { cn } from '@/lib/utils';
 
@@ -11,6 +11,7 @@ type Props = {
     projects: ProjectItem[];
     theme: {
         btn: string;
+        projectCard?: ProjectCardTheme;
     };
 };
 export default function WorkSection({ projects, theme }: Props) {
@@ -29,7 +30,7 @@ export default function WorkSection({ projects, theme }: Props) {
             <WorkFilter />
             <div className="gap-10 flex flex-col">
                 {projects?.map((item) => (
-                    <ProjectCard key={item.id} item={item} theme={{ container: 'shadow-inset' }} />
+                    <ProjectCard key={item.id} item={item} theme={theme.projectCard} />
                 ))}
             </div>
             <div className="flex justify-center w-full">

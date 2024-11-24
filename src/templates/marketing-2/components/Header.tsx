@@ -10,9 +10,11 @@ export default function Marketing1Header(props: Props) {
     return (
         <MarketingHeader
             theme={{
-                text: 'text-white',
-                background: 'bg-black',
-                contact: 'bg-white text-black',
+                text: 'text-[#111111]',
+                background: 'bg-white',
+                contact: 'text-white bg-[#111111]',
+                activeClass: 'shadow-xxl',
+                inActiveClass: '',
             }}
             name={name}
         />

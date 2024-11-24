@@ -45,6 +45,9 @@ function MarketingStyle1HomePage(props: Props) {
                 theme={{
                     background: 'bg-[#F4F4F4]',
                     btn: 'bg-[#272626] text-white',
+                    projectCard: {
+                        container: 'bg-white',
+                    },
                 }}
                 data={data.projects}
             />

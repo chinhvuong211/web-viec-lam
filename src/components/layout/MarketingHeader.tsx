@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useMemo } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 
 import { Assets } from '@/assets';
 import { cn } from '@/lib/utils';
@@ -38,6 +38,8 @@ export type HeaderTheme = {
     contact?: string;
     router?: string;
     background?: string;
+    activeClass?: string;
+    inActiveClass?: string;
 };
 
 type HeaderProps = {
@@ -47,8 +49,30 @@ type HeaderProps = {
 
 const MarketingHeader: React.FC<HeaderProps> = (props) => {
     const router = usePathname();
+    const [isVisible, setIsVisible] = useState(false);
+    const toggleVisibility = () => {
+        if (window.scrollY > 150) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
 
-    const { theme = { text: '' }, name = '' } = props || {};
+    // Scroll the window to the top
+
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisibility);
+        console.log(router);
+
+        return () => {
+            window.removeEventListener('scroll', toggleVisibility);
+        };
+    }, []);
+
+    const {
+        theme = { text: '', activeClass: '', inActiveClass: '' },
+        name = '',
+    } = props || {};
 
     const pathIndex = useMemo(() => {
         return routerNameMobile.findLastIndex((item) => router.includes(item.path));
@@ -63,7 +87,8 @@ const MarketingHeader: React.FC<HeaderProps> = (props) => {
             <div
                 className={cn(
                     'mx-auto w-full px-8 py-4 max-w-screen-xxl rounded-[1rem] max-lg:px-4 max-lg:bg-white max-lg:rounded-none',
-                    theme.background
+                    theme.background,
+                    isVisible ? theme.activeClass : theme.inActiveClass
                 )}
             >
                 <div className="flex items-center justify-between gap-2">

@@ -22,6 +22,7 @@ import menuIcon from './icons/menu.svg';
 import notionIcon from './icons/notion.svg';
 import photoshopIcon from './icons/photoshop.svg';
 import starIcon from './icons/star.svg';
+import star2Icon from './icons/star-2.svg';
 import youtubeIcon from './icons/youtube.svg';
 import avatar1 from './images/avatar-1.png';
 import avatar2 from './images/avatar-2.png';
@@ -37,6 +38,10 @@ import homeBannerLight from './images/home-banner-light.png';
 import marketingHomeBanner11 from './images/marketing-home-banner-1-1.png';
 import marketingHomeBanner12 from './images/marketing-home-banner-1-2.png';
 import marketingHomeBanner13 from './images/marketing-home-banner-1-3.png';
+import marketingHomeBanner21 from './images/marketing-home-banner-2-1.png';
+import marketingHomeBanner22 from './images/marketing-home-banner-2-2.png';
+import marketingHomeBanner23 from './images/marketing-home-banner-2-3.png';
+
 export const Assets = {
     logo: '/assets/images/logo.png',
     homeBanner,
@@ -53,6 +58,9 @@ export const Assets = {
     marketingHomeBanner11,
     marketingHomeBanner12,
     marketingHomeBanner13,
+    marketingHomeBanner21,
+    marketingHomeBanner22,
+    marketingHomeBanner23,
     asteriskIcon,
     facebookIcon,
     githubIcon,
@@ -78,4 +86,5 @@ export const Assets = {
     chevronRightIcon,
     magicWandIcon,
     starIcon,
+    star2Icon
 };

@@ -24,6 +24,9 @@ export default function Marketing1WorkPage(props: Props) {
                 projects={projects}
                 theme={{
                     btn: 'bg-[#272626] text-white',
+                    projectCard: {
+                        container: 'shadow-inset',
+                    },
                 }}
             />
             {/* Testimonial Section */}

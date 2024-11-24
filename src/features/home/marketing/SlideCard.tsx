@@ -8,6 +8,7 @@ export type SlideCardTheme = {
     description?: string;
     title?: string;
     position?: string;
+    star?: string;
 };
 
 type SlideCardProps = {
@@ -21,6 +22,7 @@ type SlideCardProps = {
 
 export const SlideCard = (props: SlideCardProps) => {
     const { name, position, description, avatar, theme, star } = props;
+
     return (
         <div
             className={cn(
@@ -31,7 +33,11 @@ export const SlideCard = (props: SlideCardProps) => {
             {star && (
                 <div className="flex items-center gap-1 mb-4">
                     {Array.from({ length: star }).map((_, index) => (
-                        <Icon url={Assets.starIcon.src} key={index} className="text-[#FFBB24]" />
+                        <Icon
+                            url={Assets.starIcon.src}
+                            key={index}
+                            className={cn(theme?.star || 'text-[#FFBB24]')}
+                        />
                     ))}
                 </div>
             )}

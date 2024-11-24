@@ -5,6 +5,7 @@ import TestimonialSection from '@/features/home/marketing/TestimonialSection';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
+import WhatClientsSayAboutMe from './components/WhatClientsSayAboutMe';
 
 type Props = {
     data: MarketingData;
@@ -19,20 +20,11 @@ export default function Marketing2AboutMe(props: Props) {
     return (
         <div>
             <Header name={data.aboutMe.name} />
-            <MarketingAboutMe data={data} />
-
-            {/* Testimonial Section */}
-            <TestimonialSection
-                data={data.whatTheySaidAboutMe}
-                cardTheme={{
-                    background: '!bg-white shadow-xs',
-                    description: 'text-[#595959]',
-                    title: 'text-[#272626]',
-                    position: 'text-[#595959]',
-                }}
-                activeDotClassName={'bg-[#272626]'}
-                inactiveDotClassName={'bg-[#C3C3C3]'}
+            <MarketingAboutMe
+                data={data}
+                theme={{ markColor: 'text-[#B8E71D]', markBgColor: 'bg-[#B8E71D]' }}
             />
+            <WhatClientsSayAboutMe data={data} />
             <Footer
                 data={{
                     socials: [

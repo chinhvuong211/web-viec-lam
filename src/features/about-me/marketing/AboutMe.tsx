@@ -7,14 +7,20 @@ import { cn } from '@/lib/utils';
 import EducationItem from './EducationItem';
 import ExperienceItem from './ExperienceItem';
 
+export type AboutMeTheme = {
+    markColor?: string;
+    markBgColor?: string;
+};
 type Props = {
     data: MarketingData;
+    theme?: AboutMeTheme;
 };
 
 export default function MarketingAboutMe(props: Props) {
-    const { data } = props;
+    const { data, theme } = props;
     const { aboutMe, experiences, educations } = data;
     const { overview } = aboutMe;
+    const { markColor = 'text-[#FFBB24]', markBgColor = 'bg-[#FFBB24]' } = theme || {};
 
     const tools = [
         Assets.figmaIcon.src,
@@ -71,7 +77,7 @@ export default function MarketingAboutMe(props: Props) {
                             >
                                 <Icon
                                     url={Assets.circleCheckIcon.src}
-                                    className="w-5 h-5 text-[#FFBB24]"
+                                    className={cn('w-5 h-5', markColor)}
                                     size={20}
                                 />
                                 <div
@@ -105,7 +111,11 @@ export default function MarketingAboutMe(props: Props) {
                     </div>
                     <div className="mt-5 flex flex-col gap-5">
                         {experiences.map((experience, index) => (
-                            <ExperienceItem data={experience} key={index} />
+                            <ExperienceItem
+                                data={experience}
+                                key={index}
+                                theme={{ markBgColor }}
+                            />
                         ))}
                     </div>
 
@@ -136,7 +146,7 @@ export default function MarketingAboutMe(props: Props) {
 
                     <div className="mt-5 flex flex-col gap-5 ">
                         {educations.map((education, index) => (
-                            <EducationItem data={education} key={index} />
+                            <EducationItem data={education} key={index}   theme={{ markBgColor }} />
                         ))}
                     </div>
                 </div>

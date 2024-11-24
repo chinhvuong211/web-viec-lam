@@ -22,7 +22,7 @@ function TestimonialSection(props: Props) {
                         'max-lg:text-[36px] max-lg:leading-[43px]'
                     )}
                 >
-                    <div>What they said</div>
+                    <div>What Clients said</div>
                     <div>About me</div>
                 </div>
             </div>

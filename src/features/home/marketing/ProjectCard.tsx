@@ -5,11 +5,14 @@ import { Icon } from '@/components/base/icon/Icon';
 import Image from '@/components/base/Image';
 import { ProjectItem } from '@/features/work/interface';
 import { cn } from '@/lib/utils';
+
+export type ProjectCardTheme = {
+    container?: string;
+};
+
 type Props = {
     item: ProjectItem;
-    theme?: {
-        container?: string;
-    };
+    theme?: ProjectCardTheme;
 };
 
 export default function ProjectCard(props: Props) {
@@ -37,7 +40,7 @@ export default function ProjectCard(props: Props) {
 
                     <div className="mt-6">
                         <div className="text-[1rem] font-normal leading-[1.35rem] text-[#111111]">
-                            Goal
+                            Goal 
                         </div>
                         <ul className="flex flex-col gap-1 mt-2 ml-4">
                             {goals.map((goal, index) => (

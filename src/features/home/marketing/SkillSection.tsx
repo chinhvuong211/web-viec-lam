@@ -11,6 +11,9 @@ import { cn } from '@/lib/utils';
 
 type Props = {
     data: SkillItem[];
+    theme?: {
+        title?: string;
+    };
 };
 
 function SkillSection({ data }: Props) {

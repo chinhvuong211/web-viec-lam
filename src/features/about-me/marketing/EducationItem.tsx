@@ -4,16 +4,20 @@ import type { EducationItem } from '../interface';
 
 type Props = {
     data: EducationItem;
+    theme?: {
+        markBgColor?: string;
+    };
 };
 
 export default function EducationItem(props: Props) {
-    const { data } = props;
+    const { data, theme } = props;
     const { time, name, major } = data;
+    const { markBgColor = 'bg-[#FFBB24]' } = theme || {};
 
     return (
         <div>
             <div className={cn('flex items-center gap-2', 'max-lg:gap-1')}>
-                <div className="w-1.5 h-1.5 bg-[#FFBB24] rounded-full"></div>
+                <div className={cn('w-1.5 h-1.5 rounded-full', markBgColor)}></div>
                 <div
                     className={cn(
                         'text-[1rem] leading-[1.35rem] text-[#595959] font-medium',
