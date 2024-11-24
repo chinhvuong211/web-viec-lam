@@ -20,5 +20,5 @@ export const getBaseUrl = () => {
 };
 
 export const getTemplateCategory = (template: string) => {
-    return template?.split('-')?.[0] as TemplateCategory ?? '';
+    return (template?.split('-')?.[0] as TemplateCategory) ?? '';
 };
