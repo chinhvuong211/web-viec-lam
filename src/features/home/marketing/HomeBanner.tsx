@@ -4,7 +4,7 @@ import { Assets } from '@/assets';
 import Button from '@/components/base/button/Button';
 import Image from '@/components/base/Image';
 import Modal from '@/components/base/modal/Modal';
-import data from '@/data/developer.json';
+import data from '@/data/marketing.json';
 import { cn } from '@/lib/utils';
 
 import ConnectForm from './ConnectForm';
@@ -42,7 +42,7 @@ function HomeBanner({ theme }: Props) {
                                     alt=""
                                     width={88}
                                     height={88}
-                                    className="aspect-[88/88] inline mr-6 max-lg:w-11"
+                                    className="aspect-[88/88] inline mr-6 max-lg:w-11 max-lg:mr-3"
                                 />
                                 Hello,{' '}
                                 <span className={cn(theme.secondaryText, 'whitespace-pre')}>
@@ -80,7 +80,7 @@ function HomeBanner({ theme }: Props) {
                     alt=""
                     width={316}
                     height={229}
-                    className="hidden max-lg:block max-lg:w-full"
+                    className="hidden max-lg:block max-lg:w-full my-2"
                 />
                 <Modal
                     contentComponent={ConnectForm}
@@ -89,34 +89,35 @@ function HomeBanner({ theme }: Props) {
                 >
                     <div
                         className={cn(
-                            'mx-auto mt-[7.3125rem] flex w-fit items-center space-x-6 max-lg:space-x-2 rounded-full border px-4 py-3 bg-white max-lg:w-full',
-                            'border-light-primary',
-                            'max-lg:px-2 max-lg:py-1',
+                            'mx-auto mt-[7.3125rem] w-fit max-lg:space-x-2 rounded-full bg-white max-lg:w-full',
+                            'shadow-[0px_0px_20px_0px_#0000001A]',
+                            'max-lg:px-2 max-lg:py-1 p-1 max-lg:p-0.5',
                             theme.connectButton
                         )}
                     >
-                        <div className="flex items-center gap-2">
-                            <div className="h-2 w-2 min-w-2 rounded-full bg-[#12C966] " />
-                            <div
+                        <div className='items-center flex space-x-6 py-1 px-3 rounded-full shadow-[0px_0px_4px_0px_#0000001A] max-lg:space-x-2 max-lg:px-1.5'>
+                            <div className="flex items-center gap-2">
+                                <div className="h-2 w-2 min-w-2 rounded-full bg-[#12C966] " />
+                                <div
+                                    className={cn(
+                                        'text-medium-16 light:text-light-primary whitespace-nowrap',
+                                        'max-lg:!text-[0.875rem] max-lg:leading-4',
+                                        theme.availabilityStatus
+                                    )}
+                                >
+                                    {aboutMe.availabilityStatus}
+                                </div>
+                            </div>
+                            <button
                                 className={cn(
-                                    'text-medium-16 light:text-light-primary whitespace-nowrap',
-                                    'max-lg:!text-[0.875rem] max-lg:leading-4 dark:text-white green:text-white',
-                                    theme.availabilityStatus
+                                    'max-h-[2.4375rem] rounded-[3.75rem] border px-5 py-3 flex-center text-medium-16 text-center whitespace-nowrap',
+                                    'max-lg:text-[0.875rem] max-lg:leading-4 max-lg:px-2 max-lg:py-1',
+                                    theme.connectButtonText
                                 )}
                             >
-                                {aboutMe.availabilityStatus}
-                            </div>
+                                CONNECT NOW
+                            </button>
                         </div>
-                        <button
-                            className={cn(
-                                'max-h-[2.4375rem] rounded-[3.75rem] border px-5 py-3 flex-center text-medium-16 text-center whitespace-nowrap',
-                                '',
-                                'max-lg:text-[0.875rem] max-lg:leading-4 max-lg:px-2 max-lg:py-1',
-                                theme.connectButtonText
-                            )}
-                        >
-                            CONNECT NOW
-                        </button>
                     </div>
                 </Modal>
             </section>

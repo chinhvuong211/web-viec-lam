@@ -21,6 +21,7 @@ export default function ProjectCard(props: Props) {
             href={`work/${id}`}
             className={cn(
                 'w-full h-full rounded-[2rem] py-6 px-8 flex gap-8 max-lg:gap-5 max-lg:py-5 max-lg:px-4 max-lg:flex-col-reverse',
+                'max-lg:rounded-[1.5rem]',
                 theme?.container
             )}
         >

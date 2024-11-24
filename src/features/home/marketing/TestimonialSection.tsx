@@ -7,7 +7,6 @@ import { cn } from '@/lib/utils';
 
 type Props = {
     cardTheme?: SlideCardTheme;
-
     activeDotClassName?: string;
     inactiveDotClassName?: string;
     data: WhatTheySaidAboutMeItem[];
@@ -16,7 +15,7 @@ type Props = {
 function TestimonialSection(props: Props) {
     const { cardTheme, activeDotClassName, inactiveDotClassName, data } = props;
     return (
-        <section className="bg-theme-background">
+        <section className="bg-white">
             <div className="max-w-screen-xxl left-0 right-0 mx-auto px-24 pt-24 pb-10 max-lg:px-5 max-lg:py-10 max-lg:pb-2">
                 <div className={
                     cn(

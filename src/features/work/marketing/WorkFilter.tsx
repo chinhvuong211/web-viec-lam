@@ -9,7 +9,12 @@ const tabs = ['All', 'Campaign', 'Content', 'Social Media'];
 function WorkFilter() {
     const [currentType, setCurrentType] = useState<string>('All');
     return (
-        <div className="flex-center-between max-lg:w-full max-lg:flex-col max-lg:gap-3 mb-8 border-b max-lg:hidden">
+        <div
+            className={cn(
+                'flex-center-between max-lg:w-full max-lg:flex-col max-lg:gap-3 mb-8 border-b',
+                'max-lg:border-none'
+            )}
+        >
             <SingleSelect
                 className="max-lg:w-full hidden max-lg:block"
                 items={tabs.map((item) => ({ label: item, value: item }))}

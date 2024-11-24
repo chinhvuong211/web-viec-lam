@@ -14,11 +14,11 @@ type Props = {
 };
 export default function WorkSection({ projects, theme }: Props) {
     return (
-        <div className="max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5">
+        <div className={cn('max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5', 'max-lg:pb-10')}>
             <div
                 className={cn(
                     'bg-white mt-[200px] text-[88px] font-semibold leading-[96.8px] tracking-[-0.01em] text-center mb-[120px]',
-                    'max-lg:mt-[75px] max-lg:text-[40px] max-lg:leading-[44px] max-lg:mb-8'
+                    'max-lg:mt-[75px] max-lg:text-[40px] max-lg:leading-[44px] max-lg:mb-12'
                 )}
             >
                 Featured works
@@ -34,6 +34,7 @@ export default function WorkSection({ projects, theme }: Props) {
                     href={'/work'}
                     className={cn(
                         'text-[18px] my-10 px-7 py-3 rounded-[8px] leading-[23.4px] font-semibold text-start flex items-center gap-2 ',
+                        'max-lg:mt-8 mb-0',
                         theme.btn
                     )}
                 >
