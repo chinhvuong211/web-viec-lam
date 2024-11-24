@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                         className={cn(
                             'dark:text-white green:text-white text-body-1 flex items-center text-everett',
                             'max-lg:font-medium max-lg:text-[1.25rem]',
-                            'light:text-light-primary light:font-medium max-lg:font-medium max-lg:text-[1.25rem]',
+                            'light:text-light-primary light:font-medium max-lg:font-medium max-lg:text-[1.25rem]'
                         )}
                     >
                         <Link href={'/'}>P.Chuong</Link>
