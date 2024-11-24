@@ -20,12 +20,15 @@ export default function WorkSection({ projects, theme }: Props) {
     return (
         <div className={container}>
             <div
-                className={cn('max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5', 'max-lg:pb-10')}
+                className={cn(
+                    'max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5',
+                    'max-lg:pb-10'
+                )}
             >
                 <div
                     className={cn(
                         ' mt-[12.5rem] text-[5.5rem] font-semibold leading-[6.05rem] tracking-[-0.01em] text-center mb-[7.5rem]',
-                        'max-lg:mt-[4.6875rem] max-lg:text-[2.5rem] max-lg:leading-[2.75rem] max-lg:mb-12',
+                        'max-lg:mt-[4.6875rem] max-lg:text-[2.5rem] max-lg:leading-[2.75rem] max-lg:mb-12'
                     )}
                 >
                     Featured works

@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useMemo, useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { Assets } from '@/assets';
 import { cn } from '@/lib/utils';
@@ -69,10 +69,7 @@ const MarketingHeader: React.FC<HeaderProps> = (props) => {
         };
     }, []);
 
-    const {
-        theme = { text: '', activeClass: '', inActiveClass: '' },
-        name = '',
-    } = props || {};
+    const { theme = { text: '', activeClass: '', inActiveClass: '' }, name = '' } = props || {};
 
     const pathIndex = useMemo(() => {
         return routerNameMobile.findLastIndex((item) => router.includes(item.path));

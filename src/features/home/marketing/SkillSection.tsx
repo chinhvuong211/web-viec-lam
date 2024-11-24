@@ -21,7 +21,7 @@ type Props = {
 function SkillSection({ data, theme }: Props) {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const { title = 'bg-white', activeBg = 'shadow-sm', containerBackground = 'bg-white' } = theme || {};
+    const { activeBg = 'shadow-sm', containerBackground = 'bg-white' } = theme || {};
 
     return (
         <section className={cn(containerBackground)}>
@@ -43,8 +43,7 @@ function SkillSection({ data, theme }: Props) {
                                 <div
                                     className={cn(
                                         'flex gap-8 items-center px-8 pt-[1.5rem] pb-[2.5rem] rounded-[1rem] cursor-pointer',
-                                        activeIndex === index ? activeBg : 'hover:bg-gray-50',
-                                        
+                                        activeIndex === index ? activeBg : 'hover:bg-gray-50'
                                     )}
                                     key={index}
                                     onClick={() => setActiveIndex(index)}

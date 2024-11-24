@@ -111,11 +111,7 @@ export default function MarketingAboutMe(props: Props) {
                     </div>
                     <div className="mt-5 flex flex-col gap-5">
                         {experiences.map((experience, index) => (
-                            <ExperienceItem
-                                data={experience}
-                                key={index}
-                                theme={{ markBgColor }}
-                            />
+                            <ExperienceItem data={experience} key={index} theme={{ markBgColor }} />
                         ))}
                     </div>
 
@@ -146,7 +142,7 @@ export default function MarketingAboutMe(props: Props) {
 
                     <div className="mt-5 flex flex-col gap-5 ">
                         {educations.map((education, index) => (
-                            <EducationItem data={education} key={index}   theme={{ markBgColor }} />
+                            <EducationItem data={education} key={index} theme={{ markBgColor }} />
                         ))}
                     </div>
                 </div>

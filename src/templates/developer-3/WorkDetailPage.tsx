@@ -1,9 +1,9 @@
 import Image from '@/components/base/Image';
+import Footer from '@/components/layout/Footer';
 import { TextTitle } from '@/components/TextTitle';
 import { ProjectItem } from '@/features/work/interface';
 
 import Developer3Header from './components/Header';
-import Footer from '@/components/layout/Footer';
 
 export default function WorkDetailPage({ projectDetail }: { projectDetail: ProjectItem }) {
     const {

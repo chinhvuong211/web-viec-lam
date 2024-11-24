@@ -15,7 +15,7 @@ export default function WhatClientsSayAboutMe(props: Props) {
                 description: 'text-[#595959]',
                 title: 'text-[#272626]',
                 position: 'text-[#595959]',
-                star: 'text-[#B8E71D]'
+                star: 'text-[#B8E71D]',
             }}
             activeDotClassName={'bg-[#272626]'}
             inactiveDotClassName={'bg-[#C3C3C3]'}

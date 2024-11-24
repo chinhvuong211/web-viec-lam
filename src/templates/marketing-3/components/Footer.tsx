@@ -14,7 +14,7 @@ export default function Marketing1Footer(props: MarketingFooterProps) {
                 btn: 'bg-white text-black',
                 divider: 'border-white',
                 contact: 'text-[#E8E8E8]',
-            }} 
+            }}
             {...props}
         />
     );

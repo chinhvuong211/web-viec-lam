@@ -1,8 +1,6 @@
 import '@/styles/global.css';
 import '@/styles/common.scss';
 
-import type { Metadata } from 'next';
-
 import { MainLayout } from '@/components/layout/MainLayout';
 import developerData from '@/data/developer.json';
 import marketingData from '@/data/marketing.json';
@@ -10,7 +8,6 @@ import { TemplateCategory } from '@/lib/constant';
 import { getCookieTemplate } from '@/lib/template';
 import { getCookieTheme } from '@/lib/theme';
 import { cn, getBaseUrl, getTemplateCategory } from '@/lib/utils';
-
 
 export async function generateMetadata() {
     const imageUrl = `${getBaseUrl()}/assets/images/profile/avatar.png`;
@@ -23,7 +20,7 @@ export async function generateMetadata() {
 
     const data = templateDataMapping[getTemplateCategory(template || '')];
     const { aboutMe, skills } = data;
-    
+
     return {
         robots: 'index, follow',
         metadataBase: new URL(getBaseUrl()),

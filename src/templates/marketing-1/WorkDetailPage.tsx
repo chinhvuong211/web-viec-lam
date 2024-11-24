@@ -1,3 +1,4 @@
+import { Assets } from '@/assets';
 import { MarketingData } from '@/features/common/interface';
 import TestimonialSection from '@/features/home/marketing/TestimonialSection';
 import MarketingWorkDetail from '@/features/work/detail/MarketingWorkDetail';
@@ -5,7 +6,6 @@ import { ProjectItem } from '@/features/work/interface';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
-import { Assets } from '@/assets';
 
 type Props = {
     data: MarketingData;

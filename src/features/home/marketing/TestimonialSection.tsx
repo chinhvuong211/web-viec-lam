@@ -13,7 +13,13 @@ type Props = {
 };
 
 function TestimonialSection(props: Props) {
-    const { cardTheme, activeDotClassName, inactiveDotClassName, backgroundClassName = 'bg-white', data } = props;
+    const {
+        cardTheme,
+        activeDotClassName,
+        inactiveDotClassName,
+        backgroundClassName = 'bg-white',
+        data,
+    } = props;
     return (
         <section className={cn(backgroundClassName)}>
             <div className="max-w-screen-xxl left-0 right-0 mx-auto px-24 pt-24 pb-10 max-lg:px-5 max-lg:py-10 max-lg:pb-2">

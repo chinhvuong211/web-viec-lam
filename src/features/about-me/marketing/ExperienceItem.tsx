@@ -16,9 +16,7 @@ export default function ExperienceItem(props: Props) {
     return (
         <div>
             <div className="flex items-center gap-2">
-                <div
-                    className={cn('w-1.5 h-1.5 rounded-full', markBgColor)}
-                />
+                <div className={cn('w-1.5 h-1.5 rounded-full', markBgColor)} />
                 <div
                     className={cn(
                         'text-[1rem] leading-[1.35rem] text-[#595959] font-medium',

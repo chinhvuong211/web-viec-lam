@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Assets } from '@/assets';
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import AboutMeSection from '@/features/about-me/components/AboutMeSection';
 import EducationSection from '@/features/about-me/components/EducationSection';
@@ -8,7 +9,6 @@ import ExperienceSection from '@/features/about-me/components/ExperienceSection'
 import SkillSection from '@/features/home/components/SkillSection';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
-import Footer from '@/components/layout/Footer';
 
 const bgMapping = {
     [Theme.DEVELOPER_1]: '',

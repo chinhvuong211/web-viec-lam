@@ -1,9 +1,9 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
+import { Template, Theme } from './lib/constant';
 import { getTemplate } from './lib/template';
 import { getTheme } from './lib/theme';
-import { Template, Theme } from './lib/constant';
 
 export function middleware(request: NextRequest) {
     const response = NextResponse.next();
@@ -31,7 +31,6 @@ export function middleware(request: NextRequest) {
             default:
                 response.cookies.set('theme', Theme.DEVELOPER_3);
                 break;
-
         }
     }
     return response;

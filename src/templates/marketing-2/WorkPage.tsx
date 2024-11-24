@@ -1,6 +1,5 @@
 import { Assets } from '@/assets';
 import { MarketingData } from '@/features/common/interface';
-import TestimonialSection from '@/features/home/marketing/TestimonialSection';
 import WorkSection from '@/features/work/marketing/WorkSection';
 
 import Marketing1Footer from './components/Footer';

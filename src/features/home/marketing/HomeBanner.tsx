@@ -23,8 +23,11 @@ type Props = {
 const { aboutMe } = data;
 
 function HomeBanner({ theme }: Props) {
-    const { banner1 = Assets.marketingHomeBanner11, banner2 = Assets.marketingHomeBanner12, banner3 = Assets.marketingHomeBanner13 } =
-        theme;
+    const {
+        banner1 = Assets.marketingHomeBanner11,
+        banner2 = Assets.marketingHomeBanner12,
+        banner3 = Assets.marketingHomeBanner13,
+    } = theme;
     return (
         <div className="h-screen -mb-[6.25rem] max-lg:mb-[0.625rem]">
             {/* Hero Section */}
@@ -54,7 +57,11 @@ function HomeBanner({ theme }: Props) {
                                 </span>
                             </div>
                             <div>
-                                A <span className={cn(theme.secondaryText, theme.highlightText)}>Digital</span> Marketing
+                                A{' '}
+                                <span className={cn(theme.secondaryText, theme.highlightText)}>
+                                    Digital
+                                </span>{' '}
+                                Marketing
                             </div>
                         </div>
                         <Image

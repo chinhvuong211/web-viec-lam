@@ -91,5 +91,5 @@ export const Assets = {
     chevronRightIcon,
     magicWandIcon,
     starIcon,
-    star2Icon
+    star2Icon,
 };

@@ -8,7 +8,7 @@ type Props = {
     projectDetail: ProjectItem;
     theme?: {
         role?: string;
-    }
+    };
 };
 export default function MarketingWorkDetail({ projectDetail, theme }: Props) {
     const {
@@ -24,7 +24,6 @@ export default function MarketingWorkDetail({ projectDetail, theme }: Props) {
         result,
         stats,
         brief,
-        
     } = projectDetail;
 
     const leftContent = [
@@ -41,8 +40,6 @@ export default function MarketingWorkDetail({ projectDetail, theme }: Props) {
             content: field,
         },
     ];
-
- 
 
     return (
         <div className="pt-[12.5rem] mx-auto max-w-screen-xxl max-lg:mt-[4.6875rem] bg-inherit">

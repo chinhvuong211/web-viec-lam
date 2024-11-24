@@ -1,13 +1,13 @@
 import { Assets } from '@/assets';
-
-import Footer from './components/Footer';
-import Header from './components/Header';
-import WhatClientsSayAboutMe from './components/WhatClientsSayAboutMe';
 import { MarketingData } from '@/features/common/interface';
 import AboutMe from '@/features/home/marketing/AboutMeSection';
 import HomeBanner from '@/features/home/marketing/HomeBanner';
 import SkillSection from '@/features/home/marketing/SkillSection';
 import WorkSection from '@/features/home/marketing/WorkSection';
+
+import Footer from './components/Footer';
+import Header from './components/Header';
+import WhatClientsSayAboutMe from './components/WhatClientsSayAboutMe';
 
 type Props = {
     data: MarketingData;

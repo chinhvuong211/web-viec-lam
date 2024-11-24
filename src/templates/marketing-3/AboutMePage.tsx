@@ -1,7 +1,6 @@
 import { Assets } from '@/assets';
 import MarketingAboutMe from '@/features/about-me/marketing/AboutMe';
 import { MarketingData } from '@/features/common/interface';
-import TestimonialSection from '@/features/home/marketing/TestimonialSection';
 
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -20,7 +19,10 @@ export default function Marketing2AboutMe(props: Props) {
     return (
         <div>
             <Header name={data.aboutMe.name} />
-            <MarketingAboutMe data={data} theme={{ markColor: 'text-[#FF3C00]', markBgColor: 'bg-[#FF3C00]' }} />
+            <MarketingAboutMe
+                data={data}
+                theme={{ markColor: 'text-[#FF3C00]', markBgColor: 'bg-[#FF3C00]' }}
+            />
 
             <WhatClientsSayAboutMe data={data} />
             <Footer

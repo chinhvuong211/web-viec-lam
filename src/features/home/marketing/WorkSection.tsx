@@ -31,13 +31,7 @@ function WorkSection(props: Props) {
                 </div>
                 <div className="gap-20 flex flex-col max-lg:gap-14">
                     {data.map((item, index) => {
-                        return (
-                            <ProjectCard
-                                key={index}
-                                item={item}
-                                theme={theme.projectCard}
-                            />
-                        );
+                        return <ProjectCard key={index} item={item} theme={theme.projectCard} />;
                     })}
                 </div>
                 <div className="flex justify-center w-full">
