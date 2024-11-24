@@ -1,22 +1,13 @@
 import React from 'react';
 
 import { Assets } from '@/assets';
-import MarketingFooter from '@/components/layout/MarketingFooter';
-import MarketingHeader from '@/components/layout/MarketingHeader';
-import AboutMeSection from '@/features/about-me/components/AboutMeSection';
-import EducationSection from '@/features/about-me/components/EducationSection';
-import ExperienceSection from '@/features/about-me/components/ExperienceSection';
 import { MarketingData } from '@/features/common/interface';
-import CommentSection from '@/features/home/components/CommentSection';
 import AboutMe from '@/features/home/marketing/AboutMeSection';
 import HomeBanner from '@/features/home/marketing/HomeBanner';
 import SkillSection from '@/features/home/marketing/SkillSection';
 import TestimonialSection from '@/features/home/marketing/TestimonialSection';
 import WorkSection from '@/features/home/marketing/WorkSection';
-import { Theme } from '@/lib/constant';
-import { getCookieTheme } from '@/lib/theme';
 
-import Marketing1Footer from './components/Footer';
 import Footer from './components/Footer';
 import Header from './components/Header';
 

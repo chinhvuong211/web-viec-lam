@@ -31,7 +31,7 @@ export default function Marketing1AboutMe(props: Props) {
                     position: 'text-[#595959]',
                 }}
                 activeDotClassName={'bg-[#272626]'}
-                inactiveDotClassName={ 'bg-[#C3C3C3]'}
+                inactiveDotClassName={'bg-[#C3C3C3]'}
             />
             <Footer
                 data={{

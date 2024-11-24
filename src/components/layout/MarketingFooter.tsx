@@ -17,7 +17,7 @@ export interface MarketingFooterProps {
         btn?: string;
         divider?: string;
         contact?: string;
-    }; 
+    };
     data?: {
         banner?: string;
         socials?: {
@@ -26,7 +26,6 @@ export interface MarketingFooterProps {
         }[];
     };
 }
-
 
 const MarketingFooter: React.FC<MarketingFooterProps> = (props) => {
     const {

@@ -5,6 +5,7 @@ import { Icon } from '@/components/base/icon/Icon';
 import ProjectCard from '@/features/home/marketing/ProjectCard';
 import { ProjectItem } from '@/features/work/interface';
 import { cn } from '@/lib/utils';
+
 import WorkFilter from './WorkFilter';
 type Props = {
     projects: ProjectItem[];
@@ -14,7 +15,9 @@ type Props = {
 };
 export default function WorkSection({ projects, theme }: Props) {
     return (
-        <div className={cn('max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5', 'max-lg:pb-10')}>
+        <div
+            className={cn('max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-5', 'max-lg:pb-10')}
+        >
             <div
                 className={cn(
                     'bg-white mt-[200px] text-[88px] font-semibold leading-[96.8px] tracking-[-0.01em] text-center mb-[120px]',

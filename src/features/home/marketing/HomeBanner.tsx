@@ -1,7 +1,4 @@
-import Link from 'next/link';
-
 import { Assets } from '@/assets';
-import Button from '@/components/base/button/Button';
 import Image from '@/components/base/Image';
 import Modal from '@/components/base/modal/Modal';
 import data from '@/data/marketing.json';
@@ -95,7 +92,7 @@ function HomeBanner({ theme }: Props) {
                             theme.connectButton
                         )}
                     >
-                        <div className='items-center flex space-x-6 py-1 px-3 rounded-full shadow-[0px_0px_4px_0px_#0000001A] max-lg:space-x-2 max-lg:px-1.5'>
+                        <div className="items-center flex space-x-6 py-1 px-3 rounded-full shadow-[0px_0px_4px_0px_#0000001A] max-lg:space-x-2 max-lg:px-1.5">
                             <div className="flex items-center gap-2">
                                 <div className="h-2 w-2 min-w-2 rounded-full bg-[#12C966] " />
                                 <div

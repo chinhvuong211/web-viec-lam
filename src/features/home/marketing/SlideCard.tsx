@@ -24,7 +24,7 @@ export const SlideCard = (props: SlideCardProps) => {
     return (
         <div
             className={cn(
-                'flex flex-col rounded-[1rem] py-8 px-9 backdrop-blur-3xl',
+                'flex flex-col rounded-[1rem] py-8 px-9 backdrop-blur-3xl h-full',
                 theme?.background
             )}
         >

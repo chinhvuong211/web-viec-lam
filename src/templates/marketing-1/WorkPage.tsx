@@ -1,10 +1,6 @@
 import { Assets } from '@/assets';
-import MarketingFooter from '@/components/layout/MarketingFooter';
-import MarketingHeader from '@/components/layout/MarketingHeader';
 import { MarketingData } from '@/features/common/interface';
-import ProjectCard from '@/features/home/marketing/ProjectCard';
 import TestimonialSection from '@/features/home/marketing/TestimonialSection';
-import WorkFilter from '@/features/work/marketing/WorkFilter';
 import WorkSection from '@/features/work/marketing/WorkSection';
 
 import Marketing1Footer from './components/Footer';

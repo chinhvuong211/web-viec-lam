@@ -20,11 +20,12 @@ function WorkSection(props: Props) {
     return (
         <section className={cn(theme.background)}>
             <div className="max-w-screen-xxl mx-auto px-24 pb-24 pt-8 max-lg:px-4 max-lg:py-4">
-                <div className={
-                    cn("text-[3.75rem] font-semibold leading-[4.5rem] tracking-[-0.01em] text-center max-w-[624px] mx-auto py-24",
-                        "max-lg:text-[2.25rem] max-lg:leading-[2.688rem] max-lg:py-14"
-                    )
-                }>
+                <div
+                    className={cn(
+                        'text-[3.75rem] font-semibold leading-[4.5rem] tracking-[-0.01em] text-center max-w-[624px] mx-auto py-24',
+                        'max-lg:text-[2.25rem] max-lg:leading-[2.688rem] max-lg:py-14'
+                    )}
+                >
                     Selected works from 2020 to the present
                 </div>
                 <div className="gap-20 flex flex-col max-lg:gap-14">

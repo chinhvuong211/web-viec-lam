@@ -1,13 +1,13 @@
 'use client';
 
+import { Transition } from '@headlessui/react';
 import { useState } from 'react';
 
 import { Assets } from '@/assets';
+import { Icon } from '@/components/base/icon/Icon';
 import Image from '@/components/base/Image';
 import { SkillItem } from '@/features/common/interface';
 import { cn } from '@/lib/utils';
-import { Icon } from '@/components/base/icon/Icon';
-import { Transition } from '@headlessui/react';
 
 type Props = {
     data: SkillItem[];
@@ -19,13 +19,13 @@ function SkillSection({ data }: Props) {
     return (
         <section className="bg-white">
             <div className="max-w-screen-xxl mx-auto p-24 py-16 max-lg:px-4 max-lg:py-10">
-                <div className={
-                    cn(
+                <div
+                    className={cn(
                         'text-[60px] font-semibold leading-[72px] tracking-[-0.01em] text-[#272626]',
                         'flex items-center justify-center gap-3 max-lg:text-[40px] max-lg:leading-[48px]',
                         'max-lg:gap-2.5 max-lg:text-[36px] max-lg:leading-[43px] max-lg:tracking-[-0.02em]'
-                    )
-                }>
+                    )}
+                >
                     The skills I can do{' '}
                     <Image src={Assets.magicWandIcon.src} alt="magic wand" width={56} height={56} />
                 </div>
@@ -86,12 +86,13 @@ function SkillSection({ data }: Props) {
                                         {index < 10 && '0'}
                                         {index + 1}
                                     </div>
-                                    <Icon url={Assets.chevronDownIcon.src} className={
-                                        cn(
+                                    <Icon
+                                        url={Assets.chevronDownIcon.src}
+                                        className={cn(
                                             'transition-all duration-300 ease-in-out',
                                             activeIndex === index ? 'rotate-180' : 'rotate-0'
-                                        )
-                                    } />
+                                        )}
+                                    />
                                 </div>
                                 <Transition
                                     show={activeIndex === index}
@@ -102,7 +103,7 @@ function SkillSection({ data }: Props) {
                                     leaveFrom="opacity-100 h-auto"
                                     leaveTo="opacity-0 h-0"
                                 >
-                                    <div className='mt-2'>
+                                    <div className="mt-2">
                                         <div className="text-[20px] leading-[24px] font-semibold text-[#272626]">
                                             {item.name}
                                         </div>

@@ -16,7 +16,7 @@ type Props = {
             experiences: string[];
             tools: string[];
         };
-    }
+    };
 };
 
 const tools = [
@@ -29,7 +29,9 @@ const tools = [
 
 function AboutMe({ theme, data }: Props) {
     return (
-        <section className={cn(theme.aboutMeBackground, 'rounded-t-[48px] max-lg:rounded-t-[32px]')}>
+        <section
+            className={cn(theme.aboutMeBackground, 'rounded-t-[48px] max-lg:rounded-t-[32px]')}
+        >
             <div className="max-w-screen-xxl mx-auto p-24 max-lg:px-5 max-lg:py-10 ">
                 <div className="text-[60px] font-semibold leading-[72px] tracking-[-0.01em] max-lg:text-[36px] max-lg:leading-[43px]">
                     About Me
@@ -77,12 +79,12 @@ function AboutMe({ theme, data }: Props) {
                                         years experience
                                     </span>
                                 </div>
-                                <div className={
-                                    cn(
+                                <div
+                                    className={cn(
                                         'text-[16px] leading-[28px] font-normal mt-2 text-[#535353]',
-                                        'max-lg:mt-1.5 max-lg:text-[14px] max-lg:leading-[28px]',
-                                    )
-                                }>
+                                        'max-lg:mt-1.5 max-lg:text-[14px] max-lg:leading-[28px]'
+                                    )}
+                                >
                                     as a Digital Marketing Freelancer
                                 </div>
                             </div>

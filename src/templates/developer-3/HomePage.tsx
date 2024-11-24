@@ -1,5 +1,4 @@
 import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
 import AboutMe from '@/features/home/components/AboutMeSection';
 import CommentSection from '@/features/home/components/CommentSection';
 import HomeBanner from '@/features/home/components/HomeBanner';
