@@ -15,7 +15,7 @@ interface Props {
 function ProjectCard(props: Props) {
     const { item, className, imageProps } = props;
 
-    const { imageUrl, name, technologies, id } = item;
+    const { imageUrl = '', name = '', technologies = [], id = '' } = item;
 
     return (
         <div className={className}>
