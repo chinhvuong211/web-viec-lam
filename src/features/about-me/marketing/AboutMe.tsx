@@ -126,7 +126,14 @@ export default function MarketingAboutMe(props: Props) {
                         </div>
                         <div className="flex items-center gap-4 mt-5">
                             {tools.map((tool, index) => (
-                                <Image src={tool} key={index} alt="" width={48} height={48} />
+                                <Image
+                                    src={tool}
+                                    key={index}
+                                    alt=""
+                                    width={48}
+                                    height={48}
+                                    className="w-12 h-12"
+                                />
                             ))}
                         </div>
                     </div>

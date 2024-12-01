@@ -23,7 +23,7 @@ export const Icon = React.forwardRef<HTMLSpanElement, IIConProps>(
                     display: 'inline-block',
                     maskImage: `url(${url})`,
                     WebkitMaskImage: `url(${url})`,
-                    '--icon-size': `${size}px`,
+                    '--icon-size': `${size / 16}rem`,
                     height,
                     ...style,
                 } as CSSProperties
