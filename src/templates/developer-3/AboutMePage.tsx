@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Assets } from '@/assets';
-import Footer from '@/components/layout/Footer';
 import AboutMeSection from '@/features/about-me/components/AboutMeSection';
 import EducationSection from '@/features/about-me/components/EducationSection';
 import ExperienceSection from '@/features/about-me/components/ExperienceSection';
@@ -9,6 +8,7 @@ import SkillSection from '@/features/home/components/SkillSection';
 import { Theme } from '@/lib/constant';
 import { getCookieTheme } from '@/lib/theme';
 
+import Developer3Footer from './components/Footer';
 import Developer3Header from './components/Header';
 
 const bgMapping = {
@@ -38,16 +38,7 @@ function AboutMePage() {
             <ExperienceSection />
             <EducationSection />
             <SkillSection />
-            <Footer
-                theme={{
-                    social: 'text-[#D2DEFC]',
-                    message: '!text-white',
-                    email: 'text-[#D2DEFC]',
-                    copyright: 'text-[#BBBBBB]',
-                    router: 'text-[#BBBBBB]',
-                    routerContainer: 'light:pt-5 light:border-light-primary',
-                }}
-            />
+            <Developer3Footer />
         </div>
     );
 }

@@ -156,7 +156,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                             {contact.copyright}
                         </div>
 
-                        <div className="flex items-center gap-5 max-lg:text-everett">
+                        <div className="flex items-center gap-5 ">
                             {routerNames.map((item) => (
                                 <a
                                     className={cn('text-[#BBBBBB] text-normal-14', theme.router)}

@@ -1,8 +1,8 @@
-import Footer from '@/components/layout/Footer';
 import ProjectList from '@/features/work/components/ProjectList';
 import ProjectListPagination from '@/features/work/components/ProjectListPagination';
 import WorkFilter from '@/features/work/components/WorkFilter';
 
+import Developer3Footer from './components/Footer';
 import Developer3Header from './components/Header';
 
 export default function WorkPage() {
@@ -23,16 +23,7 @@ export default function WorkPage() {
                     <ProjectListPagination />
                 </div>
             </div>
-            <Footer
-                theme={{
-                    social: 'text-[#D2DEFC]',
-                    message: '!text-white',
-                    email: 'text-[#D2DEFC]',
-                    copyright: 'text-[#BBBBBB]',
-                    router: 'text-[#BBBBBB]',
-                    routerContainer: 'light:pt-5 light:border-light-primary',
-                }}
-            />
+            <Developer3Footer />
         </div>
     );
 }

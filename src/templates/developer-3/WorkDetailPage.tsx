@@ -1,8 +1,8 @@
 import Image from '@/components/base/Image';
-import Footer from '@/components/layout/Footer';
 import { TextTitle } from '@/components/TextTitle';
 import { ProjectItem } from '@/features/work/interface';
 
+import Developer3Footer from './components/Footer';
 import Developer3Header from './components/Header';
 
 export default function WorkDetailPage({ projectDetail }: { projectDetail: ProjectItem }) {
@@ -105,16 +105,7 @@ export default function WorkDetailPage({ projectDetail }: { projectDetail: Proje
                     </div>
                 </div>
             </div>
-            <Footer
-                theme={{
-                    social: 'text-[#D2DEFC]',
-                    message: '!text-white',
-                    email: 'text-[#D2DEFC]',
-                    copyright: 'text-[#BBBBBB]',
-                    router: 'text-[#BBBBBB]',
-                    routerContainer: 'light:pt-5 light:border-light-primary',
-                }}
-            />
+            <Developer3Footer />
         </div>
     );
 }

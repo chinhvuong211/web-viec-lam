@@ -1,4 +1,3 @@
-import Footer from '@/components/layout/Footer';
 import AboutMe from '@/features/home/components/AboutMeSection';
 import CommentSection from '@/features/home/components/CommentSection';
 import HomeBanner from '@/features/home/components/HomeBanner';
@@ -6,8 +5,8 @@ import SkillSection from '@/features/home/components/SkillSection';
 import TestimonialSection from '@/features/home/components/TestimonialSection';
 import WorkSection from '@/features/home/components/WorkSection';
 
+import Developer3Footer from './components/Footer';
 import Developer3Header from './components/Header';
-
 export default function DeveloperStyle3() {
     return (
         <div>
@@ -38,16 +37,7 @@ export default function DeveloperStyle3() {
                 {/* Comments Section */}
                 <CommentSection />
             </div>
-            <Footer
-                theme={{
-                    social: 'text-light-primary',
-                    message: 'text-light-primary',
-                    email: 'text-theme-primary',
-                    copyright: 'text-light-primary',
-                    router: 'text-light-primary',
-                    routerContainer: 'light:border-t pt-5  border-developer-style3-primary',
-                }}
-            />
+            <Developer3Footer />
         </div>
     );
 }
