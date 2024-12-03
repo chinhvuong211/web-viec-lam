@@ -80,3 +80,19 @@ html.light .ql-editor[data-placeholder]::before {
     border: 1px solid;
     border-image-source: linear-gradient(180deg, rgba(157, 157, 157, 0.25) 0%, rgba(157, 157, 157, 0) 100%, rgba(157, 157, 157, 0) 100%);
 }
+
+.ql-snow {
+    .ql-formats {
+        button[type='button'] {
+            padding: 0 !important;
+            width: 1.2rem !important;
+            height: 1.2rem !important;
+            margin: 0 0.3rem ;
+            svg {
+                width: 1.2rem !important;
+                height: 1.2rem !important;
+            }
+        }
+    }
+}
+

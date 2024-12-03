@@ -42,7 +42,7 @@ export default function MarketingWorkDetail({ projectDetail, theme }: Props) {
     ];
 
     return (
-        <div className="pt-[12.5rem] mx-auto max-w-screen-xxl max-lg:mt-[4.6875rem] bg-inherit">
+        <div className="pt-[12.5rem] mx-auto max-w-screen-xxl max-lg:mt-[4.6875rem] max-lg:pt-[2.5rem] bg-inherit">
             <div className="px-24 pb-24 max-lg:px-4 max-lg:pb-10">
                 <div
                     className={cn(
@@ -226,7 +226,7 @@ export default function MarketingWorkDetail({ projectDetail, theme }: Props) {
                             alt={name ?? ''}
                             width={1248}
                             height={702}
-                            className="object-cover rounded-[1.5rem] w-full"
+                            className="object-cover rounded-[1.5rem] w-full max-lg:rounded-[0.5rem]"
                             key={index}
                         />
                     ))}

@@ -20,7 +20,7 @@ export const WhatTheySaidAboutMeSlider = (props: Props) => {
             <Carousel
                 slides={data}
                 slideClassName={cn(
-                    '!min-w-0 flex-[0_0_20%] max-lg:flex-[0_0_100%] max-xl:flex-[0_0_50%] max-lg:pl-0'
+                    '!min-w-0 flex-[0_0_20%] max-lg:flex-[0_0_100%] max-xl:flex-[0_0_50%] max-lg:pl-2 max-lg:pr-2 '
                 )}
                 activeDotClassName={activeDotClassName}
                 inactiveDotClassName={inactiveDotClassName}

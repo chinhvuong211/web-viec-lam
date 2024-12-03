@@ -98,7 +98,7 @@ export default function ProjectCard(props: Props) {
                 alt={name}
                 width={693}
                 height={464}
-                className="rounded-[1.5rem] aspect-[693/464] max-lg:w-full max-lg:h-auto"
+                className="rounded-[1.5rem] aspect-[693/464] max-lg:w-full max-lg:h-auto w-[43.3125rem]"
             />
         </Link>
     );

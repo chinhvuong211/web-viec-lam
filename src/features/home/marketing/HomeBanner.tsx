@@ -48,7 +48,7 @@ function HomeBanner({ theme }: Props) {
                                     alt=""
                                     width={88}
                                     height={88}
-                                    className="aspect-[88/88] inline mr-[1.5rem] max-lg:w-[2.75rem] max-lg:mr-[0.75rem]"
+                                    className="aspect-[88/88] w-[5.5rem] inline mr-[1.5rem] max-lg:w-[2.75rem] max-lg:mr-[0.75rem]"
                                 />
                                 Hello,{' '}
                                 <span className={cn(theme.secondaryText, 'whitespace-pre')}>
@@ -69,7 +69,7 @@ function HomeBanner({ theme }: Props) {
                             alt=""
                             width={316}
                             height={229}
-                            className="max-lg:hidden"
+                            className="max-lg:hidden aspect-[316/229] w-[19.75rem]"
                         />
                     </div>
                     <div className="flex items-center gap-[1.5rem] max-lg:flex-wrap max-lg:gap-0">
@@ -79,7 +79,7 @@ function HomeBanner({ theme }: Props) {
                             alt=""
                             width={88}
                             height={88}
-                            className="aspect-[88/88] inline max-lg:w-[2.75rem] max-lg:ml-[0.75rem]"
+                            className="aspect-[88/88] w-[5.5rem] inline max-lg:w-[2.75rem] max-lg:ml-[0.75rem]"
                         />
                         experience
                     </div>
@@ -90,22 +90,27 @@ function HomeBanner({ theme }: Props) {
                     alt=""
                     width={316}
                     height={229}
-                    className="hidden max-lg:block max-lg:w-full my-[0.125rem]"
+                    className="hidden max-lg:block max-lg:w-full my-[0.125rem] aspect-[316/229] w-[19.75rem]"
                 />
                 <Modal
                     contentComponent={ConnectForm}
                     title="Have an project in mind "
-                    className="fixed bottom-[1.25rem] left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[0.25rem]"
+                    className="fixed bottom-[1.25rem] left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[1rem]"
                 >
                     <div
                         className={cn(
                             'mx-auto mt-[7.3125rem] w-fit max-lg:space-x-2 rounded-full bg-white max-lg:w-full',
                             'shadow-[0px_0px_20px_0px_#0000001A]',
-                            'max-lg:px-2 max-lg:py-1 p-1 max-lg:p-0.5',
+                            'max-lg:px-1 max-lg:py-1 p-1',
                             theme.connectButton
                         )}
                     >
-                        <div className="items-center flex space-x-[1.5rem] py-[0.0625rem] px-[0.1875rem] rounded-full shadow-[0px_0px_4px_0px_#0000001A] max-lg:space-x-[0.5rem] max-lg:px-[0.09375rem]">
+                        <div
+                            className={cn(
+                                'items-center flex space-x-[1.5rem] py-[0.0625rem] px-[0.1875rem] rounded-full shadow-[0px_0px_4px_0px_#0000001A]',
+                                'max-lg:space-x-[0.5rem] max-lg:px-2 max-lg:py-1'
+                            )}
+                        >
                             <div className="flex items-center gap-[0.5rem]">
                                 <div className="h-[0.5rem] w-[0.5rem] min-w-[0.5rem] rounded-full bg-[#12C966] " />
                                 <div
@@ -121,7 +126,7 @@ function HomeBanner({ theme }: Props) {
                             <button
                                 className={cn(
                                     'max-h-[2.4375rem] rounded-[3.75rem] border px-5 py-3 flex-center text-medium-16 text-center whitespace-nowrap',
-                                    'max-lg:text-[0.875rem] max-lg:leading-4 max-lg:px-2 max-lg:py-1',
+                                    'max-lg:text-[0.875rem] max-lg:leading-4 max-lg:px-3 max-lg:py-3',
                                     theme.connectButtonText
                                 )}
                             >

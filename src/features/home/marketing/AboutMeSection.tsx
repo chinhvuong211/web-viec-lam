@@ -132,7 +132,7 @@ function AboutMe({ theme, data }: Props) {
                             src={aboutMe.avatar}
                             width={441}
                             height={588}
-                            className="object-cover h-full max-lg:aspect-[335/229] max-lg:min-w-full rounded-t-[0.375rem]"
+                            className="object-cover h-full max-lg:aspect-[335/229] max-lg:min-w-full rounded-t-[0.375rem] aspect-[441/588] w-[27.5625rem]"
                             alt={''}
                         />
                     </div>

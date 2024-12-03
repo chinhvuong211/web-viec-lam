@@ -10,6 +10,7 @@ import ExperienceItem from './ExperienceItem';
 export type AboutMeTheme = {
     markColor?: string;
     markBgColor?: string;
+    viewMoreBtn?: string;
 };
 type Props = {
     data: MarketingData;
@@ -20,7 +21,11 @@ export default function MarketingAboutMe(props: Props) {
     const { data, theme } = props;
     const { aboutMe, experiences, educations } = data;
     const { overview } = aboutMe;
-    const { markColor = 'text-[#FFBB24]', markBgColor = 'bg-[#FFBB24]' } = theme || {};
+    const {
+        markColor = 'text-[#FFBB24]',
+        markBgColor = 'bg-[#FFBB24]',
+        viewMoreBtn = 'bg-[#272626] text-white',
+    } = theme || {};
 
     const tools = [
         Assets.figmaIcon.src,
@@ -159,11 +164,21 @@ export default function MarketingAboutMe(props: Props) {
                         src={aboutMe.avatar}
                         width={441}
                         height={588}
-                        className="object-cover h-full w-full max-lg:min-w-full rounded-t-[0.375rem]"
+                        className="object-cover h-full max-lg:min-w-full rounded-t-[0.375rem] aspect-[441/588] w-[27.5625rem]"
                         alt={''}
                     />
                 </div>
             </div>
+
+            <button
+                className={cn(
+                    'text-[1.125rem] mx-auto mt-6 max-lg:mt-14 px-7 py-4 rounded-[0.5rem] leading-[1.4625rem] font-medium text-start flex items-center gap-2 max-lg:text-[1rem] max-lg:leading-[1.3rem]',
+                    'max-lg:block hidden',
+                    viewMoreBtn
+                )}
+            >
+                Contact now
+            </button>
         </div>
     );
 }

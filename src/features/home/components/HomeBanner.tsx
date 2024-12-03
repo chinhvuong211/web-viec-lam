@@ -49,14 +49,14 @@ function HomeBanner() {
                 <Modal
                     contentComponent={ConnectForm}
                     title="Have an project in mind "
-                    className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 max-lg:bottom-4"
+                    className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[1rem]"
                 >
                     <div
                         className={cn(
-                            'mx-auto mt-[7.3125rem] flex w-fit items-center space-x-6 max-lg:space-x-2 rounded-full border px-4 py-3 bg-black light:bg-white max-lg:w-full',
+                            'mx-auto mt-[7.3125rem] flex w-fit items-center space-x-6 max-lg:space-x-4 rounded-full border px-4 py-3 bg-black light:bg-white max-lg:w-full',
                             'light:border-light-primary',
                             'dark:border-[#0057FF]',
-                            'max-lg:px-2 max-lg:py-1'
+                            'max-lg:px-4 max-lg:py-2'
                         )}
                     >
                         <div className="flex items-center gap-2">
@@ -76,7 +76,7 @@ function HomeBanner() {
                                 'green:text-[#0F0F0F] green:bg-white',
                                 'dark:bg-white dark:text-[#0057FF] dark:border-[#0057FF]',
                                 'light:text-white bg-light-primary',
-                                'max-lg:text-[0.875rem] max-lg:leading-4 max-lg:px-2 max-lg:py-1'
+                                'max-lg:text-[0.875rem] max-lg:leading-4 max-lg:px-3 max-lg:py-3'
                             )}
                         >
                             CONNECT NOW

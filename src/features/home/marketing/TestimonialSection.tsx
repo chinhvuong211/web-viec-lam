@@ -34,7 +34,7 @@ function TestimonialSection(props: Props) {
                 </div>
             </div>
 
-            <div className="mx-auto px-8 pb-24 max-lg:px-5 max-lg:py-4 max-lg:pb-2">
+            <div className="mx-auto pb-24 max-lg:py-4 max-lg:pb-2">
                 <WhatTheySaidAboutMeSlider
                     data={data}
                     cardTheme={cardTheme}

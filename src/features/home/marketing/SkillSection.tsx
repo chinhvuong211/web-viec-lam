@@ -34,7 +34,13 @@ function SkillSection({ data, theme }: Props) {
                     )}
                 >
                     The skills I can do{' '}
-                    <Image src={Assets.magicWandIcon.src} alt="magic wand" width={56} height={56} />
+                    <Image
+                        src={Assets.magicWandIcon.src}
+                        alt="magic wand"
+                        width={56}
+                        height={56}
+                        className="max-lg:w-[2rem] max-lg:h-[2rem] w-[3.5rem] h-[3.5rem] aspect-square"
+                    />
                 </div>
                 <div className="flex justify-between mt-[2.5rem] max-lg:flex-col max-lg:gap-[2.5rem] max-lg:hidden">
                     <div className="flex flex-col">
