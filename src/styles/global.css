@@ -71,7 +71,7 @@ html {
 
 @media screen and (max-width: 992px) {
     html {
-        font-size: 4.266667vw;
+        font-size: calc(1440 / 375) * 1vw;
     }
 }
 
