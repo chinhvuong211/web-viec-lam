@@ -158,7 +158,7 @@ export default function MarketingAboutMe(props: Props) {
                     </div>
                 </div>
 
-                <div className="h-full w-[40%] max-lg:hidden">
+                <div className="h-full w-[40%] max-lg:hidden sticky top-[8rem] pt-8">
                     <ImageGalary url={aboutMe.avatar} url2={aboutMe.avatar} />
                 </div>
             </div>
