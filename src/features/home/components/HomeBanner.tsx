@@ -1,25 +1,22 @@
+'use client';
 import Link from 'next/link';
 
-import { Assets } from '@/assets';
 import Button from '@/components/base/button/Button';
 import Modal from '@/components/base/modal/Modal';
 import data from '@/data/developer.json';
-import { Theme } from '@/lib/constant';
-import { getCookieTheme } from '@/lib/theme';
+import { useToggleBottomVisibility } from '@/hooks/useToggleVisibility';
 import { cn } from '@/lib/utils';
 
 import ConnectForm from './ConnectForm';
 
 const { aboutMe } = data;
 
-const bgMapping = {
-    [Theme.DEVELOPER_1]: Assets.homeBanner.src,
-    [Theme.DEVELOPER_3]: Assets.homeBannerLight.src,
-    [Theme.DEVELOPER_2]: Assets.homeBannerGreen.src,
-};
+interface Props {
+    bg: string;
+}
 
-function HomeBanner() {
-    const bg = bgMapping[getCookieTheme()];
+function HomeBanner({ bg }: Props) {
+    const { isVisible } = useToggleBottomVisibility();
 
     return (
         <div
@@ -49,7 +46,10 @@ function HomeBanner() {
                 <Modal
                     contentComponent={ConnectForm}
                     title="Have an project in mind "
-                    className="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[1rem]"
+                    className={cn(
+                        'fixed bottom-20 left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[1rem]',
+                        isVisible ? 'block' : 'max-lg:hidden'
+                    )}
                 >
                     <div
                         className={cn(

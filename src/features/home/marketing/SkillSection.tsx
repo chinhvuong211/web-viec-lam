@@ -1,6 +1,5 @@
 'use client';
 
-import { Transition } from '@headlessui/react';
 import { useState } from 'react';
 
 import { Assets } from '@/assets';
@@ -52,7 +51,7 @@ function SkillSection({ data, theme }: Props) {
                                         activeIndex === index ? activeBg : 'hover:bg-gray-50'
                                     )}
                                     key={index}
-                                    onClick={() => setActiveIndex(index)}
+                                    onMouseOver={() => setActiveIndex(index)}
                                 >
                                     <div className="min-w-[21.875rem]">
                                         <div className="text-[1.125rem] leading-[1.4625rem] text-[#2E2B2B]">
@@ -102,19 +101,14 @@ function SkillSection({ data, theme }: Props) {
                                     <Icon
                                         url={Assets.chevronDownIcon.src}
                                         className={cn(
-                                            'transition-all duration-300 ease-in-out',
+                                            'transition-all duration-500 ease-in-out',
                                             activeIndex === index ? 'rotate-180' : 'rotate-0'
                                         )}
                                     />
                                 </div>
-                                <Transition
-                                    show={activeIndex === index}
-                                    enter="transition-all duration-300 ease-in-out"
-                                    enterFrom="opacity-0 h-0"
-                                    enterTo="opacity-100 h-auto"
-                                    leave="transition-all duration-300 ease-in-out"
-                                    leaveFrom="opacity-100 h-auto"
-                                    leaveTo="opacity-0 h-0"
+                                <div
+                                    className="overflow-hidden transition-[max-height] duration-500 ease-in-out"
+                                    style={{ maxHeight: activeIndex === index ? '1000px' : '0' }}
                                 >
                                     <div className="mt-[0.5rem]">
                                         <div className="text-[1.25rem] leading-[1.5rem] font-semibold text-[#272626]">
@@ -124,7 +118,7 @@ function SkillSection({ data, theme }: Props) {
                                             {item.description}
                                         </div>
                                     </div>
-                                </Transition>
+                                </div>
                             </div>
                         );
                     })}

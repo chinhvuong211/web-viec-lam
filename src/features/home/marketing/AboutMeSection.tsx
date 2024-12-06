@@ -2,6 +2,7 @@ import { Assets } from '@/assets';
 import { Icon } from '@/components/base/icon/Icon';
 import Image from '@/components/base/Image';
 import data from '@/data/marketing.json';
+import ImageCard from '@/features/about-me/marketing/ImageCard';
 import { cn } from '@/lib/utils';
 
 const { aboutMe } = data;
@@ -45,8 +46,13 @@ function AboutMe({ theme, data }: Props) {
                     About Me
                 </div>
                 <div className="mt-6 flex gap-6 max-lg:flex-col max-lg:gap-3 max-lg:mt-3">
-                    <div className="flex-1 h-full grow ">
-                        <div className={cn('rounded-[0.75rem] p-8 max-lg:p-4', cardBackground)}>
+                    <div className="flex-1 grow flex flex-col">
+                        <div
+                            className={cn(
+                                'rounded-[0.75rem] p-8 max-lg:p-4 flex-1',
+                                cardBackground
+                            )}
+                        >
                             <div className="text-[1rem] font-normal leading-[1.35rem] text-[#222222] max-lg:text-[0.875rem] max-lg:leading-[1.125rem]">
                                 {data.overview.description}
                             </div>
@@ -127,13 +133,12 @@ function AboutMe({ theme, data }: Props) {
                         </div>
                     </div>
 
-                    <div className="h-full aspect-[441/588]">
-                        <Image
-                            src={aboutMe.avatar}
-                            width={441}
-                            height={588}
-                            className="object-cover h-full max-lg:aspect-[335/229] max-lg:min-w-full rounded-t-[0.375rem] aspect-[441/588] w-[27.5625rem]"
-                            alt={''}
+                    <div className="h-full ">
+                        <ImageCard
+                            url={aboutMe.avatar}
+                            className="object-cover max-lg:aspect-[335/229] max-lg:min-w-full rounded-t-[0.375rem] w-[26rem] max-lg:w-full "
+                            showGhim
+                            ghimClassName="max-lg:hidden"
                         />
                     </div>
                 </div>

@@ -1,3 +1,4 @@
+import { Assets } from '@/assets';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import AboutMe from '@/features/home/components/AboutMeSection';
@@ -13,7 +14,7 @@ export default function DeveloperStyle2() {
             <div>
                 <Header theme={{ text: 'text-white', contact: 'border-white bg-transparent' }} />
 
-                <HomeBanner />
+                <HomeBanner bg={Assets.homeBannerGreen.src} />
 
                 <WorkSection />
 

@@ -1,3 +1,4 @@
+import { Assets } from '@/assets';
 import AboutMe from '@/features/home/components/AboutMeSection';
 import CommentSection from '@/features/home/components/CommentSection';
 import HomeBanner from '@/features/home/components/HomeBanner';
@@ -12,7 +13,7 @@ export default function DeveloperStyle3() {
         <div>
             <div>
                 <Developer3Header />
-                <HomeBanner />
+                <HomeBanner bg={Assets.homeBannerLight.src} />
 
                 <WorkSection />
 

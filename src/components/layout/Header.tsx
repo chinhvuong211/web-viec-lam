@@ -1,9 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 
 import { Assets } from '@/assets';
+import { useToggleHeaderVisibility } from '@/hooks/useToggleVisibility';
 import { cn } from '@/lib/utils';
 
 import { Icon } from '../base/icon/Icon';
@@ -43,30 +44,11 @@ type HeaderProps = {
 };
 
 const Header: React.FC<HeaderProps> = (props) => {
-    const [isVisible, setIsVisible] = useState(false);
     const router = usePathname();
 
     const { theme = { text: '', title: '', font: '', contact: '' } } = props || {};
 
-    // Show or hide the button based on scroll position
-    const toggleVisibility = () => {
-        if (window.scrollY > 150) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    // Scroll the window to the top
-
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-        console.log(router);
-
-        return () => {
-            window.removeEventListener('scroll', toggleVisibility);
-        };
-    }, []);
+    const { isVisible } = useToggleHeaderVisibility();
 
     const pathIndex = useMemo(() => {
         return routerNameMobile.findLastIndex((item) => router.includes(item.path));
@@ -75,7 +57,7 @@ const Header: React.FC<HeaderProps> = (props) => {
     return (
         <header
             className={cn(
-                'fixed top-0 z-10 w-full py-5  left-0 right-0 ',
+                'fixed top-0 z-10 w-full py-5 left-0 right-0',
                 isVisible ? 'bg-theme-background shadow-xxl' : ''
             )}
         >

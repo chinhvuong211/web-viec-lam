@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils';
 
 import EducationItem from './EducationItem';
 import ExperienceItem from './ExperienceItem';
+import ImageCard from './ImageCard';
+import ImageGalary from './ImageGalary';
 
 export type AboutMeTheme = {
     markColor?: string;
@@ -97,12 +99,9 @@ export default function MarketingAboutMe(props: Props) {
                         ))}
                     </div>
 
-                    <Image
-                        src={aboutMe.avatar}
-                        width={441}
-                        height={588}
+                    <ImageCard
+                        url={aboutMe.avatar}
                         className="object-cover h-full w-full mt-8 rounded-t-[0.375rem] max-lg:block hidden"
-                        alt={''}
                     />
 
                     <div
@@ -160,13 +159,7 @@ export default function MarketingAboutMe(props: Props) {
                 </div>
 
                 <div className="h-full w-[40%] max-lg:hidden">
-                    <Image
-                        src={aboutMe.avatar}
-                        width={441}
-                        height={588}
-                        className="object-cover h-full max-lg:min-w-full rounded-t-[0.375rem] aspect-[441/588] w-[27.5625rem]"
-                        alt={''}
-                    />
+                    <ImageGalary url={aboutMe.avatar} url2={aboutMe.avatar} />
                 </div>
             </div>
 

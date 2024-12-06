@@ -89,8 +89,21 @@ html.light .ql-editor[data-placeholder]::before {
             height: 1.2rem !important;
             margin: 0 0.3rem ;
             svg {
-                width: 1.2rem !important;
-                height: 1.2rem !important;
+                width: 1.4rem !important;
+                height: 1.4rem !important;
+
+            }
+
+            // Desktop styles
+            @media (min-width: 62rem) {
+                width: 2rem !important;
+                height: 2rem !important;
+                margin: 0 0.4rem;
+                
+                svg {
+                    width: 2rem !important;
+                    height: 2rem !important;
+                }
             }
         }
     }

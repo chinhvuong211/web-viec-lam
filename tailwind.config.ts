@@ -83,7 +83,6 @@ const config: Config = {
         boxShadow: {
             green: '0px 0px 20px 0px #0057FF4D;',
             xxl: '0px 25px 60px -15px #10182833', // shadow-xxlarge
-            inset: '0px 0px 20px 4px #0000001A inset',
             sm: '0px 0px 20px 4px #0000000D inset',
             xs: '0px 0px 18px 4px #00000014 inset',
         },

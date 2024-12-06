@@ -1,7 +1,10 @@
+'use client';
+
 import { Assets } from '@/assets';
 import Image from '@/components/base/Image';
 import Modal from '@/components/base/modal/Modal';
 import data from '@/data/marketing.json';
+import { useToggleBottomVisibility } from '@/hooks/useToggleVisibility';
 import { cn } from '@/lib/utils';
 
 import ConnectForm from './ConnectForm';
@@ -28,6 +31,8 @@ function HomeBanner({ theme }: Props) {
         banner2 = Assets.marketingHomeBanner12,
         banner3 = Assets.marketingHomeBanner13,
     } = theme;
+
+    const { isVisible } = useToggleBottomVisibility();
     return (
         <div className="h-screen -mb-[6.25rem] max-lg:mb-[0.625rem]">
             {/* Hero Section */}
@@ -95,7 +100,10 @@ function HomeBanner({ theme }: Props) {
                 <Modal
                     contentComponent={ConnectForm}
                     title="Have an project in mind "
-                    className="fixed bottom-[1.25rem] left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[1rem]"
+                    className={cn(
+                        'fixed bottom-[1.25rem] left-1/2 -translate-x-1/2 z-50 max-lg:bottom-[1rem]',
+                        isVisible ? 'block' : 'max-lg:hidden'
+                    )}
                 >
                     <div
                         className={cn(

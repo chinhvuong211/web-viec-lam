@@ -32,6 +32,7 @@ import bannerHeaderGreenImage from './images/banner-background-green.png';
 import footerImage from './images/footer.png';
 import footerGreenImage from './images/footer-green.png';
 import footerLightImage from './images/footer-light.png';
+import ghimImage from './images/ghim.png';
 import homeBanner from './images/home-banner.png';
 import homeBannerGreen from './images/home-banner-green.png';
 import homeBannerLight from './images/home-banner-light.png';
@@ -44,6 +45,7 @@ import marketingHomeBanner23 from './images/marketing-home-banner-2-3.png';
 import marketingHomeBanner31 from './images/marketing-home-banner-3-1.png';
 import marketingHomeBanner32 from './images/marketing-home-banner-3-2.png';
 import marketingHomeBanner33 from './images/marketing-home-banner-3-3.png';
+
 export const Assets = {
     logo: '/assets/images/logo.png',
     homeBanner,
@@ -57,6 +59,7 @@ export const Assets = {
     avatar1,
     avatar2,
     avatar3,
+    ghimImage,
     marketingHomeBanner11,
     marketingHomeBanner12,
     marketingHomeBanner13,

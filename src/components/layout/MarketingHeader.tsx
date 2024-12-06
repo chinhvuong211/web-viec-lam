@@ -1,9 +1,10 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 
 import { Assets } from '@/assets';
+import { useToggleHeaderVisibility } from '@/hooks/useToggleVisibility';
 import { cn } from '@/lib/utils';
 
 import { Icon } from '../base/icon/Icon';
@@ -49,25 +50,7 @@ type HeaderProps = {
 
 const MarketingHeader: React.FC<HeaderProps> = (props) => {
     const router = usePathname();
-    const [isVisible, setIsVisible] = useState(false);
-    const toggleVisibility = () => {
-        if (window.scrollY > 150) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    // Scroll the window to the top
-
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-        console.log(router);
-
-        return () => {
-            window.removeEventListener('scroll', toggleVisibility);
-        };
-    }, []);
+    const { isVisible } = useToggleHeaderVisibility();
 
     const { theme = { text: '', activeClass: '', inActiveClass: '' }, name = '' } = props || {};
 
