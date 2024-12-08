@@ -24,6 +24,9 @@ export default function Marketing2WorkPage(props: Props) {
                 projects={projects}
                 theme={{
                     btn: 'bg-[#272626] text-white',
+                    projectCard: {
+                        container: 'shadow-[inset_0px_0px_20px_4px_rgba(0,0,0,0.10)]',
+                    },
                 }}
             />
             <WhatClientsSayAboutMe data={data} />
